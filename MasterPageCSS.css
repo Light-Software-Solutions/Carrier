@@ -1,0 +1,54 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+header {
+    background: linear-gradient(to right, green, grey);
+}
+
+#HeaderWrapper {
+    float: right;
+    background: red;
+    margin-right: 2%;
+    font-size: 1rem;
+}
+
+nav li {
+    float: left;
+    border: 1px solid red;
+    width: 10rem;
+    background: red;
+    text-align: center;
+}
+
+    nav li a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+        nav li a:hover {
+            background: grey;
+        }
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+footer {
+    background: aqua;
+}
+
+/*Reseter*/
+header:after, nav:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}

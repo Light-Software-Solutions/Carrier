@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page</title>
+    <link href="MasterPageCSS.css" type="text/css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div id="HeaderWrapper">
+            <div>
+                <a href="#">Register</a>
+                <span>/</span>
+                <a href="#">Login</a>
+            </div>
+            <div>hide</div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">content</a></li>
+            <li><a href="#">content</a></li>
+            <li><a href="#">content</a></li>
+            <li><a href="#">content</a></li>
+            <li><a href="#">content</a></li>
+        </ul>
+    </nav>
+    <form id="FormMaster" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentMaster" runat="server">
+                <div id="Content"></div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        <div>Lorem ipsum dolor sit amet, gravida tincidunt, egestas aliquet sapien nam dolor mollis. Pellentesque volutpat risus magna, et bibendum ab. Tempor lorem wisi egestas nulla. </div>
+    </footer>
+</body>
+</html>
