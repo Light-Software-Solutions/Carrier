@@ -11,4 +11,19 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void HideOrShow(object sender, EventArgs e)
+    {
+        bool visibility = NavMenu.Visible;
+        if (visibility == false)
+        {
+            NavMenu.Visible = true;
+            Arrow.ImageUrl = "Images/up.png";
+        }
+        else
+        {
+            NavMenu.Visible = false;
+            Arrow.ImageUrl = "Images/down.png";
+        }
+    }
 }

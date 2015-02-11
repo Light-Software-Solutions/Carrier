@@ -15,6 +15,11 @@ header {
     font-size: 1rem;
 }
 
+input[type=image] {
+    width: 50px;
+    height: 50px;
+}
+
 nav li {
     float: left;
     width: 10rem;
@@ -40,7 +45,7 @@ nav ul {
     list-style-type: none;
 }
 
-#Content {
+#PageContent {
     height: 50rem;
 }
 

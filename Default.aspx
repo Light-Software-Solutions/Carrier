@@ -1,20 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <link href="Default.css" type="text/css" rel="stylesheet" />
+<asp:Content ID="RegisterHead" ContentPlaceHolderID="head" runat="Server">
+    <link href="LoginAndReg.css" type="text/css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Register" ContentPlaceHolderID="ContentMaster" runat="Server">
     <div id="Content">
-        <img src="#" alt="Logo" />
-        <form action="/" method="post">
-            <fieldset>
-                <input type="text" name="UserName" value="" placeholder="Username" />
-                <input type="password" name="Pass" value="" placeholder="Password"/>
-                <input type="password" name="Pass" value="" placeholder="Password" />
-                <input type="email" name="Email" value="" placeholder="Email" />
-                <input type="submit" name="Submit" value="Register" />
-            </fieldset>
-        </form>
+        <asp:Image runat="server" AlternateText="Logo" ImageUrl="http://img-9gag-ftw.9cache.com/photo/a9LPYL6_460s_v1.jpg" />
+        <fieldset>
+            <asp:TextBox ID="userName" runat="server" placeholder="Username" />
+            <asp:TextBox ID="password" runat="server" TextMode="Password" placeholder="Password" />
+            <asp:TextBox ID="verifyPassword" runat="server" TextMode="Password" placeholder="Verify Password" />
+            <asp:TextBox ID="email" runat="server" placeholder="Email" />
+            <asp:Button ID="submit" Text="Register" runat="server" />
+        </fieldset>
     </div>
 </asp:Content>
 
