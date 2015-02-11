@@ -40,6 +40,6 @@ fieldset input[type="submit"] {
 }
 
     fieldset input[type="submit"]:hover {
-        background: red;
+        background: green;
         border-radius: 5px;
     }

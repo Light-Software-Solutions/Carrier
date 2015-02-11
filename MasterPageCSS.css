@@ -5,12 +5,11 @@
 }
 
 header {
-    background: linear-gradient(to right, green, grey);
+    background: green;
 }
 
 #HeaderWrapper {
     float: right;
-    background: red;
     margin-right: 2%;
     font-size: 1rem;
 }
@@ -20,10 +19,15 @@ input[type=image] {
     height: 50px;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 nav li {
     float: left;
     width: 10rem;
-    background: red;
+    background: grey;
     text-align: center;
 }
 
@@ -36,7 +40,7 @@ nav li {
     }
 
         nav li a:hover {
-            background: grey;
+            background: green;
         }
 
 nav ul {
