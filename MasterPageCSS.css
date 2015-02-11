@@ -17,7 +17,6 @@ header {
 
 nav li {
     float: left;
-    border: 1px solid red;
     width: 10rem;
     background: red;
     text-align: center;
@@ -39,6 +38,10 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+#Content {
+    height: 50rem;
 }
 
 footer {
