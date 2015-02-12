@@ -18,12 +18,10 @@ public partial class MasterPage : System.Web.UI.MasterPage
         if (visibility == false)
         {
             NavMenu.Visible = true;
-            Arrow.ImageUrl = "Images/up.png";
         }
         else
         {
             NavMenu.Visible = false;
-            Arrow.ImageUrl = "Images/down.png";
         }
     }
 }

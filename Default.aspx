@@ -4,8 +4,7 @@
     <link href="LoginAndReg.css" type="text/css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Register" ContentPlaceHolderID="ContentMaster" runat="Server">
-    <div id="Content">
-        <asp:Image runat="server" AlternateText="Logo" ImageUrl="http://img-9gag-ftw.9cache.com/photo/a9LPYL6_460s_v1.jpg" />
+    <div id="Wrapper">
         <fieldset>
             <asp:TextBox ID="userName" runat="server" placeholder="Username" />
             <asp:TextBox ID="password" runat="server" TextMode="Password" placeholder="Password" />

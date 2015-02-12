@@ -4,21 +4,14 @@
     background: #ead3d3;
 }
 
-#Content {
+#Wrapper {
     margin: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
 }
 
-    #Content img {
-        width: 300px;
-        height: 300px;
-        margin-left: 10%;
-    }
-
-    #Content fieldset {
+    #Wrapper fieldset {
         border: none;
-        display: inline-block;
-        margin-left: 12%;
-        margin-right: 10%;
     }
 
 fieldset input[type="text"],
@@ -36,10 +29,12 @@ fieldset input[type="submit"] {
     font-size: 1.5rem;
     background: none;
     border: none;
+    color: black;
     padding: 0.7rem 0 0.7rem 0;
 }
 
     fieldset input[type="submit"]:hover {
         background: green;
+        color: #ead3d3;
         border-radius: 5px;
     }
