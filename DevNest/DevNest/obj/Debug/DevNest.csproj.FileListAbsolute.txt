@@ -32,3 +32,37 @@ C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\bin\Micro
 C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\obj\Debug\DevNest.csprojResolveAssemblyReference.cache
 C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\obj\Debug\DevNest.dll
 C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\obj\Debug\DevNest.pdb
+D:\Carrier\DevNest\DevNest\bin\DevNest.dll.config
+D:\Carrier\DevNest\DevNest\bin\DevNest.dll
+D:\Carrier\DevNest\DevNest\bin\DevNest.pdb
+D:\Carrier\DevNest\DevNest\bin\Antlr3.Runtime.dll
+D:\Carrier\DevNest\DevNest\bin\AspNet.ScriptManager.jQuery.dll
+D:\Carrier\DevNest\DevNest\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.AspNet.dll
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.Core.dll
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OAuth.dll
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OpenId.dll
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Carrier\DevNest\DevNest\bin\EntityFramework.dll
+D:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Carrier\DevNest\DevNest\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Carrier\DevNest\DevNest\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Carrier\DevNest\DevNest\bin\Microsoft.Web.Infrastructure.dll
+D:\Carrier\DevNest\DevNest\bin\System.Web.Optimization.dll
+D:\Carrier\DevNest\DevNest\bin\System.Web.Providers.dll
+D:\Carrier\DevNest\DevNest\bin\WebGrease.dll
+D:\Carrier\DevNest\DevNest\bin\EntityFramework.xml
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.Core.xml
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OAuth.xml
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OpenId.xml
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.AspNet.xml
+D:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.csprojResolveAssemblyReference.cache
+D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.dll
+D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.pdb

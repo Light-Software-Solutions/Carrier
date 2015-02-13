@@ -8,14 +8,17 @@ header {
     background: grey;
     color: white;
 }
-    
-header a {
-    text-decoration: none;
-}
 
-header a:visited {
-    color: white;
-}
+    header a {
+        text-decoration: none;
+    }
+
+        header a:visited {
+            color: white;
+        }
+        header a:hover {
+            color: green;
+        }
 
 #HeaderWrapper {
     float: right;
@@ -24,11 +27,11 @@ header a:visited {
     padding: 1% 0 1% 0;
 }
 
-#HeaderWrapper div:last-of-type {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 8%;
-}
+    #HeaderWrapper div:last-of-type {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 8%;
+    }
 
 nav {
     display: flex;
@@ -40,8 +43,6 @@ nav {
         width: 10rem;
         background: #ead3d3;
         text-align: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 
         nav li a {
@@ -53,20 +54,20 @@ nav {
             padding: 0.5rem 0 0.5rem 0;
         }
 
-         nav li a:visited {
-             color: black;
-         }
+            nav li a:visited {
+                color: black;
+            }
 
             nav li a:hover {
                 background: green;
                 color: #ead3d3;
             }
 
-        nav li:first-child a:hover {
+        nav li:first-child, nav li:first-child a:hover {
             border-bottom-left-radius: 9px;
         }
 
-        nav li:last-child a:hover {
+        nav li:last-child, nav li:last-child a:hover {
             border-bottom-right-radius: 9px;
         }
 

@@ -19,7 +19,7 @@
                     <a href="Login.aspx">Login</a>
                 </div>
                 <div>
-                    <asp:ImageButton ID="Arrow" ImageUrl="Images/menu.png" runat="server" />
+                    <asp:ImageButton ID="Arrow" ImageUrl="Images/menu.png" runat="server" OnClick="ShowOrHide" />
                 </div>
             </div>
         </header>

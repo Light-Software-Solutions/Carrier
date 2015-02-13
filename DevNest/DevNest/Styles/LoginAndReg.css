@@ -21,7 +21,8 @@ fieldset input[type="password"] {
     border-left: none;
     border-right: none;
     background: #ead3d3;
-    margin: 2rem 0 2rem 0;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 5% 2% 2% 5%;
 }
 
 fieldset input[type="submit"] {
@@ -38,3 +39,10 @@ fieldset input[type="submit"] {
         color: #ead3d3;
         border-radius: 5px;
     }
+
+fieldset input[type="text"]:focus,
+fieldset input[type="password"]:focus {
+    box-shadow: 0 0 1rem green;
+    background: #fff;
+    color: green;
+}
