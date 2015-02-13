@@ -11,10 +11,11 @@ header {
 
     header a {
         text-decoration: none;
+        color: #fff;
     }
 
         header a:visited {
-            color: white;
+            color: #fff;
         }
         header a:hover {
             color: green;
