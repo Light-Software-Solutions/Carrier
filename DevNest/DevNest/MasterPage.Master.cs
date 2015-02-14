@@ -9,29 +9,21 @@ namespace DevNest
 {
     public partial class MasterPage : System.Web.UI.MasterPage
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
+            var temp = Session["login"];
             if (Session["login"] != null)
             {
                 lblWelcomeUser.Text = "Welcome " + Session["login"].ToString();
                 lnkBtnLogout.Text = "Logout";
 
-                lblWelcomeUser.Visible = true;
-                lblPipe.Visible = true;
-                lnkBtnLogout.Visible = true;
-                lnkBtnRegister.Visible = false;
-                lblSlash.Visible = false;
-                lnkBtnLogin.Visible = false;
+                authenticated.Visible = true;
+                authentication.Visible = false;
             }
             else
             {
-                lnkBtnRegister.Visible = true;
-                lblSlash.Visible = true;
-                lnkBtnLogin.Visible = true;
-                lblWelcomeUser.Visible = false;
-                lblPipe.Visible = false;
-                lnkBtnLogout.Visible = false;
+                authenticated.Visible = false;
+                authentication.Visible = true;
             }
         }
 

@@ -11,15 +11,7 @@ namespace DevNest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ClearForms();
-        }
-
-        private void ClearForms()
-        {
-            userName.Text = "Enter your username";
-            password.Text = "Enter a password";
-            verifyPassword.Text = "Confirm the password";
-            email.Text = "Enter your email address";
+           
         }
 
         protected void submit_Click(object sender, EventArgs e)

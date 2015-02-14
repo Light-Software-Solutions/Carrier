@@ -24,10 +24,10 @@ namespace DevNest
             foreach (Article article in articleList)
             {
                 strBuilder.Append(string.Format(@"
-                    <div class='article'>
-                        <div class='title'>{0}</div>
-                        <div class='body'>{1}</div>
-                    </div>",
+                    <article>
+                        <h1 class='title'>{0}</h1>
+                        <div class='article-content'>{1}</div>
+                    </article>",
                 article.title, article.body));
             }
 

@@ -31,6 +31,15 @@ namespace DevNest {
         protected global::System.Web.UI.HtmlControls.HtmlForm ContentForm;
         
         /// <summary>
+        /// authentication control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl authentication;
+        
+        /// <summary>
         /// lnkBtnRegister control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace DevNest {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkBtnLogin;
+        
+        /// <summary>
+        /// authenticated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl authenticated;
         
         /// <summary>
         /// lblWelcomeUser control.

@@ -126,9 +126,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\DevNestDB.mdf" />
+    <Content Include="App_Data\DevNestDB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\DevNestDB_log.ldf">
       <DependentUpon>DevNestDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\Login.aspx" />
