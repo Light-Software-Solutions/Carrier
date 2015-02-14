@@ -65,7 +65,22 @@ namespace DevNest
                 if (containUser < 1)
                 {
                     //User does not exist, create a new user
-                    query = string.Format("INSERT INTO Users VALUES ('{0}', '{1}', '{2}', '{3}')", user.Username, user.Password, user.Email, "user");
+                    query = string.Format("INSERT INTO Users VALUES ('{0}', '{1}', '{2}')", user.Username, user.Password, "user");
+                    command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+
+                    query = string.Format("INSERT INTO UserInfo VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')"
+                        , user.Username, "", "", "", "", "", "", "", "");
+                    command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+
+                    query = string.Format("INSERT INTO Social VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')"
+                        , user.Username, user.Email, "", "", "", "", "");
+                    command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+
+                    query = string.Format("INSERT INTO Projects VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')"
+                        , user.Username, "", "", "", "", "", "", "", "", "", "", "", "");
                     command = new SqlCommand(query, connection);
                     command.ExecuteNonQuery();
                     return "User succesfully registered!";
@@ -106,7 +121,7 @@ namespace DevNest
                     {
                         //Passwords match.
                         //Retrieve further user data from the database
-                        query = string.Format("SELECT Email, Type FROM Users WHERE Username = '{0}'", loginUsername);
+                        query = string.Format("SELECT Type FROM Users WHERE Username = '{0}'", loginUsername);
                         command.CommandText = query;
 
                         SqlDataReader reader = command.ExecuteReader();
@@ -114,10 +129,9 @@ namespace DevNest
 
                         while (reader.Read())
                         {
-                            string email = reader.GetString(0);
-                            string type = reader.GetString(1);
+                            string type = reader.GetString(0);
 
-                            user = new User(loginUsername, password, email, type);
+                            user = new User(loginUsername, password, type);
                         }
                         return user;
                     }

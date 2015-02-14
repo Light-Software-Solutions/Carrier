@@ -12,12 +12,11 @@ namespace DevNest
         public string Email { get; set; }
         public string Type { get; set; }
 
-        public User(string name, string password, string email)
+        public User(string name, string password, string type)
         {
             this.Username = name;
             this.Password = password;
-            this.Email = email;
-            this.Type = "user";
+            this.Type = type;
         }
 
         public User(string name, string password, string email, string accType)
