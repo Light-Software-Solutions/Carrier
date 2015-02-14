@@ -17,6 +17,7 @@ header {
         header a:visited {
             color: #fff;
         }
+
         header a:hover {
             color: green;
         }
@@ -32,6 +33,39 @@ header {
         display: flex;
         justify-content: flex-end;
         padding-top: 8%;
+    }
+
+#authenticated ul {
+    padding: 0;
+    list-style: none;
+}
+
+#authenticated ul li {
+    float: left;
+    width: 100px;
+    text-align: center;
+    line-height: 21px;
+}
+
+    #authenticated ul li a {
+        display: block;
+        padding: 5px 10px;
+        color: #333;
+        background: #f2f2f2;
+        text-decoration: none;
+    }
+
+        #authenticated ul li a:hover {
+            color: #fff;
+            background: #939393;
+        }
+
+    #authenticated ul li ul {
+        display: none;
+    }
+
+    #authenticated ul li:hover ul {
+        display: block; /* display the dropdown */
     }
 
 nav {

@@ -13,8 +13,7 @@ namespace DevNest
         {
             if (Session["login"] != null)
             {
-                lblWelcomeUser.Text = "Welcome " + Session["login"].ToString();
-                lnkBtnLogout.Text = "Logout";
+                lblWelcomeUser.Text = Session["login"].ToString();
 
                 authenticated.Visible = true;
                 authentication.Visible = false;
@@ -40,11 +39,15 @@ namespace DevNest
         {
             Response.Redirect("Login.aspx");
         }
-
         protected void lnkBtnLogout_Click(object sender, EventArgs e)
         {
             Session["login"] = null;
             Response.Redirect("Home.aspx");
+        }
+
+        protected void ProfileRedirect(object sender, EventArgs e)
+        {
+            Response.Redirect("Profile.aspx");
         }
     }
 }

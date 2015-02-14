@@ -20,11 +20,17 @@
 
                 </div>
                 <div id="authenticated" runat="server">
-
-                    <asp:Label ID="lblWelcomeUser" runat="server"></asp:Label>
-                    <asp:Label ID="lblPipe" runat="server" Text=" | "></asp:Label>
-                    <asp:LinkButton ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click">Logout</asp:LinkButton>
-
+                    <ul>
+                        <li>
+                            <asp:Label ID="lblWelcomeUser" runat="server"></asp:Label>
+                            <ul>
+                                <li>
+                                    <asp:LinkButton runat="server" OnClick="ProfileRedirect">Profile</asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click">Logout</asp:LinkButton></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <asp:ImageButton ID="Arrow" ImageUrl="Images/menu.png" runat="server" OnClick="ShowOrHide" />
