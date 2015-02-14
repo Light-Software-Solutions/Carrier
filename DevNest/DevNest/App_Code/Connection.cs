@@ -99,13 +99,13 @@ namespace DevNest
                     //User exists, check if the passwords match
                     query = string.Format("SELECT Password FROM Users WHERE Username = '{0}'", loginUsername);
                     command.CommandText = query;
-                    string dbPassword = command.ExecuteScalar().ToString();
+                    string dbPassword = command.ExecuteScalar().ToString().Trim();
 
                     if (dbPassword == password)
                     {
                         //Passwords match.
                         //Retrieve further user data from the database
-                        query = string.Format("SELECT Email FROM Users WHERE Username = '{0}'", loginUsername);
+                        query = string.Format("SELECT Email, Type FROM Users WHERE Username = '{0}'", loginUsername);
                         command.CommandText = query;
 
                         SqlDataReader reader = command.ExecuteReader();
@@ -114,8 +114,9 @@ namespace DevNest
                         while (reader.Read())
                         {
                             string email = reader.GetString(0);
+                            string type = reader.GetString(1);
 
-                            user = new User(loginUsername, password, email);
+                            user = new User(loginUsername, password, email, type);
                         }
                         return user;
                     }

@@ -19,5 +19,13 @@ namespace DevNest
             this.Email = email;
             this.Type = "user";
         }
+
+        public User(string name, string password, string email, string accType)
+        {
+            this.Username = name;
+            this.Password = password;
+            this.Email = email;
+            this.Type = accType;
+        }
     }
 }

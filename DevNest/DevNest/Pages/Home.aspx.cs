@@ -13,7 +13,19 @@ namespace DevNest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //FillPage();
+            //Checking If the User Is Logged In
+            if (Session["login"] != null)
+            {
+                welcome.Text = "Welcome " + Session["login"].ToString();
+                welcome.Visible = true;
+                logout.Visible = true;
+            }
+            else
+            {
+                welcome.Visible = false;
+                logout.Visible = false;
+            }
+            FillPage();
         }
 
         private void FillPage()
@@ -30,6 +42,12 @@ namespace DevNest
             }
 
             lblOutout.Text = strBuilder.ToString();
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Login.aspx");
         }
     }
 }

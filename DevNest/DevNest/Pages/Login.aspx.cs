@@ -22,7 +22,7 @@ namespace DevNest
                 Session["login"] = user.Username;
                 Session["type"] = user.Type;
                 
-                Response.Redirect("Pages/Home.aspx");
+                Response.Redirect("Home.aspx");
             }
         }
     }

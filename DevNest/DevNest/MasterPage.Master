@@ -13,7 +13,7 @@
     <form id="ContentForm" runat="server">
         <header>
             <div id="HeaderWrapper">
-                <div>
+                <div ID="authentication">
                     <a href="Register.aspx">Register</a>
                     <span>/</span>
                     <a href="Login.aspx">Login</a>
