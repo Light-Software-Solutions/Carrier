@@ -49,5 +49,3 @@ D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.csprojResolveAssemblyReference.cach
 D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.dll
 D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.pdb
 C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\bin\Microsoft.Web.Infrastructure.xml
-C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\bin\App_Data\DevNestDB.mdf
-C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\bin\App_Data\DevNestDB_log.ldf

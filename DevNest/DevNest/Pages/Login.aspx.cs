@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -21,7 +22,8 @@ namespace DevNest
             {
                 Session["login"] = user.Username;
                 Session["type"] = user.Type;
-                
+
+                Thread.Sleep(3000);
                 Response.Redirect("Home.aspx");
             }
         }

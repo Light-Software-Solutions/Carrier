@@ -11,7 +11,6 @@ namespace DevNest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var temp = Session["login"];
             if (Session["login"] != null)
             {
                 lblWelcomeUser.Text = "Welcome " + Session["login"].ToString();
@@ -29,15 +28,7 @@ namespace DevNest
 
         protected void ShowOrHide(object sender, ImageClickEventArgs e)
         {
-            bool isVisible = NavMenu.Visible;
-            if (isVisible)
-            {
-                NavMenu.Visible = false;
-            }
-            else
-            {
-                NavMenu.Visible = true;
-            }
+            NavMenu.Visible = NavMenu.Visible == true ? false : true;
         }
 
         protected void Register_Click(object sender, EventArgs e)
