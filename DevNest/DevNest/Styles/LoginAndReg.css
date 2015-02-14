@@ -1,7 +1,7 @@
 ﻿body {
     width: auto;
     height: auto;
-    background: #ead3d3;
+    background: #AAAAAA;
 }
 
 #Wrapper {
@@ -20,7 +20,9 @@ fieldset input[type="password"] {
     border-top: none;
     border-left: none;
     border-right: none;
-    background: #ead3d3;
+    border-color: black;
+    border-radius: 4px;
+    background: #fff;
     margin: 1.5rem 0 1.5rem 0;
     padding: 5% 2% 2% 5%;
 }
@@ -36,13 +38,17 @@ fieldset input[type="submit"] {
 
     fieldset input[type="submit"]:hover {
         background: green;
-        color: #ead3d3;
+        color: #AAAAAA;
         border-radius: 5px;
     }
 
 fieldset input[type="text"]:focus,
 fieldset input[type="password"]:focus {
-    box-shadow: 0 0 1rem green;
-    background: #fff;
+    box-shadow: 0 0 1rem green inset;
     color: green;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: green;
+    border-radius: 4px;
 }

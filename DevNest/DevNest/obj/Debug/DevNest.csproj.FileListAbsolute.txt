@@ -49,3 +49,20 @@ D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.csprojResolveAssemblyReference.cach
 D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.dll
 D:\Carrier\DevNest\DevNest\obj\Debug\DevNest.pdb
 C:\Users\Indzhev\Documents\Visual Studio 2013\Projects\DevNest\DevNest\bin\Microsoft.Web.Infrastructure.xml
+E:\Carrier\DevNest\DevNest\bin\DevNest.dll.config
+E:\Carrier\DevNest\DevNest\bin\DevNest.dll
+E:\Carrier\DevNest\DevNest\bin\DevNest.pdb
+E:\Carrier\DevNest\DevNest\bin\Microsoft.Web.Infrastructure.dll
+E:\Carrier\DevNest\DevNest\bin\Microsoft.Web.Infrastructure.xml
+E:\Carrier\DevNest\DevNest\bin\EntityFramework.xml
+E:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.Core.xml
+E:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OAuth.xml
+E:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OpenId.xml
+E:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Carrier\DevNest\DevNest\bin\DotNetOpenAuth.AspNet.xml
+E:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+E:\Carrier\DevNest\DevNest\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Carrier\DevNest\DevNest\obj\Debug\DevNest.csprojResolveAssemblyReference.cache
+E:\Carrier\DevNest\DevNest\obj\Debug\DevNest.dll
+E:\Carrier\DevNest\DevNest\obj\Debug\DevNest.pdb

@@ -42,7 +42,7 @@ nav {
     nav li {
         float: left;
         width: 10rem;
-        background: #ead3d3;
+        background: #C1C1C1;
         text-align: center;
     }
 
@@ -61,7 +61,7 @@ nav {
 
             nav li a:hover {
                 background: green;
-                color: #ead3d3;
+                color: #C1C1C1;
             }
 
         nav li:first-child, nav li:first-child a:hover {
@@ -84,11 +84,15 @@ nav {
     }
 
 #PageContent {
-    height: 50rem;
+    min-height: 50rem;
 }
 
 footer {
-    background: aqua;
+    background: grey;
+    color: #fff;
+    padding: 1%;
+    text-align: justify;
+    font-size: 0.8rem;
 }
 
 /*Reseter*/
