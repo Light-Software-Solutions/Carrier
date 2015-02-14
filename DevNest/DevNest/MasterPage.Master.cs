@@ -12,7 +12,27 @@ namespace DevNest
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["login"] != null)
+            {
+                lblWelcomeUser.Text = "Welcome " + Session["login"].ToString();
+                lnkBtnLogout.Text = "Logout";
 
+                lblWelcomeUser.Visible = true;
+                lblPipe.Visible = true;
+                lnkBtnLogout.Visible = true;
+                lnkBtnRegister.Visible = false;
+                lblSlash.Visible = false;
+                lnkBtnLogin.Visible = false;
+            }
+            else
+            {
+                lnkBtnRegister.Visible = true;
+                lblSlash.Visible = true;
+                lnkBtnLogin.Visible = true;
+                lblWelcomeUser.Visible = false;
+                lblPipe.Visible = false;
+                lnkBtnLogout.Visible = false;
+            }
         }
 
         protected void ShowOrHide(object sender, ImageClickEventArgs e)
@@ -26,6 +46,22 @@ namespace DevNest
             {
                 NavMenu.Visible = true;
             }
+        }
+
+        protected void Register_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Register.aspx");
+        }
+
+        protected void Login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void lnkBtnLogout_Click(object sender, EventArgs e)
+        {
+            Session["login"] = null;
+            Response.Redirect("Home.aspx");
         }
     }
 }

@@ -13,18 +13,6 @@ namespace DevNest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Checking If the User Is Logged In
-            if (Session["login"] != null)
-            {
-                welcome.Text = "Welcome " + Session["login"].ToString();
-                welcome.Visible = true;
-                logout.Visible = true;
-            }
-            else
-            {
-                welcome.Visible = false;
-                logout.Visible = false;
-            }
             FillPage();
         }
 
@@ -36,8 +24,10 @@ namespace DevNest
             foreach (Article article in articleList)
             {
                 strBuilder.Append(string.Format(@"
-                    <div class='title'>{0}</div>
-                    <div class='body'>{1}</div>",
+                    <div class='article'>
+                        <div class='title'>{0}</div>
+                        <div class='body'>{1}</div>
+                    </div>",
                 article.title, article.body));
             }
 

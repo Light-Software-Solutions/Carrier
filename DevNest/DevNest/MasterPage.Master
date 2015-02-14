@@ -13,10 +13,18 @@
     <form id="ContentForm" runat="server">
         <header>
             <div id="HeaderWrapper">
-                <div ID="authentication">
-                    <a href="Register.aspx">Register</a>
-                    <span>/</span>
-                    <a href="Login.aspx">Login</a>
+                <div id="authentication">
+                    <asp:LinkButton ID="lnkBtnRegister" runat="server" Visible="True" OnClick="Register_Click">Register</asp:LinkButton>
+                    <asp:Label ID="lblSlash" runat="server" Text="Label" Visible="True"> / </asp:Label>
+                    <asp:LinkButton ID="lnkBtnLogin" runat="server" Visible="True" OnClick="Login_Click">Login</asp:LinkButton>
+                    
+                </div>
+                <div id="authenticated">
+
+                    <asp:Label ID="lblWelcomeUser" runat="server" Visible="False"></asp:Label>
+                    <asp:Label ID="lblPipe" runat="server" Text="Label" Visible="False"> | </asp:Label>
+                    <asp:LinkButton ID="lnkBtnLogout" runat="server" Visible="False" OnClick="lnkBtnLogout_Click">Logout</asp:LinkButton>
+
                 </div>
                 <div>
                     <asp:ImageButton ID="Arrow" ImageUrl="Images/menu.png" runat="server" OnClick="ShowOrHide" />

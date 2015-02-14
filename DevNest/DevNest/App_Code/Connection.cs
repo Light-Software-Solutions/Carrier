@@ -24,6 +24,7 @@ namespace DevNest
         {
             ArrayList list = new ArrayList();
             string selectQuery = string.Format("SELECT * FROM Articles");
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             command = new SqlCommand(selectQuery, connection);
             try
             {
