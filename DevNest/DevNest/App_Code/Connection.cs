@@ -15,16 +15,16 @@ namespace DevNest
 
         public Connection()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            command = new SqlCommand("Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\\DevNestDB.mdf;Integrated Security=True");
+            command = new SqlCommand("", connection);
         }
 
         public static ArrayList GetArticleByID()
         {
             ArrayList list = new ArrayList();
             string selectQuery = string.Format("SELECT * FROM Articles");
-
+            command = new SqlCommand(selectQuery, connection);
             try
             {
                 connection.Open();
@@ -52,19 +52,20 @@ namespace DevNest
         public static string RegisterUser(User user)
         {
             //Check if user exists
-            string query = string.Format("SELECT COUNT(*) FROM Users WHERE Username = " +  user.Username);
-           // command.CommandText = query;
-            
+            string query = string.Format("SELECT COUNT(*) FROM Users WHERE Username = '{0}'", user.Username);
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            command = new SqlCommand(query, connection);
+
             try
             {
                 connection.Open();
-                int amountOfUsers = 0;// (int)command.ExecuteScalar();
+                int containUser = (int)command.ExecuteScalar();
 
-                if (amountOfUsers < 1)
+                if (containUser < 1)
                 {
                     //User does not exist, create a new user
                     query = string.Format("INSERT INTO Users VALUES ('{0}', '{1}', '{2}', '{3}')", user.Username, user.Password, user.Email, "user");
-                    command.CommandText = query;
+                    command = new SqlCommand(query, connection);
                     command.ExecuteNonQuery();
                     return "User succesfully registered!";
                 }
@@ -85,14 +86,15 @@ namespace DevNest
         {
             //Check if user exists
             string query = string.Format("SELECT COUNT(*) FROM Users WHERE Username = '{0}'", loginUsername);
-            command.CommandText = query;
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            command = new SqlCommand(query, connection);
 
             try
             {
                 connection.Open();
                 int amountOfUsers = (int)command.ExecuteScalar();
 
-                if (amountOfUsers == 1) //I am not sure, 'cuz I cant test it
+                if (amountOfUsers == 1) 
                 {
                     //User exists, check if the passwords match
                     query = string.Format("SELECT Password FROM Users WHERE Username = '{0}'", loginUsername);
@@ -125,7 +127,7 @@ namespace DevNest
                 }
                 else
                 {
-                    //User exists
+                    //User doesn't exists
                     return null;
                 }
             }

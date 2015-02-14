@@ -8,7 +8,7 @@
         <fieldset>
             <asp:TextBox ID="userName" runat="server" placeholder="Enter your username" />
             <asp:TextBox ID="password" runat="server" TextMode="Password" placeholder="Enter a password" />
-            <asp:TextBox ID="verifyPassword" runat="server" TextMode="Password" placeholder="Enter password again" />
+            <asp:TextBox ID="verifyPassword" runat="server" TextMode="Password" placeholder="Confirm the password" />
             <asp:TextBox ID="email" runat="server" placeholder="Enter your email address" />
             <asp:Button ID="submit" Text="Register" runat="server" onClick="submit_Click"/>
             <asp:Label ID="lblResult" runat="server"></asp:Label>
