@@ -1,0 +1,93 @@
+﻿@import "reset.css";
+
+$MainColor: #282627;
+$SecColor: #195039;
+
+body {
+    //background: $MainColor;
+}
+
+header {
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid black;
+
+    #logo {
+        width: 150px;
+        height: 150px;
+        background: red;
+        order: 1;
+        flex-grow: 1;
+    }
+
+    #header-wrapper {
+        order: 2;
+        flex-grow: 5;
+        border: 1px solid red;
+        display: flex;
+        flex-flow: row wrap;
+
+        #search {
+            order: 1;
+            
+            flex-grow: 0;
+            input[type="text"] {
+                border: none;
+                background: $SecColor;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+
+            input[type="submit"] {
+                border: none;
+                background: $SecColor;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+        //Float reset;
+        #controls {
+            order: 2;
+            border: 1px solid yellow;
+            flex-grow: 5;
+            align-self: flex-end;
+            #nav-menu {
+                ul {
+                    order: 1;
+
+                    li {
+                        float: left;
+                        margin: 0 1%;
+                        border: 1px solid $SecColor;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            padding: 0.5rem 2rem;
+                        }
+                    }
+                }
+            }
+
+            &:after {
+                content: "";
+                height: 0;
+                clear: both;
+                display: block;
+            }
+
+            #user-label {
+                color: red;
+            }
+        }
+    }
+}
+
+#content-page {
+    margin: 5%;
+    min-height: 900px;
+    width: auto;
+}

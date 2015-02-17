@@ -1,138 +1,62 @@
-﻿body {
-    margin: 0;
-    padding: 0;
-    width: auto;
-}
-
+﻿@import url(reset.css);
 header {
-    background: grey;
-    color: white;
-}
-
-    header a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-        header a:visited {
-            color: #fff;
-        }
-
-        header a:hover {
-            color: green;
-        }
-
-#HeaderWrapper {
-    float: right;
-    margin-right: 2%;
-    font-size: 1rem;
-    padding: 1% 0 1% 0;
-}
-
-    #HeaderWrapper div:last-of-type {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 8%;
-    }
-
-#authenticated ul {
-    padding: 0;
-    list-style: none;
-}
-
-#authenticated ul li {
-    float: left;
-    width: 100px;
-    text-align: center;
-    line-height: 21px;
-}
-
-    #authenticated ul li a {
-        display: block;
-        padding: 5px 10px;
-        color: #333;
-        background: #f2f2f2;
-        text-decoration: none;
-    }
-
-        #authenticated ul li a:hover {
-            color: #fff;
-            background: #939393;
-        }
-
-    #authenticated ul li ul {
-        display: none;
-    }
-
-    #authenticated ul li:hover ul {
-        display: block; /* display the dropdown */
-    }
-
-nav {
+  width: auto;
+  height: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid black; }
+  header #logo {
+    width: 150px;
+    height: 150px;
+    background: red;
+    order: 1;
+    flex-grow: 1; }
+  header #header-wrapper {
+    order: 2;
+    flex-grow: 5;
+    border: 1px solid red;
     display: flex;
-    justify-content: center;
-}
-
-    nav li {
-        float: left;
-        width: 10rem;
-        background: #C1C1C1;
-        text-align: center;
-    }
-
-        nav li a {
-            display: block;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            padding: 0.5rem 0 0.5rem 0;
-        }
-
-            nav li a:visited {
-                color: black;
-            }
-
-            nav li a:hover {
-                background: green;
-                color: #C1C1C1;
-            }
-
-        nav li:first-child, nav li:first-child a:hover {
-            border-bottom-left-radius: 9px;
-        }
-
-        nav li:last-child, nav li:last-child a:hover {
-            border-bottom-right-radius: 9px;
-        }
-
-    nav ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+    flex-flow: row wrap; }
+    header #header-wrapper #search {
+      order: 1;
+      flex-grow: 0; }
+      header #header-wrapper #search input[type="text"] {
+        border: none;
+        background: #195039;
         border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px; }
+      header #header-wrapper #search input[type="submit"] {
+        border: none;
+        background: #195039;
         border-bottom-right-radius: 10px;
-    }
+        border-top-right-radius: 10px; }
+    header #header-wrapper #controls {
+      order: 2;
+      border: 1px solid yellow;
+      flex-grow: 5;
+      align-self: flex-end; }
+      header #header-wrapper #controls #nav-menu ul {
+        order: 1; }
+        header #header-wrapper #controls #nav-menu ul li {
+          float: left;
+          margin: 0 1%;
+          border: 1px solid #195039; }
+          header #header-wrapper #controls #nav-menu ul li a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 0.5rem 2rem; }
+      header #header-wrapper #controls:after {
+        content: "";
+        height: 0;
+        clear: both;
+        display: block; }
+      header #header-wrapper #controls #user-label {
+        color: red; }
 
-#PageContent {
-    min-height: 50rem;
-}
+#content-page {
+  margin: 5%;
+  min-height: 900px;
+  width: auto; }
 
-footer {
-    background: grey;
-    color: #fff;
-    padding: 1%;
-    text-align: justify;
-    font-size: 0.8rem;
-}
-
-/*Reseter*/
-header:after, nav:after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-}
+/*# sourceMappingURL=MasterPage.css.map */

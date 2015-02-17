@@ -5,52 +5,49 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="Styles/MasterPage.css" />
+    <link rel="stylesheet" href="Styles/MasterPage.css" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="ContentForm" runat="server">
+    <form id="MasterForm" runat="server">
         <header>
-            <div id="HeaderWrapper">
-                <div id="authentication" runat="server">
-                    <asp:LinkButton ID="lnkBtnRegister" runat="server" Visible="True" OnClick="Register_Click">Register</asp:LinkButton>
-                    <asp:Label ID="lblSlash" runat="server" Text="Label" Visible="True"> / </asp:Label>
-                    <asp:LinkButton ID="lnkBtnLogin" runat="server" Visible="True" OnClick="Login_Click">Login</asp:LinkButton>
-
+            <div id="logo"></div>
+            <div id="header-wrapper">
+                <div id="search">
+                    <asp:TextBox runat="server" /><!--
+                    --><asp:Button Text="s" runat="server" />
                 </div>
-                <div id="authenticated" runat="server">
-                    <ul>
-                        <li>
-                            <asp:Label ID="lblWelcomeUser" runat="server"></asp:Label>
-                            <ul>
-                                <li>
-                                    <asp:LinkButton runat="server" OnClick="ProfileRedirect">Profile</asp:LinkButton></li>
-                                <li>
-                                    <asp:LinkButton ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click">Logout</asp:LinkButton></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <asp:ImageButton ID="Arrow" ImageUrl="Images/menu.png" runat="server" OnClick="ShowOrHide" />
+                <div id="controls">
+                    <nav id="nav-menu">
+                        <ul>
+                            <li>
+                                <asp:LinkButton Text="text" runat="server" />
+                            </li>
+                            <li>
+                                <asp:LinkButton Text="text" runat="server" />
+                            </li>
+                            <li>
+                                <asp:LinkButton Text="text" runat="server" />
+                            </li>
+                            <li>
+                                <asp:LinkButton Text="text" runat="server" />
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="user-label">
+                        <asp:Label ID="WelcomeUser" Text="t" runat="server"></asp:Label>
+                    </div>
                 </div>
             </div>
         </header>
-        <nav runat="server" id="NavMenu">
-            <ul>
-                <li><a href="Home.aspx">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-        <div id="PageContent">
-            <asp:ContentPlaceHolder ID="ContentMaster" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        <main id="content-page">
+        <asp:ContentPlaceHolder ID="ContentMaster" runat="server">
+        </asp:ContentPlaceHolder>
+    </main>
         <footer>
-            <div>Lorem ipsum dolor sit amet, gravida tincidunt, egestas aliquet sapien nam dolor mollis. Pellentesque volutpat risus magna, et bibendum ab. Tempor lorem wisi egestas nulla. </div>
+            <div>social sites</div>
+            <div>&copy all right reserved</div>
         </footer>
     </form>
 </body>
