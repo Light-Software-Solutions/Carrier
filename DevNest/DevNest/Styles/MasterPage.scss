@@ -5,7 +5,10 @@ $SecColor: #195039;
 
 body {
     //background: $MainColor;
-    max-width: 1366px;
+    max-width: 1600px;
+    margin: 0 auto;
+    //background: $SecColor;
+    //border: 1px solid $MainColor;
 }
 
 header {
@@ -34,7 +37,7 @@ header {
         #search {
             //border: 1px solid red;
             text-align: right;
-            padding: 2% 2% 0 0;
+            padding: 0.7rem 2% 0 0;
             order: 1;
             flex-grow: 0;
 
@@ -46,10 +49,12 @@ header {
                 width: 10rem;
                 height: 1.4rem;
                 padding: 0 0.3rem;
+                text-align: center;
 
                 &:focus {
                     background: #fff;
                     color: $SecColor;
+                    text-align: left;
                 }
             }
 
@@ -63,10 +68,6 @@ header {
                 height: 1.4rem;
                 color: #fff;
 
-                &:hover {
-                    background: #fff;
-                    color: $MainColor;
-                }
             }
         }
 
@@ -171,7 +172,7 @@ header {
 
 #content-page {
     margin: 5%;
-    min-height: 30rem;
+    min-height: 50rem;
     width: auto;
 }
 

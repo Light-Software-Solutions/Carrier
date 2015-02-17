@@ -15,7 +15,7 @@
             <div id="logo"></div>
             <div id="header-wrapper">
                 <div id="search">
-                    <asp:TextBox runat="server" /><!--
+                    <asp:TextBox placeholder="Search" runat="server" /><!--
                     --><asp:Button Text="s" runat="server" />
                 </div>
                 <div id="controls">

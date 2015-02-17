@@ -1,6 +1,7 @@
-﻿@import url(reset.css);
+@import url(reset.css);
 body {
-  max-width: 1366px; }
+  max-width: 1600px;
+  margin: 0 auto; }
 
 header {
   width: auto;
@@ -21,7 +22,7 @@ header {
     flex-flow: column; }
     header #header-wrapper #search {
       text-align: right;
-      padding: 2% 2% 0 0;
+      padding: 0.7rem 2% 0 0;
       order: 1;
       flex-grow: 0; }
       header #header-wrapper #search input[type="text"] {
@@ -31,10 +32,12 @@ header {
         border-top-left-radius: 5px;
         width: 10rem;
         height: 1.4rem;
-        padding: 0 0.3rem; }
+        padding: 0 0.3rem;
+        text-align: center; }
         header #header-wrapper #search input[type="text"]:focus {
           background: #fff;
-          color: #195039; }
+          color: #195039;
+          text-align: left; }
       header #header-wrapper #search input[type="submit"] {
         border: none;
         background: #195039;
@@ -44,9 +47,6 @@ header {
         width: 2rem;
         height: 1.4rem;
         color: #fff; }
-        header #header-wrapper #search input[type="submit"]:hover {
-          background: #fff;
-          color: #282627; }
     header #header-wrapper #controls {
       order: 2;
       flex-grow: 5;
@@ -109,7 +109,7 @@ header {
 
 #content-page {
   margin: 5%;
-  min-height: 30rem;
+  min-height: 50rem;
   width: auto; }
 
 footer {
