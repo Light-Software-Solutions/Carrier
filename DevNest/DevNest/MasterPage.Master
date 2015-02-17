@@ -36,7 +36,8 @@
                         </ul>
                     </nav>
                     <div id="user-label">
-                        <asp:Label ID="WelcomeUser" Text="t" runat="server"></asp:Label>
+                        <div>Hello, </div>
+                        <asp:Label ID="Label2" Text="LongUserName" runat="server"></asp:Label>
                     </div>
                 </div>
             </div>
@@ -47,7 +48,7 @@
     </main>
         <footer>
             <div>social sites</div>
-            <div>&copy all right reserved</div>
+            <div>&copy All right Reserved</div>
         </footer>
     </form>
 </body>
