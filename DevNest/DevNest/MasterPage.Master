@@ -22,7 +22,7 @@
                     <nav id="nav-menu">
                         <ul>
                             <li>
-                                <asp:LinkButton Text="text" runat="server" />
+                                <asp:LinkButton Text="Home" runat="server" OnClick="goHome" />
                             </li>
                             <li>
                                 <asp:LinkButton Text="text" runat="server" />

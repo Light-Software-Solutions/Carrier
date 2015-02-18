@@ -1,16 +1,17 @@
-@import url(reset.css);
+﻿@import url(reset.css);
 body {
-  max-width: 1600px;
+  max-width: 1280px;
   margin: 0 auto; }
 
 header {
   width: auto;
-  height: 7.5rem;
+  height: 100px;
   display: flex;
   flex-flow: row wrap;
-  background: #282627; }
+  background: #282627;
+  border-bottom: 1px solid #F5F5F5; }
   header #logo {
-    width: 300px;
+    width: 200px;
     height: 100%;
     background: #195039;
     order: 1;
@@ -35,7 +36,7 @@ header {
         padding: 0 0.3rem;
         text-align: center; }
         header #header-wrapper #search input[type="text"]:focus {
-          background: #fff;
+          background: #F5F5F5;
           color: #195039;
           text-align: left;
           outline: 0;
@@ -48,10 +49,14 @@ header {
         border-left: 1px solid #282627;
         width: 2rem;
         height: 1.4rem;
-        color: #fff; }
+        color: #F5F5F5;
+        background-position: 8px 4px;
+        background-size: 47% auto; }
         header #header-wrapper #search input[type="submit"]:hover {
           background: url("/Images/magnifying_glass.png") no-repeat, #fff;
-          color: #195039; }
+          color: #195039;
+          background-position: 8px 4px;
+          background-size: 47% auto; }
     header #header-wrapper #controls {
       order: 2;
       flex-grow: 5;
@@ -86,18 +91,18 @@ header {
               display: block;
               padding: 0.5rem 4rem;
               text-decoration: none;
-              color: #fff;
+              color: #F5F5F5;
               text-transform: uppercase;
               font-size: 1rem; }
               header #header-wrapper #controls #nav-menu ul li a:visited {
                 text-decoration: none;
-                color: #fff; }
+                color: #F5F5F5; }
               header #header-wrapper #controls #nav-menu ul li a:hover, header #header-wrapper #controls #nav-menu ul li a:visited:hover {
                 background: #195039; }
       header #header-wrapper #controls #user-label {
         order: 1;
         align-self: flex-end;
-        color: #fff;
+        color: #F5F5F5;
         margin-right: 2%;
         margin-left: 5%;
         padding-bottom: 0.75rem;
@@ -110,18 +115,18 @@ header {
             color: #195039; }
 
 #content-page {
-  margin: 5%;
-  min-height: 50rem;
+  height: auto;
   width: auto; }
 
 footer {
   width: auto;
-  height: 4rem;
+  height: 50px;
   background: #195039;
   font-size: 1rem;
-  color: #fff;
+  color: #F5F5F5;
   display: flex;
-  flex-flow: column; }
+  flex-flow: column;
+  border-top: 1px solid #F5F5F5; }
   footer div:first-of-type {
     flex-grow: 5;
     text-align: left;

@@ -1,0 +1,47 @@
+﻿@import "Utility.scss";
+
+#Wrapper {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+
+    #index-image {
+        border-right: 1px solid rgba($SecColor, 0.6);
+        order: 1;
+        flex-grow: 1;
+        width: 49%;
+        background: $SecColor;
+    }
+
+    #forms {
+        border: 1px solid yellow;
+        order: 2;
+        flex-grow: 1;
+        width: 49%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //display: flex;
+        flex-flow: column wrap;
+
+        fieldset {
+            //border: 1px solid $FontColor;
+            border: 1px solid red;
+            margin-bottom: 100px;
+
+
+            .text-field, .submit-button, span {
+                display: block;
+                //background: blue;
+            }
+        }
+
+        fieldset:first-of-type {
+            order: 1;
+        }
+
+        fieldset:last-of-type {
+            order: 2;
+        }
+    }
+}

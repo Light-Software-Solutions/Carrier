@@ -2,10 +2,11 @@
 
 $MainColor: #282627;
 $SecColor: #195039;
+$FontColor: #F5F5F5;
 
 body {
     //background: $MainColor;
-    max-width: 1600px;
+    max-width: 1280px;
     margin: 0 auto;
     //background: $SecColor;
     //border: 1px solid $MainColor;
@@ -13,14 +14,15 @@ body {
 
 header {
     width: auto;
-    height: 7.5rem;
+    height: 100px;
     display: flex;
     flex-flow: row wrap;
     //border: 1px solid black;
     background: $MainColor;
+    border-bottom: 1px solid $FontColor;
 
     #logo {
-        width: 300px;
+        width: 200px;
         height: 100%;
         background: $SecColor;
         order: 1;
@@ -52,7 +54,7 @@ header {
                 text-align: center;
 
                 &:focus {
-                    background: #fff;
+                    background: $FontColor;
                     color: $SecColor;
                     text-align: left;
                     outline: 0;
@@ -68,11 +70,15 @@ header {
                 border-left: 1px solid $MainColor;
                 width: 2rem;
                 height: 1.4rem;
-                color: #fff;
+                color: $FontColor;
+                background-position: 8px 4px;
+                background-size: 47% auto;
 
                 &:hover {
                     background: url("/Images/magnifying_glass.png") no-repeat, #fff;
                     color: $SecColor;
+                    background-position: 8px 4px;
+                    background-size: 47% auto;
                 }
             }
         }
@@ -128,13 +134,13 @@ header {
                             display: block;
                             padding: 0.5rem 4rem;
                             text-decoration: none;
-                            color: #fff;
+                            color: $FontColor;
                             text-transform: uppercase;
                             font-size: 1rem;
 
                             &:visited {
                                 text-decoration: none;
-                                color: #fff;
+                                color: $FontColor;
                             }
 
                             &:hover, &:visited:hover {
@@ -148,7 +154,7 @@ header {
             #user-label {
                 order: 1;
                 align-self: flex-end;
-                color: #fff;
+                color: $FontColor;
                 //border: 1px solid green;
                 margin-right: 2%;
                 margin-left: 5%;
@@ -172,19 +178,19 @@ header {
 }
 
 #content-page {
-    margin: 5%;
-    min-height: 50rem;
+    height: auto;
     width: auto;
 }
 
 footer {
     width: auto;
-    height: 4rem;
+    height: 50px;
     background: $SecColor;
     font-size: 1rem;
-    color: #fff;
+    color: $FontColor;
     display: flex;
     flex-flow: column;
+    border-top: 1px solid $FontColor;
 
     div:first-of-type {
         flex-grow: 5;

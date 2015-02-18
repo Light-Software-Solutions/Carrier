@@ -1,0 +1,33 @@
+﻿#Wrapper {
+  min-height: 550px; }
+
+#Wrapper {
+  width: auto;
+  display: flex;
+  flex-flow: row wrap; }
+  #Wrapper #index-image {
+    border-right: 1px solid rgba(25, 80, 57, 0.6);
+    order: 1;
+    flex-grow: 1;
+    width: 49%;
+    background: #195039; }
+  #Wrapper #forms {
+    border: 1px solid yellow;
+    order: 2;
+    flex-grow: 1;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap; }
+    #Wrapper #forms fieldset {
+      border: 1px solid red;
+      margin-bottom: 100px; }
+      #Wrapper #forms fieldset .text-field, #Wrapper #forms fieldset .submit-button, #Wrapper #forms fieldset span {
+        display: block; }
+    #Wrapper #forms fieldset:first-of-type {
+      order: 1; }
+    #Wrapper #forms fieldset:last-of-type {
+      order: 2; }
+
+/*# sourceMappingURL=Index.css.map */

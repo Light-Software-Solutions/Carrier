@@ -132,6 +132,12 @@
     </Content>
     <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\Index.aspx" />
+    <Content Include="Styles\Index.css">
+      <DependentUpon>Index.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\Index.min.css">
+      <DependentUpon>Index.css</DependentUpon>
+    </Content>
     <Content Include="Styles\MasterPage.css">
       <DependentUpon>MasterPage.scss</DependentUpon>
     </Content>
@@ -139,6 +145,12 @@
       <DependentUpon>MasterPage.css</DependentUpon>
     </Content>
     <Content Include="Styles\reset.css" />
+    <Content Include="Styles\Utility.css">
+      <DependentUpon>Utility.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\Utility.min.css">
+      <DependentUpon>Utility.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +159,14 @@
       <DependentUpon>MasterPage.css</DependentUpon>
     </Content>
     <Content Include="MasterPage.Master" />
+    <Content Include="Styles\Index.scss" />
+    <Content Include="Styles\Index.css.map">
+      <DependentUpon>Index.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\Utility.scss" />
+    <Content Include="Styles\Utility.css.map">
+      <DependentUpon>Utility.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

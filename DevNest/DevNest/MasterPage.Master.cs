@@ -13,5 +13,10 @@ namespace DevNest
         {
 
         }
+
+        protected void goHome(object sender, EventArgs e)
+        {
+            Response.Redirect("index.aspx");
+        }
     }
 }
