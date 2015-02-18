@@ -4,37 +4,104 @@
     width: auto;
     display: flex;
     flex-flow: row wrap;
+    font-size: 1rem;
 
     #index-image {
         border-right: 1px solid rgba($SecColor, 0.6);
         order: 1;
         flex-grow: 1;
         width: 49%;
-        background: $SecColor;
+        background: $MainColor;
     }
 
     #forms {
-        border: 1px solid yellow;
+        //border: 1px solid yellow;
         order: 2;
         flex-grow: 1;
         width: 49%;
         display: flex;
         align-items: center;
         justify-content: center;
-        //display: flex;
         flex-flow: column wrap;
+        background: $MainColor;
 
         fieldset {
-            //border: 1px solid $FontColor;
-            border: 1px solid red;
-            margin-bottom: 100px;
+            border: 1px solid $FontColor;
+            //border: 1px solid red;
+            border-radius: 2px;
+            margin-bottom: 70px;
+            padding: 35px 5px 20px 20px;
+            background: rgba($SecColor, 0.3);
 
-
-            .text-field, .submit-button, span {
+            .text-field, span {
                 display: block;
-                //background: blue;
+                width: 250px;
+                height: 22px;
+            }
+
+            .text-field {
+                border: none;
+                border-radius: 10px;
+                text-align: center;
+                background: url(/Images/toolbar_home.png) no-repeat, $FontColor;
+                background-size: 10% auto;
+
+                &:focus {
+                    text-align: left;
+                    width: 225px;
+                    padding-left: 25px;
+                    outline: 0;
+                    color: $SecColor;
+                }
+            }
+
+            span {
+                padding-bottom: 4px;
+                text-align: center;
+                color: $FontColor;
+                //border: 1px solid red;
+            }
+
+            .upper-buttons {
+                .text-field {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .lower-buttons {
+                //border: 1px solid green;
+                display: flex;
+                flex-flow: row wrap;
+
+                .text-field:first-of-type {
+                    margin-bottom: 5px;
+                }
+
+                .inner-row {
+                    order: 1;
+                    //border: 1px solid red;
+                }
+
+                .submit-button {
+                    order: 2;
+                    width: 66px;
+                    text-align: center;
+                    margin-left: 10px;
+                    background: $SecColor;
+                    color: $FontColor;
+                    border: 1px solid $FontColor;
+                    border-radius: 8px;
+
+                    &:hover {
+                        background: $FontColor;
+                        color: $SecColor;
+                        border: 1px solid $MainColor;
+                    }
+                }
             }
         }
+
+
 
         fieldset:first-of-type {
             order: 1;

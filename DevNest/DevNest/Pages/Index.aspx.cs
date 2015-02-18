@@ -20,7 +20,7 @@ namespace DevNest
             User user = new User(userName.Text, password.Text.Trim(), email.Text);
 
             //Register the user and return a result message
-            lblResult.Text = Connection.RegisterUser(user);
+            //lblResult.Text = Connection.RegisterUser(user);
             Thread.Sleep(3000);
             Response.Redirect("Home.aspx");
         }

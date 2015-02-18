@@ -46,9 +46,9 @@
             </div>
         </header>
         <main id="content-page">
-        <asp:ContentPlaceHolder ID="ContentMaster" runat="server">
-        </asp:ContentPlaceHolder>
-    </main>
+            <asp:ContentPlaceHolder ID="ContentMaster" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
         <footer>
             <div>social sites</div>
             <div>&copy All right Reserved</div>

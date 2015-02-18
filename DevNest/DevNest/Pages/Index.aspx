@@ -9,18 +9,27 @@
         <div id="forms">
             <fieldset>
                 <asp:Label Text="Already a user? - Log in" runat="server" />
-                <asp:TextBox class="text-field" ID="UserLogin" runat="server" placeholder="Username" />
-                <asp:TextBox class="text-field" ID="PassLogin" runat="server" TextMode="Password" placeholder="Password" />
-                <asp:Button class="submit-button" ID="LoginButton" Text="Login" runat="server" OnClick="submit_Click" />
+                <div class="lower-buttons">
+                    <div class="inner-row">
+                        <asp:TextBox class="text-field" ID="UserLogin" runat="server" placeholder="Username" />
+                        <asp:TextBox class="text-field" ID="PassLogin" runat="server" TextMode="Password" placeholder="Password" />
+                    </div>
+                    <asp:Button class="submit-button" ID="LoginButton" Text="Login" runat="server" OnClick="submit_Click" />
+                </div>
             </fieldset>
             <fieldset>
-                <asp:Label Text="New user? - Register" runat="server" />
-                <asp:TextBox class="text-field" ID="userName" runat="server" placeholder="Enter your username" />
-                <asp:TextBox class="text-field" ID="password" runat="server" TextMode="Password" placeholder="Enter a password" />
-                <asp:TextBox class="text-field" ID="verifyPassword" runat="server" TextMode="Password" placeholder="Confirm the password" />
-                <asp:TextBox class="text-field" ID="email" runat="server" placeholder="Enter your email address" />
-                <asp:Button class="submit-button" ID="submit" Text="Register" runat="server" OnClick="submit_Click" />
-                <asp:Label ID="lblResult" runat="server"></asp:Label>
+                <div class="upper-buttons">
+                    <asp:Label Text="New user? - Register" runat="server" />
+                    <asp:TextBox class="text-field" ID="userName" runat="server" placeholder="Enter your username" />
+                    <asp:TextBox class="text-field" ID="password" runat="server" TextMode="Password" placeholder="Enter a password" />
+                </div>
+                <div class="lower-buttons">
+                    <div class="inner-row">
+                        <asp:TextBox class="text-field" ID="verifyPassword" runat="server" TextMode="Password" placeholder="Confirm the password" />
+                        <asp:TextBox class="text-field" ID="email" runat="server" placeholder="Enter your email address" />
+                    </div>
+                    <asp:Button class="submit-button" ID="submit" Text="Register" runat="server" OnClick="submit_Click" />
+                </div>
             </fieldset>
         </div>
     </div>

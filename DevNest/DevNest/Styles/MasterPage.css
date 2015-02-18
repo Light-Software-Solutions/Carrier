@@ -1,4 +1,7 @@
 ﻿@import url(reset.css);
+#Wrapper {
+  min-height: 550px; }
+
 body {
   max-width: 1280px;
   margin: 0 auto; }
@@ -23,7 +26,7 @@ header {
     flex-flow: column; }
     header #header-wrapper #search {
       text-align: right;
-      padding: 0.7rem 2% 0 0;
+      padding: 15px 2% 0 0;
       order: 1;
       flex-grow: 0; }
       header #header-wrapper #search input[type="text"] {
@@ -31,10 +34,11 @@ header {
         background: #195039;
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
-        width: 10rem;
-        height: 1.4rem;
-        padding: 0 0.3rem;
-        text-align: center; }
+        width: 150px;
+        height: 22px;
+        padding: 0 7px;
+        text-align: center;
+        color: #F5F5F5; }
         header #header-wrapper #search input[type="text"]:focus {
           background: #F5F5F5;
           color: #195039;
@@ -47,13 +51,13 @@ header {
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         border-left: 1px solid #282627;
-        width: 2rem;
-        height: 1.4rem;
+        width: 30px;
+        height: 22px;
         color: #F5F5F5;
         background-position: 8px 4px;
         background-size: 47% auto; }
         header #header-wrapper #search input[type="submit"]:hover {
-          background: url("/Images/magnifying_glass.png") no-repeat, #fff;
+          background: url("/Images/magnifying_glass.png") no-repeat, #F5F5F5;
           color: #195039;
           background-position: 8px 4px;
           background-size: 47% auto; }
@@ -78,18 +82,20 @@ header {
           header #header-wrapper #controls #nav-menu ul li {
             float: left;
             justify-content: center;
-            border: 1px solid #195039; }
+            border-top: 1px solid #195039; }
             header #header-wrapper #controls #nav-menu ul li:first-of-type {
-              border-top-left-radius: 5px; }
+              border-left: 1px solid #195039;
+              border-top-left-radius: 10px; }
             header #header-wrapper #controls #nav-menu ul li:last-of-type {
-              border-top-right-radius: 5px; }
+              border-right: 1px solid #195039;
+              border-top-right-radius: 10px; }
             header #header-wrapper #controls #nav-menu ul li:first-of-type a:hover {
-              border-top-left-radius: 3px; }
+              border-top-left-radius: 8px; }
             header #header-wrapper #controls #nav-menu ul li:last-of-type a:hover {
-              border-top-right-radius: 3px; }
+              border-top-right-radius: 8px; }
             header #header-wrapper #controls #nav-menu ul li a {
               display: block;
-              padding: 0.5rem 4rem;
+              padding: 10px 55px;
               text-decoration: none;
               color: #F5F5F5;
               text-transform: uppercase;
@@ -105,7 +111,7 @@ header {
         color: #F5F5F5;
         margin-right: 2%;
         margin-left: 5%;
-        padding-bottom: 0.75rem;
+        padding-bottom: 10px;
         font-size: 1rem; }
         header #header-wrapper #controls #user-label div {
           display: inline-block; }
@@ -130,10 +136,8 @@ footer {
   footer div:first-of-type {
     flex-grow: 5;
     text-align: left;
-    padding: 0.5rem 2%; }
+    padding: 8px 2%; }
   footer div:last-of-type {
     flex-grow: 0;
     text-align: right;
-    padding: 0.5rem 2%; }
-
-/*# sourceMappingURL=MasterPage.css.map */
+    padding: 0 2% 10px 2%; }
