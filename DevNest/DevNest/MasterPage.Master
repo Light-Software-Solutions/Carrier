@@ -16,7 +16,7 @@
             <div id="header-wrapper">
                 <div id="search">
                     <asp:TextBox placeholder="Search" runat="server" /><!--
-                    --><asp:Button Text="s" runat="server" />
+                    --><asp:Button Text=" " runat="server" />
                 </div>
                 <div id="controls">
                     <nav id="nav-menu">
@@ -37,7 +37,10 @@
                     </nav>
                     <div id="user-label">
                         <div>Hello, </div>
-                        <asp:Label ID="Label2" Text="LongUserName" runat="server"></asp:Label>
+                        <div id="user-name">
+                            <asp:Label ID="Label2" Text="LongUserName" runat="server"></asp:Label><!--
+                           --><span>&#9662;</span>
+                        </div>
                     </div>
                 </div>
             </div>

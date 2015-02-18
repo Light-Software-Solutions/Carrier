@@ -55,12 +55,14 @@ header {
                     background: #fff;
                     color: $SecColor;
                     text-align: left;
+                    outline: 0;
+                    border: none;
                 }
             }
 
             input[type="submit"] {
                 border: none;
-                background: $SecColor;
+                background: url("/Images/magnifying_glass_White.png") no-repeat, $SecColor;
                 border-bottom-right-radius: 5px;
                 border-top-right-radius: 5px;
                 border-left: 1px solid $MainColor;
@@ -68,6 +70,10 @@ header {
                 height: 1.4rem;
                 color: #fff;
 
+                &:hover {
+                    background: url("/Images/magnifying_glass.png") no-repeat, #fff;
+                    color: $SecColor;
+                }
             }
         }
 
@@ -133,7 +139,6 @@ header {
 
                             &:hover, &:visited:hover {
                                 background: $SecColor;
-                                color: $MainColor;
                             }
                         }
                     }
@@ -154,16 +159,12 @@ header {
                     display: inline-block;
                 }
 
-                span {
+                #user-name {
                     font-weight: 700;
 
                     &:hover {
                         color: $SecColor;
                     }
-                }
-
-                &:after {
-                    content: "arr";
                 }
             }
         }
