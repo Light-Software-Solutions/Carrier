@@ -40,7 +40,7 @@
                         <ul>
                             <li>
                                 <div id="user-name">
-                                    <asp:Label ID="UserName" Text="Камигавaaaaaaaaaaaaа" runat="server"></asp:Label><!----><span>&#9662;</span>
+                                    <asp:Label ID="UserName" Text="НякаквоСуперДългоИме" runat="server"></asp:Label><!----><span>&#9662;</span>
                                 </div>
                                 <ul id="drop-down">
                                     <li>

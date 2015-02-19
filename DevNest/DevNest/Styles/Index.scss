@@ -1,19 +1,24 @@
 ﻿@import "Utility.scss";
 
+@mixin icon-position {
+    background-size: 9%;
+    background-position: 1px 1px;
+}
+
 #Wrapper {
     width: auto;
     display: flex;
     flex-flow: row wrap;
     font-size: 1rem;
-
+    //color: red;
     #index-image {
         border-right: 1px solid rgba($SecColor, 0.6);
         order: 1;
         flex-grow: 1;
         width: 49%;
         background: url("../Images/BodyBubbles.png") no-repeat,$MainColor;
-        background-size: 86%;
-        background-position: 0 0;
+        background-size: 74% 97%;
+        background-position: 50% 50%;
     }
 
     #forms {
@@ -28,7 +33,7 @@
         background: $MainColor;
 
         fieldset {
-            border: 1px solid $FontColor;
+            border: 1px solid $BorderColor;
             //border: 1px solid red;
             border-radius: 2px;
             margin-bottom: 70px;
@@ -45,7 +50,6 @@
                 border: none;
                 border-radius: 10px;
                 text-align: center;
-                background: url(/Images/toolbar_home.png) no-repeat, $FontColor;
                 background-size: 10% auto;
 
                 &:focus {
@@ -55,6 +59,21 @@
                     outline: 0;
                     color: $SecColor;
                 }
+            }
+
+            .username {
+                background: url(/Images/username.png) no-repeat, $FontColor;
+                @include icon-position;
+            }
+
+            .password {
+                background: url(/Images/password.png) no-repeat, $FontColor;
+                @include icon-position;
+            }
+
+            .email {
+                background: url(/Images/mail.png) no-repeat, $FontColor;
+                @include icon-position;
             }
 
             span {
@@ -91,7 +110,7 @@
                     margin-left: 10px;
                     background: $SecColor;
                     color: $FontColor;
-                    border: 1px solid $FontColor;
+                    border: 1px solid $BorderColor;
                     border-radius: 8px;
 
                     &:hover {

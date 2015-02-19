@@ -16,7 +16,7 @@ header {
     flex-flow: row wrap;
     //border: 1px solid black;
     background: $MainColor;
-    border-bottom: 1px solid $FontColor;
+    border-bottom: 1px solid $BorderColor;
 
     #logo {
         width: 200px;
@@ -250,7 +250,7 @@ footer {
     color: $FontColor;
     display: flex;
     flex-flow: column;
-    border-top: 1px solid $FontColor;
+    border-top: 1px solid $BorderColor;
 
     div:first-of-type {
         flex-grow: 5;

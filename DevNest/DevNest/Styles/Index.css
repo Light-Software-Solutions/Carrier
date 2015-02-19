@@ -12,8 +12,8 @@
     flex-grow: 1;
     width: 49%;
     background: url("../Images/BodyBubbles.png") no-repeat, #282627;
-    background-size: 86%;
-    background-position: 0 0; }
+    background-size: 74% 97%;
+    background-position: 50% 50%; }
   #Wrapper #forms {
     order: 2;
     flex-grow: 1;
@@ -24,7 +24,7 @@
     flex-flow: column wrap;
     background: #282627; }
     #Wrapper #forms fieldset {
-      border: 1px solid #F5F5F5;
+      border: 1px solid rgba(245, 245, 245, 0.4);
       border-radius: 2px;
       margin-bottom: 70px;
       padding: 35px 5px 20px 20px;
@@ -37,7 +37,6 @@
         border: none;
         border-radius: 10px;
         text-align: center;
-        background: url(/Images/toolbar_home.png) no-repeat, #F5F5F5;
         background-size: 10% auto; }
         #Wrapper #forms fieldset .text-field:focus {
           text-align: left;
@@ -45,6 +44,18 @@
           padding-left: 25px;
           outline: 0;
           color: #195039; }
+      #Wrapper #forms fieldset .username {
+        background: url(/Images/username.png) no-repeat, #F5F5F5;
+        background-size: 9%;
+        background-position: 1px 1px; }
+      #Wrapper #forms fieldset .password {
+        background: url(/Images/password.png) no-repeat, #F5F5F5;
+        background-size: 9%;
+        background-position: 1px 1px; }
+      #Wrapper #forms fieldset .email {
+        background: url(/Images/mail.png) no-repeat, #F5F5F5;
+        background-size: 9%;
+        background-position: 1px 1px; }
       #Wrapper #forms fieldset span {
         padding-bottom: 4px;
         text-align: center;
@@ -65,7 +76,7 @@
           margin-left: 10px;
           background: #195039;
           color: #F5F5F5;
-          border: 1px solid #F5F5F5;
+          border: 1px solid rgba(245, 245, 245, 0.4);
           border-radius: 8px; }
           #Wrapper #forms fieldset .lower-buttons .submit-button:hover {
             background: #F5F5F5;
@@ -75,5 +86,3 @@
       order: 1; }
     #Wrapper #forms fieldset:last-of-type {
       order: 2; }
-
-/*# sourceMappingURL=Index.css.map */
