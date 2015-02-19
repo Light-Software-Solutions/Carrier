@@ -11,7 +11,9 @@
         order: 1;
         flex-grow: 1;
         width: 49%;
-        background: $MainColor;
+        background: url("../Images/BodyBubbles.png") no-repeat,$MainColor;
+        background-size: 86%;
+        background-position: 0 0;
     }
 
     #forms {

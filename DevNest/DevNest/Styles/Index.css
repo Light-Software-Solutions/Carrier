@@ -11,7 +11,9 @@
     order: 1;
     flex-grow: 1;
     width: 49%;
-    background: #282627; }
+    background: url("../Images/BodyBubbles.png") no-repeat, #282627;
+    background-size: 86%;
+    background-position: 0 0; }
   #Wrapper #forms {
     order: 2;
     flex-grow: 1;

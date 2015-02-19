@@ -21,7 +21,9 @@ header {
     #logo {
         width: 200px;
         height: 100%;
-        background: $SecColor;
+        background: url("../Images/logo.png") no-repeat;
+        background-size: 100%;
+        background-position: 0 14px;
         order: 1;
         flex-grow: 0;
     }
@@ -155,21 +157,78 @@ header {
                 order: 1;
                 align-self: flex-end;
                 color: $FontColor;
-                //border: 1px solid green;
+                //border: 1px solid red;
                 margin-right: 2%;
                 margin-left: 5%;
-                padding-bottom: 10px;
+                padding-bottom: 5px;
                 font-size: 1rem;
 
-                div {
+                #hello {
                     display: inline-block;
+                    overflow: hidden;
                 }
 
                 #user-name {
+                    //border: 1px solid red;
                     font-weight: 700;
+                    width: 140px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
 
                     &:hover {
                         color: $SecColor;
+                    }
+                }
+                //Drop-down
+                ul {
+                    display: inline-block;
+
+                    li {
+                        //border: 1px solid red;
+                        &:hover ul {
+                            position: absolute;
+                            display: block;
+                        }
+
+                        ul {
+                            width: 140px;
+                            //border: 1px solid red;
+                            display: none;
+
+                            li {
+                                text-align: center;
+
+                                &:first-of-type a {
+                                    border-radius: 5px 5px 0 0;
+                                }
+
+                                 &:last-of-type a {
+                                    border-radius: 0 0 5px 5px;
+                                }
+
+                                a {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    padding: 5px 0;
+                                    background: $SecColor;
+                                    color: $FontColor;
+                                    text-decoration: none;
+                                    border: 1px solid $MainColor;
+
+                                    &:hover {
+                                        color: $SecColor;
+                                        text-decoration: none;
+                                        background: $FontColor;
+                                    }
+
+                                    &:visited {
+                                        color: $SecColor;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

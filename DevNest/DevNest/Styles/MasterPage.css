@@ -16,7 +16,9 @@ header {
   header #logo {
     width: 200px;
     height: 100%;
-    background: #195039;
+    background: url("../Images/logo.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 14px;
     order: 1;
     flex-grow: 0; }
   header #header-wrapper {
@@ -111,14 +113,48 @@ header {
         color: #F5F5F5;
         margin-right: 2%;
         margin-left: 5%;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         font-size: 1rem; }
-        header #header-wrapper #controls #user-label div {
-          display: inline-block; }
+        header #header-wrapper #controls #user-label #hello {
+          display: inline-block;
+          overflow: hidden; }
         header #header-wrapper #controls #user-label #user-name {
-          font-weight: 700; }
+          font-weight: 700;
+          width: 140px;
+          text-overflow: ellipsis;
+          overflow: hidden; }
           header #header-wrapper #controls #user-label #user-name:hover {
             color: #195039; }
+        header #header-wrapper #controls #user-label ul {
+          display: inline-block; }
+          header #header-wrapper #controls #user-label ul li:hover ul {
+            position: absolute;
+            display: block; }
+          header #header-wrapper #controls #user-label ul li ul {
+            width: 140px;
+            display: none; }
+            header #header-wrapper #controls #user-label ul li ul li {
+              text-align: center; }
+              header #header-wrapper #controls #user-label ul li ul li:first-of-type a {
+                border-radius: 5px 5px 0 0; }
+              header #header-wrapper #controls #user-label ul li ul li:last-of-type a {
+                border-radius: 0 0 5px 5px; }
+              header #header-wrapper #controls #user-label ul li ul li a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 5px 0;
+                background: #195039;
+                color: #F5F5F5;
+                text-decoration: none;
+                border: 1px solid #282627; }
+                header #header-wrapper #controls #user-label ul li ul li a:hover {
+                  color: #195039;
+                  text-decoration: none;
+                  background: #F5F5F5; }
+                header #header-wrapper #controls #user-label ul li ul li a:visited {
+                  color: #195039;
+                  text-decoration: none; }
 
 #content-page {
   height: auto;
@@ -141,3 +177,5 @@ footer {
     flex-grow: 0;
     text-align: right;
     padding: 0 2% 10px 2%; }
+
+/*# sourceMappingURL=MasterPage.css.map */

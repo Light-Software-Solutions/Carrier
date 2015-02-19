@@ -36,11 +36,22 @@
                         </ul>
                     </nav>
                     <div id="user-label">
-                        <div>Hello, </div>
-                        <div id="user-name">
-                            <asp:Label ID="Label2" Text="LongUserName" runat="server"></asp:Label><!--
-                           --><span>&#9662;</span>
-                        </div>
+                        <div id="hello">Hello, </div>
+                        <ul>
+                            <li>
+                                <div id="user-name">
+                                    <asp:Label ID="UserName" Text="Камигавaaaaaaaaaaaaа" runat="server"></asp:Label><!----><span>&#9662;</span>
+                                </div>
+                                <ul id="drop-down">
+                                    <li>
+                                        <asp:LinkButton Text="Profile" runat="server" />
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton Text="Logout" runat="server" />
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
