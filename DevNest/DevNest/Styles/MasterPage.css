@@ -173,7 +173,33 @@ footer {
     flex-grow: 5;
     text-align: left;
     padding: 8px 2%; }
+    footer div:first-of-type .social-media {
+      width: 32px;
+      height: 32px;
+      border: none; }
+    footer div:first-of-type #Facebook {
+      background: url("../Images/facebook.png") no-repeat; }
+      footer div:first-of-type #Facebook:hover {
+        background: url("../Images/facebook_w.png") no-repeat; }
+    footer div:first-of-type #Tweeter {
+      background: url("../Images/twitter.png") no-repeat; }
+      footer div:first-of-type #Tweeter:hover {
+        background: url("../Images/twitter_w.png") no-repeat; }
+    footer div:first-of-type #GooglePlus {
+      background: url("../Images/google.png") no-repeat; }
+      footer div:first-of-type #GooglePlus:hover {
+        background: url("../Images/google_w.png") no-repeat; }
+    footer div:first-of-type #LinkedIn {
+      background: url("../Images/linkedin.png") no-repeat; }
+      footer div:first-of-type #LinkedIn:hover {
+        background: url("../Images/linkedin_w.png") no-repeat; }
+    footer div:first-of-type #GitHub {
+      background: url("../Images/github.png") no-repeat; }
+      footer div:first-of-type #GitHub:hover {
+        background: url("../Images/github_w.png") no-repeat; }
   footer div:last-of-type {
     flex-grow: 0;
     text-align: right;
     padding: 0 2% 10px 2%; }
+
+/*# sourceMappingURL=MasterPage.css.map */

@@ -202,7 +202,7 @@ header {
                                     border-radius: 5px 5px 0 0;
                                 }
 
-                                 &:last-of-type a {
+                                &:last-of-type a {
                                     border-radius: 0 0 5px 5px;
                                 }
 
@@ -256,6 +256,52 @@ footer {
         flex-grow: 5;
         text-align: left;
         padding: 8px 2%;
+
+        .social-media {
+            width: 32px;
+            height: 32px;
+            border: none;
+        }
+
+        #Facebook {
+            background: url("../Images/facebook.png") no-repeat;
+
+            &:hover {
+                background: url("../Images/facebook_w.png") no-repeat;
+            }
+        }
+
+        #Tweeter {
+            background: url("../Images/twitter.png") no-repeat;
+
+            &:hover {
+                background: url("../Images/twitter_w.png") no-repeat;
+            }
+        }
+
+        #GooglePlus {
+            background: url("../Images/google.png") no-repeat;
+
+            &:hover {
+                background: url("../Images/google_w.png") no-repeat;
+            }
+        }
+
+        #LinkedIn {
+            background: url("../Images/linkedin.png") no-repeat;
+
+            &:hover {
+                background: url("../Images/linkedin_w.png") no-repeat;
+            }
+        }
+
+        #GitHub {
+            background: url("../Images/github.png") no-repeat;
+
+            &:hover {
+                background: url("../Images/github_w.png") no-repeat;
+            }
+        }
     }
 
     div:last-of-type {

@@ -40,7 +40,7 @@
                         <ul>
                             <li>
                                 <div id="user-name">
-                                    <asp:Label ID="UserName" Text="НякаквоСуперДългоИме" runat="server"></asp:Label><!----><span>&#9662;</span>
+                                    <asp:Label ID="UserName" Text="Нasd" runat="server"></asp:Label><!----><span>&#9662;</span>
                                 </div>
                                 <ul id="drop-down">
                                     <li>
@@ -61,7 +61,13 @@
             </asp:ContentPlaceHolder>
         </main>
         <footer>
-            <div>social sites</div>
+            <div>
+                <asp:Button id="Facebook" class="social-media" Text=" " runat="server" />
+                <asp:Button id="Tweeter" class="social-media" Text=" " runat="server" />
+                <asp:Button id="GooglePlus" class="social-media" Text=" " runat="server" />
+                <asp:Button id="LinkedIn" class="social-media" Text=" " runat="server" />
+                <asp:Button id="GitHub" class="social-media" Text=" " runat="server" />
+            </div>
             <div>&copy All right Reserved</div>
         </footer>
     </form>
