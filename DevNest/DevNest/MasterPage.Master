@@ -47,6 +47,9 @@
                                         <asp:LinkButton Text="Profile" runat="server" />
                                     </li>
                                     <li>
+                                        <asp:LinkButton Text="Edit profile" runat="server" />
+                                    </li>
+                                    <li>
                                         <asp:LinkButton Text="Logout" runat="server" />
                                     </li>
                                 </ul>
