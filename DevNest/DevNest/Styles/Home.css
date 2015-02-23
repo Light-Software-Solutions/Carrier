@@ -3,6 +3,10 @@
   min-height: 550px;
   font-size: 1rem; }
 
+@font-face {
+  font-family: "Sugar";
+  src: url("Fonts/give me some sugar_2.ttf"); }
+
 #Wrapper #display {
   background: red;
   height: 50%; }
@@ -36,15 +40,16 @@
       text-overflow: ellipsis;
       overflow: hidden;
       text-indent: 20px; }
+      #Wrapper section article div::first-letter {
+        font-family: Sugar;
+        font-size: 2rem; }
     #Wrapper section article footer {
       margin-top: 4%;
       border: 1px solid red;
       display: flex;
-      flex-flow: column;
-      justify-content: center; }
+      flex-flow: row;
+      justify-content: space-between; }
       #Wrapper section article footer time {
-        align-self: flex-start; }
+        border: 1px solid blue; }
       #Wrapper section article footer a {
-        align-self: flex-end; }
-
-/*# sourceMappingURL=Home.css.map */
+        border: 1px solid pink; }

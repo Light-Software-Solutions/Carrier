@@ -1,5 +1,10 @@
 ﻿@import "Utility.scss";
 
+@font-face {
+    font-family: "Sugar";
+    src: url("Fonts/give me some sugar_2.ttf");
+}
+
 #Wrapper {
     #display {
         background: red;
@@ -42,19 +47,23 @@
                 text-overflow: ellipsis;
                     overflow: hidden;
                      text-indent: 20px;
+                     &::first-letter {
+                         font-family: Sugar;
+                         font-size: 2rem;
+                     }
             }
 
             footer {
                 margin-top: 4%;
                 border: 1px solid red;
                 display: flex;
-                flex-flow: column;
-                justify-content: center;
+                flex-flow: row;
+                justify-content: space-between;
                 time {
-                   align-self: flex-start;
+                   border: 1px solid blue;
                 }
                 a {
-                    align-self: flex-end;
+                    border: 1px solid pink;
                 }
             }
         }
