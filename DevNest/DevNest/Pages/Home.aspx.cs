@@ -13,31 +13,31 @@ namespace DevNest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            FillPage();
+            //FillPage();
         }
 
-        private void FillPage()
-        {
-            ArrayList articleList = Connection.GetArticleByID();
-            StringBuilder strBuilder = new StringBuilder();
+//        private void FillPage()
+//        {
+//            ArrayList articleList = Connection.GetArticleByID();
+//            StringBuilder strBuilder = new StringBuilder();
 
-            foreach (Article article in articleList)
-            {
-                strBuilder.Append(string.Format(@"
-                    <article>
-                        <h1 class='title'>{0}</h1>
-                        <div class='article-content'>{1}</div>
-                    </article>",
-                article.title, article.body));
-            }
+//            foreach (Article article in articleList)
+//            {
+//                strBuilder.Append(string.Format(@"
+//                    <article>
+//                        <h1 class='title'>{0}</h1>
+//                        <div class='article-content'>{1}</div>
+//                    </article>",
+//                article.title, article.body));
+//            }
 
-            lblOutout.Text = strBuilder.ToString();
-        }
+//            lblOutout.Text = strBuilder.ToString();
+//        }
 
-        protected void logout_Click(object sender, EventArgs e)
-        {
-            Session.Clear();
-            Response.Redirect("Login.aspx");
-        }
+//        protected void logout_Click(object sender, EventArgs e)
+//        {
+//            Session.Clear();
+//            Response.Redirect("Login.aspx");
+//        }
     }
 }

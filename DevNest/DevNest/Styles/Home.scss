@@ -1,0 +1,62 @@
+﻿@import "Utility.scss";
+
+#Wrapper {
+    #display {
+        background: red;
+        height: 50%;
+    }
+
+    section {
+        border: 1px solid green;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: green;
+
+        article {
+            border: 1px solid $BorderColor;
+            border-radius: 4px;
+            margin: 0 10%;
+            width: 300px;
+            height: 50%;
+            align-self: center;
+            color: $FontColor;
+            display: flex;
+            flex-direction: column;
+
+            h1, div {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            div {
+                text-align: justify;
+                height: 44%;
+                border: 1px solid red;
+                text-overflow: ellipsis;
+                    overflow: hidden;
+                     text-indent: 20px;
+            }
+
+            footer {
+                margin-top: 4%;
+                border: 1px solid red;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                time {
+                   align-self: flex-start;
+                }
+                a {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}

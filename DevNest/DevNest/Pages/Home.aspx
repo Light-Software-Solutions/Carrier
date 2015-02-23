@@ -3,7 +3,29 @@
     <link href="/Styles/Home.css" type="text/css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Home" ContentPlaceHolderID="ContentMaster" runat="server">
-    <div>
-        <asp:Label ID="lblOutout" runat="server"></asp:Label>  
+    <div id="Wrapper">
+        <div id="display">Display</div>
+        <section>
+            <article>
+                <h1>
+                    Lorem ipsum dolor sit amet
+                </h1>
+                <div>Lorem ipsum dolor sit amet, rhoncus nisl nec, auctor luctus amet sollicitudin velit Lorem ipsum dolor sit amet, rhoncus nisl nec, auctor luctus amet sollicitudin velit Lorem ipsum dolor sit amet, rhoncus nisl nec, auctor luctus amet sollicitudin velit</div>
+                <footer>
+                    <time>11.11.2011</time>
+                    <asp:LinkButton Text="Read more..." runat="server" />
+                </footer>
+            </article>
+            <article>
+                <h1>
+                    header
+                </h1>
+                <div>content</div>
+                <footer>
+                    <time>11.11.2011</time>
+                    <asp:LinkButton Text="Read more..." runat="server" />
+                </footer>
+            </article>
+        </section>
     </div>
 </asp:Content>

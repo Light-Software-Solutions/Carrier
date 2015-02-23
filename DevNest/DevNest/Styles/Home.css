@@ -1,0 +1,50 @@
+﻿#Wrapper {
+  height: 550px;
+  min-height: 550px;
+  font-size: 1rem; }
+
+#Wrapper #display {
+  background: red;
+  height: 50%; }
+#Wrapper section {
+  border: 1px solid green;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: green; }
+  #Wrapper section article {
+    border: 1px solid rgba(245, 245, 245, 0.4);
+    border-radius: 4px;
+    margin: 0 10%;
+    width: 300px;
+    height: 50%;
+    align-self: center;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column; }
+    #Wrapper section article h1, #Wrapper section article div {
+      padding: 5px; }
+    #Wrapper section article h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center; }
+    #Wrapper section article div {
+      text-align: justify;
+      height: 44%;
+      border: 1px solid red;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-indent: 20px; }
+    #Wrapper section article footer {
+      margin-top: 4%;
+      border: 1px solid red;
+      display: flex;
+      flex-flow: column;
+      justify-content: center; }
+      #Wrapper section article footer time {
+        align-self: flex-start; }
+      #Wrapper section article footer a {
+        align-self: flex-end; }
+
+/*# sourceMappingURL=Home.css.map */
