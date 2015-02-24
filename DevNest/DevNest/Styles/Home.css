@@ -7,49 +7,90 @@
   font-family: "Sugar";
   src: url("Fonts/give me some sugar_2.ttf"); }
 
-#Wrapper #display {
-  background: red;
-  height: 50%; }
-#Wrapper section {
-  border: 1px solid green;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: green; }
-  #Wrapper section article {
-    border: 1px solid rgba(245, 245, 245, 0.4);
-    border-radius: 4px;
-    margin: 0 10%;
-    width: 300px;
+#Wrapper {
+  background: #282627; }
+  #Wrapper #display {
     height: 50%;
-    align-self: center;
-    color: #F5F5F5;
+    background: rgba(25, 80, 57, 0.3);
     display: flex;
-    flex-direction: column; }
-    #Wrapper section article h1, #Wrapper section article div {
-      padding: 5px; }
-    #Wrapper section article h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-align: center; }
-    #Wrapper section article div {
-      text-align: justify;
-      height: 44%;
-      border: 1px solid red;
+    justify-content: space-between;
+    align-items: center; }
+    #Wrapper #display #LeftArrow, #Wrapper #display #RightArrow {
+      width: 59px;
+      height: 59px;
+      cursor: pointer;
+      opacity: 0.3;
+      transition: 2s; }
+      #Wrapper #display #LeftArrow:hover, #Wrapper #display #RightArrow:hover {
+        opacity: 1; }
+    #Wrapper #display #LeftArrow {
+      margin-left: 20px;
+      background: url("../Images/sliderArrows.png") no-repeat; }
+    #Wrapper #display #RightArrow {
+      margin-right: 20px;
+      background: url("../Images/sliderArrows.png") no-repeat;
+      background-position: -64px 0; }
+    #Wrapper #display article {
+      width: 80%;
+      height: 90%;
+      color: #F5F5F5;
       text-overflow: ellipsis;
       overflow: hidden;
-      text-indent: 20px; }
-      #Wrapper section article div::first-letter {
-        font-family: Sugar;
-        font-size: 2rem; }
-    #Wrapper section article footer {
-      margin-top: 4%;
-      border: 1px solid red;
+      background: url("../Images/Splash.png") no-repeat;
+      background-position: 172px -41px; }
+  #Wrapper section:nth-of-type(2) {
+    border-top: 1px solid rgba(245, 245, 245, 0.4);
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #Wrapper section:nth-of-type(2) article {
+      border: 1px solid rgba(245, 245, 245, 0.4);
+      border-radius: 4px;
+      width: 500px;
+      height: 66%;
+      align-self: center;
+      color: #F5F5F5;
+      background: rgba(25, 80, 57, 0.3);
       display: flex;
-      flex-flow: row;
-      justify-content: space-between; }
-      #Wrapper section article footer time {
-        border: 1px solid blue; }
-      #Wrapper section article footer a {
-        border: 1px solid pink; }
+      flex-direction: column;
+      margin: 0 10%; }
+      #Wrapper section:nth-of-type(2) article h1, #Wrapper section:nth-of-type(2) article div {
+        padding: 5px 10px;
+        text-transform: capitalize; }
+      #Wrapper section:nth-of-type(2) article h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        height: 15%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-top: 10px; }
+      #Wrapper section:nth-of-type(2) article div {
+        text-align: justify;
+        height: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-indent: 20px; }
+        #Wrapper section:nth-of-type(2) article div::first-letter {
+          font-family: Sugar;
+          font-size: 2rem; }
+      #Wrapper section:nth-of-type(2) article footer {
+        margin-top: 3%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        padding-bottom: 10px; }
+        #Wrapper section:nth-of-type(2) article footer time {
+          padding-left: 15px; }
+        #Wrapper section:nth-of-type(2) article footer a {
+          color: #F5F5F5;
+          padding-right: 15px;
+          text-decoration: none; }
+          #Wrapper section:nth-of-type(2) article footer a:visited {
+            color: #F5F5F5;
+            text-decoration: none; }
+          #Wrapper section:nth-of-type(2) article footer a:hover {
+            text-decoration: underline; }
+
+/*# sourceMappingURL=Home.css.map */

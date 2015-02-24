@@ -4,7 +4,11 @@
 </asp:Content>
 <asp:Content ID="Home" ContentPlaceHolderID="ContentMaster" runat="server">
     <div id="Wrapper">
-        <div id="display"></div>
+        <section id="display">
+            <div id="LeftArrow"></div>
+            <article></article>
+            <div id="RightArrow"></div>
+        </section>
         <section>
             <article>
                 <h1>

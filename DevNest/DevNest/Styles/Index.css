@@ -79,7 +79,8 @@
           background: #195039;
           color: #F5F5F5;
           border: 1px solid rgba(245, 245, 245, 0.4);
-          border-radius: 8px; }
+          border-radius: 8px;
+          cursor: pointer; }
           #Wrapper #forms fieldset .lower-buttons .submit-button:hover {
             background: #F5F5F5;
             color: #195039;

@@ -5,8 +5,8 @@
 </asp:Content>
 <asp:Content ID="Register" ContentPlaceHolderID="ContentMaster" runat="server">
     <div id="Wrapper">
-        <div id="index-image"></div>
-        <div id="forms">
+        <section id="index-image"></section>
+        <section id="forms">
             <fieldset>
                 <asp:Label Text="Already a user? - Log in" runat="server" />
                 <div class="lower-buttons">
@@ -31,6 +31,6 @@
                     <asp:Button class="submit-button" ID="submit" Text="Register" runat="server" OnClick="submit_Click" />
                 </div>
             </fieldset>
-        </div>
+        </section>
     </div>
 </asp:Content>

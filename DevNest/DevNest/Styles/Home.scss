@@ -6,64 +6,123 @@
 }
 
 #Wrapper {
+    background: $MainColor;
+
     #display {
-        background: red;
         height: 50%;
+        background: $OpacitySec;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #LeftArrow, #RightArrow {
+            width: 59px;
+            height: 59px;
+            cursor: pointer;
+            opacity: 0.3;
+            transition: 2s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        #LeftArrow {
+            margin-left: 20px;
+            background: url("../Images/sliderArrows.png") no-repeat;
+        }
+
+        #RightArrow {
+            margin-right: 20px;
+            background: url("../Images/sliderArrows.png") no-repeat;
+            background-position: -64px 0;
+        }
+
+        article {
+            //border: 1px solid red;
+            width: 80%;
+            height: 90%;
+            color: $FontColor;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            background: url("../Images/Splash.png") no-repeat;
+            background-position: 172px -41px;
+        }
     }
 
-    section {
-        border: 1px solid green;
+    section:nth-of-type(2) {
+        border-top: 1px solid $BorderColor;
         height: 50%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: green;
 
         article {
             border: 1px solid $BorderColor;
             border-radius: 4px;
-            margin: 0 10%;
-            width: 300px;
-            height: 50%;
+            width: 500px;
+            height: 66%;
             align-self: center;
             color: $FontColor;
+            background: $OpacitySec;
             display: flex;
             flex-direction: column;
+            margin: 0 10%;
 
             h1, div {
-                padding: 5px;
+                padding: 5px 10px;
+                text-transform: capitalize;
             }
 
             h1 {
                 font-size: 1.5rem;
                 font-weight: 700;
                 text-align: center;
+                height: 15%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                padding-top: 10px;
             }
 
             div {
                 text-align: justify;
-                height: 44%;
-                border: 1px solid red;
+                height: 50%;
+                //border: 1px solid red;
                 text-overflow: ellipsis;
-                    overflow: hidden;
-                     text-indent: 20px;
-                     &::first-letter {
-                         font-family: Sugar;
-                         font-size: 2rem;
-                     }
+                overflow: hidden;
+                text-indent: 20px;
+
+                &::first-letter {
+                    font-family: Sugar;
+                    font-size: 2rem;
+                }
             }
 
             footer {
-                margin-top: 4%;
-                border: 1px solid red;
+                margin-top: 3%;
+                //border: 1px solid red;
                 display: flex;
                 flex-flow: row;
                 justify-content: space-between;
+                padding-bottom: 10px;
+
                 time {
-                   border: 1px solid blue;
+                    padding-left: 15px;
                 }
+
                 a {
-                    border: 1px solid pink;
+                    color: $FontColor;
+                    padding-right: 15px;
+                    text-decoration: none;
+
+                    &:visited {
+                        color: $FontColor;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
