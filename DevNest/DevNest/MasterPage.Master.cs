@@ -23,5 +23,10 @@ namespace DevNest
         {
             Response.Redirect("index.aspx");
         }
+
+        protected void goEditProfile(object sender, EventArgs e)
+        {
+            Response.Redirect("EditProfile.aspx");
+        }
     }
 }
