@@ -1,3 +1,23 @@
 ﻿#Wrapper {
     //background: red;
+    display: flex;
+    flex-flow: row wrap;
+
+    .left-edit {
+        order: 1;
+        width: 35%;
+        flex-grow: 1;
+        background: red;
+
+        .avatar-edit {
+
+        }
+    }
+
+    .right-edit {
+        order: 2;
+        width: 55%;
+        flex-grow: 1;
+        background: blue;
+    }
 }
