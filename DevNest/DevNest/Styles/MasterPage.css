@@ -1,7 +1,6 @@
 ﻿@import url(reset.css);
 #Wrapper {
-  height: 550px;
-  min-height: 550px;
+  min-height: 623px;
   font-size: 1rem; }
 
 body {
@@ -207,3 +206,5 @@ body {
     flex-grow: 0;
     text-align: right;
     padding: 0 2% 10px 2%; }
+
+/*# sourceMappingURL=MasterPage.css.map */

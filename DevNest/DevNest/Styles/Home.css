@@ -1,6 +1,5 @@
 ﻿#Wrapper {
-  height: 550px;
-  min-height: 550px;
+  min-height: 623px;
   font-size: 1rem; }
 
 @font-face {
@@ -9,12 +8,14 @@
 
 #Wrapper {
   background: #282627; }
+  #Wrapper section {
+    height: 300px; }
   #Wrapper #display {
-    height: 50%;
     background: rgba(25, 80, 57, 0.3);
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-top: 10px; }
     #Wrapper #display #LeftArrow, #Wrapper #display #RightArrow {
       width: 59px;
       height: 59px;
@@ -32,7 +33,7 @@
       background-position: -64px 0; }
     #Wrapper #display article {
       width: 80%;
-      height: 90%;
+      height: 100%;
       color: #F5F5F5;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -40,7 +41,6 @@
       background-position: 172px -41px; }
   #Wrapper section:nth-of-type(2) {
     border-top: 1px solid rgba(245, 245, 245, 0.4);
-    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }

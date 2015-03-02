@@ -1,23 +1,183 @@
-﻿#Wrapper {
+﻿@import "Utility.scss";
+
+@mixin marginH2 {
+    margin: 5px 2.5% 0 2.5%;
+}
+
+@mixin formatForm {
+    margin: 5px 0 5px 1.5%;
+    display: inline-block;
+    width: 47%;
+    //background: blue;
+}
+
+#Wrapper {
     //background: red;
     display: flex;
     flex-flow: row wrap;
 
     .left-edit {
         order: 1;
-        width: 35%;
-        flex-grow: 1;
-        background: red;
+        width: 30%;
+        flex-grow: 0;
+        //background: red;
+        border-right: 1px solid red;
+
+        .avatar-edit, .social-edit, .projects-edit {
+            border: 1px solid green;
+            margin: 20px;
+        }
 
         .avatar-edit {
+            display: flex;
+            flex-flow: column wrap;
 
+            img {
+                align-self: center;
+            }
+
+            .upload-container {
+                //background: blue;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+
+        .social-edit {
+            h2 {
+                @include marginH2;
+            }
+
+            input[type=text] {
+                @include formatForm;
+                width: 94%;
+                margin: 5px 2.5%;
+            }
+
+            input[type=submit] {
+                @include formatForm;
+                width: 95%;
+                margin: 5px 2.5%;
+            }
+        }
+
+        .projects-edit {
+            background: red;
+            color: $FontColor;
+
+            h2 {
+                @include marginH2;
+            }
+
+            a {
+                @include formatForm;
+                color: $FontColor;
+                text-decoration: none;
+                width: 95%;
+                margin: 5px 2.5%;
+                text-align: center;
+
+                &:visited {
+                    text-decoration: none;
+                    color: $FontColor;
+                }
+            }
         }
     }
 
     .right-edit {
         order: 2;
-        width: 55%;
+        width: 60%;
         flex-grow: 1;
-        background: blue;
+        //background: blue;
+        border-left: 1px solid blue;
+
+        .user-container, .knowledge-container {
+            border: 1px solid green;
+            margin: 20px;
+        }
+
+        .user-container {
+            h2 {
+                @include marginH2;
+            }
+
+            display: flex;
+            flex-flow: row wrap;
+
+            .user-info-edit {
+                order: 1;
+                border: 1px solid red;
+                width: 90%;
+                flex-grow: 0;
+
+                input {
+                    @include formatForm;
+                }
+
+                textarea {
+                    @include formatForm;
+                    width: 96.3%;
+                }
+            }
+
+            input[type="submit"] {
+                order: 2;
+                border: 1px solid green;
+                //width: 8%;
+                flex-grow: 1;
+                height: 50px;
+                align-self: flex-end;
+            }
+        }
+
+        .knowledge-container {
+            display: flex;
+            flex-flow: row wrap;
+
+            h2 {
+                @include marginH2;
+            }
+
+            .knowledge-edit {
+                border: 1px solid blue;
+                order: 1;
+                border: 1px solid red;
+                width: 90%;
+                flex-grow: 0;
+                display: flex;
+                flex-flow: row wrap;
+
+                .language {
+                    border: 1px solid black;
+                    width: 48%;
+                    margin: 5px;
+
+                    input {
+                        @include formatForm;
+                        width: 94%;
+                        margin: 0;
+                    }
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+
+                    .hidden-menu-edit {
+                        display: none;
+                    }
+                }
+            }
+
+            input[type="submit"] {
+                order: 2;
+                border: 1px solid green;
+                //width: 8%;
+                flex-grow: 1;
+                height: 50px;
+                align-self: flex-end;
+            }
+        }
     }
 }
