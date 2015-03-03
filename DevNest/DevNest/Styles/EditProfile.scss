@@ -1,77 +1,137 @@
 ﻿@import "Utility.scss";
 
-@mixin marginH2 {
-    margin: 5px 2.5% 0 2.5%;
+@mixin h2Style {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    color: $FontColor;
 }
 
-@mixin formatForm {
-    margin: 5px 0 5px 1.5%;
-    display: inline-block;
-    width: 47%;
-    //background: blue;
+@mixin formCommon {
+    border: none;
+    background: $FontColor;
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin formLeft {
+    @include formCommon;
+    border-radius: 5px 0 0 5px;
+    order: 1;
+    width: 90%;
+    flex-grow: 1;
+    //background: blue !important;
+}
+
+@mixin formRight {
+    @include formCommon;
+    border-radius: 0 5px 5px 0;
+    order: 2;
+    flex-grow: 1;
+    font-size: 2rem;
+    //background: blue !important;
+}
+
+@mixin submitButton {
+    @include buttonLayout;
+    order: 2;
+    //width: 8%;
+    flex-grow: 1;
+    height: 77px;
+    align-self: flex-end;
+    margin: 0 5px 12px 5px;
+}
+
+input[type=text], textarea {
+    color: $MainColor;
 }
 
 #Wrapper {
     //background: red;
     display: flex;
     flex-flow: row wrap;
+    font-size: 1rem;
 
     .left-edit {
         order: 1;
-        width: 30%;
+        width: 24%;
         flex-grow: 0;
         //background: red;
-        border-right: 1px solid red;
-
+        //border-right: 1px solid red;
         .avatar-edit, .social-edit, .projects-edit {
-            border: 1px solid green;
+            //border: 1px solid green;
             margin: 20px;
+            padding-bottom: 10px;
         }
 
         .avatar-edit {
+            background: $OpacitySec;
             display: flex;
             flex-flow: column wrap;
 
             img {
                 align-self: center;
+                padding-top: 10px;
+                width: 200px;
+                height: 150px;
             }
 
             .upload-container {
                 //background: blue;
                 display: flex;
-                flex-flow: row wrap;
+                flex-flow: column wrap;
                 justify-content: space-between;
+
+                input[type=file] {
+                    @include buttonLayout;
+                    padding: 6px 23px;
+                    flex-grow: 1;
+                    margin: 10px;
+                }
+
+                input[type=submit] {
+                    @include buttonLayout;
+                    padding: 8px 0;
+                    flex-grow: 1;
+                    margin: 0 10px;
+                }
             }
         }
 
         .social-edit {
+            background: $OpacitySec;
+
             h2 {
-                @include marginH2;
+                @include h2Style;
             }
 
             input[type=text] {
-                @include formatForm;
-                width: 94%;
-                margin: 5px 2.5%;
+                @include fieldIconLeft;
+                border-radius: 5px;
+                margin: 7px auto;
+                background: url(/Images/username.png) no-repeat, $FontColor;
+                @include icon-position;
             }
 
             input[type=submit] {
-                @include formatForm;
+                @include buttonLayout;
+                padding: 8px 0;
                 width: 95%;
                 margin: 5px 2.5%;
             }
         }
 
         .projects-edit {
-            background: red;
+            background: $OpacitySec;
             color: $FontColor;
 
             h2 {
-                @include marginH2;
+                @include h2Style;
             }
 
             a {
-                @include formatForm;
+                display: block;
+                @include buttonLayout;
+                padding: 6px 0;
                 color: $FontColor;
                 text-decoration: none;
                 width: 95%;
@@ -91,16 +151,16 @@
         width: 60%;
         flex-grow: 1;
         //background: blue;
-        border-left: 1px solid blue;
-
+        //border-left: 1px solid blue;
         .user-container, .knowledge-container {
-            border: 1px solid green;
+            //border: 1px solid green;
+            background: $OpacitySec;
             margin: 20px;
         }
 
         .user-container {
             h2 {
-                @include marginH2;
+                @include h2Style;
             }
 
             display: flex;
@@ -108,27 +168,55 @@
 
             .user-info-edit {
                 order: 1;
-                border: 1px solid red;
+                //border: 1px solid red;
                 width: 90%;
                 flex-grow: 0;
+                //Align left and right part height
+                margin-bottom: 16px;
 
-                input {
-                    @include formatForm;
-                }
+                .input-row {
+                    display: flex;
+                    flex-flow: row wrap;
+                    //height: 30px;
+                    //background: red;
+                    input[type=text] {
+                        border: none;
+                        background: $FontColor;
+                        text-align: center;
+                        outline: 0;
+                        border-radius: 5px;
+                        width: 45%;
+                        flex-grow: 1;
+                        margin: 5px 0 5px 9px;
+                        height: 30px;
+                        padding-left: 7px;
+                        //background: red;
+                        &:focus {
+                            text-align: left;
+                        }
+                    }
 
-                textarea {
-                    @include formatForm;
-                    width: 96.3%;
+                    textarea {
+                        //background: red;
+                        background: $FontColor;
+                        outline: 0;
+                        flex-grow: 1;
+                        margin: 5px 0 0 9px;
+                        max-width: 100%;
+                        height: 63px;
+                        border: none;
+                        border-radius: 5px;
+                        padding-left: 7px;
+                        //Align left and right panels
+                        padding-top: 10px;
+                        //margin: 5px 5px 10px 5px;
+                    }
                 }
             }
 
             input[type="submit"] {
-                order: 2;
-                border: 1px solid green;
-                //width: 8%;
-                flex-grow: 1;
-                height: 50px;
-                align-self: flex-end;
+                @include submitButton;
+                margin-bottom: 15px;
             }
         }
 
@@ -137,46 +225,68 @@
             flex-flow: row wrap;
 
             h2 {
-                @include marginH2;
+                @include h2Style;
             }
 
             .knowledge-edit {
-                border: 1px solid blue;
                 order: 1;
-                border: 1px solid red;
+                //border: 1px solid red;
                 width: 90%;
                 flex-grow: 0;
                 display: flex;
                 flex-flow: row wrap;
+                //Align left and right panels
+                margin-bottom: 9px;
 
                 .language {
-                    border: 1px solid black;
-                    width: 48%;
-                    margin: 5px;
+                    //border: 1px solid black;
+                    width: 42%;
+                    margin: 5px 0 5px 9px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-flow: column wrap;
 
-                    input {
-                        @include formatForm;
-                        width: 94%;
-                        margin: 0;
-                    }
 
-                    span {
-                        font-size: 1.5rem;
+                    .language-row {
+                        display: flex;
+                        flex-flow: row wrap;
+
+                        input {
+                            @include formLeft;
+                        }
+
+                        span {
+                            @include formRight;
+                        }
                     }
 
                     .hidden-menu-edit {
                         display: none;
+                        //display: flex;
+                        flex-flow: column wrap;
+                        //position: relative;
+                        li {
+                            align-self: flex-end;
+                            width: 50%;
+                            border-radius: 5px;
+                            //background: red;
+                            background: $FontColor;
+                            text-align: center;
+                            border-top: 1px solid $SecColor;
+                            padding: 5px 0;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: $SecColor;
+                                color: $FontColor;
+                            }
+                        }
                     }
                 }
             }
 
             input[type="submit"] {
-                order: 2;
-                border: 1px solid green;
-                //width: 8%;
-                flex-grow: 1;
-                height: 50px;
-                align-self: flex-end;
+                @include submitButton;
             }
         }
     }

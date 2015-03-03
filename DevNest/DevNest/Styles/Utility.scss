@@ -4,8 +4,48 @@ $FontColor: #F5F5F5;
 $BorderColor: rgba($FontColor, 0.4);
 $OpacitySec: rgba(25, 80, 57, 0.3);
 
+@mixin buttonLayout {
+    text-align: center;
+    background: $SecColor;
+    color: $FontColor;
+    border: 1px solid $BorderColor;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background: $FontColor;
+        color: $SecColor;
+        border: 1px solid $MainColor;
+    }
+}
+
+@mixin fieldIconLeft {
+    display: block;
+    width: 250px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-size: 10% auto;
+
+    &:focus {
+        text-align: left;
+        width: 225px;
+        padding-left: 25px;
+        outline: 0;
+        color: $SecColor;
+    }
+}
+
+@mixin icon-position {
+    background-size: 9%;
+    background-position: 1px 1px;
+}
+
+
 #Wrapper {
     //height: 550px;
     min-height: 623px;
     font-size: 1rem;
+    background: $MainColor;
 }

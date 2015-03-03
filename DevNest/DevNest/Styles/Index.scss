@@ -1,10 +1,5 @@
 ﻿@import "Utility.scss";
 
-@mixin icon-position {
-    background-size: 9%;
-    background-position: 1px 1px;
-}
-
 #Wrapper {
     width: auto;
     display: flex;
@@ -16,7 +11,7 @@
         order: 1;
         flex-grow: 1;
         width: 49%;
-        background: url("../Images/BodyBubbles.png") no-repeat,$MainColor;
+        background: url("../Images/BodyBubbles.png") no-repeat;
         background-size: 74% 97%;
         background-position: 50% 50%;
     }
@@ -30,7 +25,7 @@
         align-items: center;
         justify-content: center;
         flex-flow: column wrap;
-        background: $MainColor;
+        //background: $MainColor;
 
         fieldset {
             border: 1px solid $BorderColor;
@@ -40,25 +35,14 @@
             padding: 35px 5px 20px 20px;
             background: $OpacitySec;
 
-            .text-field, span {
+            span {
                 display: block;
                 width: 250px;
                 height: 22px;
             }
 
             .text-field {
-                border: none;
-                border-radius: 10px;
-                text-align: center;
-                background-size: 10% auto;
-
-                &:focus {
-                    text-align: left;
-                    width: 225px;
-                    padding-left: 25px;
-                    outline: 0;
-                    color: $SecColor;
-                }
+                @include fieldIconLeft;
             }
 
             .username {
@@ -106,19 +90,8 @@
                 .submit-button {
                     order: 2;
                     width: 66px;
-                    text-align: center;
                     margin-left: 10px;
-                    background: $SecColor;
-                    color: $FontColor;
-                    border: 1px solid $BorderColor;
-                    border-radius: 8px;
-                    cursor: pointer;
-
-                    &:hover {
-                        background: $FontColor;
-                        color: $SecColor;
-                        border: 1px solid $MainColor;
-                    }
+                    @include buttonLayout;
                 }
             }
         }

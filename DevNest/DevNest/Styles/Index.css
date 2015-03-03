@@ -1,6 +1,7 @@
 ﻿#Wrapper {
   min-height: 623px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background: #282627; }
 
 #Wrapper {
   width: auto;
@@ -12,7 +13,7 @@
     order: 1;
     flex-grow: 1;
     width: 49%;
-    background: url("../Images/BodyBubbles.png") no-repeat, #282627;
+    background: url("../Images/BodyBubbles.png") no-repeat;
     background-size: 74% 97%;
     background-position: 50% 50%; }
   #Wrapper #forms {
@@ -22,19 +23,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
-    background: #282627; }
+    flex-flow: column wrap; }
     #Wrapper #forms fieldset {
       border: 1px solid rgba(245, 245, 245, 0.4);
       border-radius: 2px;
       margin-bottom: 70px;
       padding: 35px 5px 20px 20px;
       background: rgba(25, 80, 57, 0.3); }
-      #Wrapper #forms fieldset .text-field, #Wrapper #forms fieldset span {
+      #Wrapper #forms fieldset span {
         display: block;
         width: 250px;
         height: 22px; }
       #Wrapper #forms fieldset .text-field {
+        display: block;
+        width: 250px;
+        height: 22px;
         border: none;
         border-radius: 10px;
         text-align: center;
@@ -73,8 +76,8 @@
         #Wrapper #forms fieldset .lower-buttons .submit-button {
           order: 2;
           width: 66px;
-          text-align: center;
           margin-left: 10px;
+          text-align: center;
           background: #195039;
           color: #F5F5F5;
           border: 1px solid rgba(245, 245, 245, 0.4);

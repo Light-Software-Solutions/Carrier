@@ -1,7 +1,8 @@
 ﻿@import url(reset.css);
 #Wrapper {
   min-height: 623px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background: #282627; }
 
 body {
   max-width: 1280px;
