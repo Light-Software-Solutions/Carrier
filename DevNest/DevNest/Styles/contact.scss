@@ -94,6 +94,10 @@ $buttonsWidth: 300px;
                                 text-decoration: none;
                                 color: $FontColor;
                             }
+
+                            &:hover, &:hover:visited {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }

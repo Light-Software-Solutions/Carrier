@@ -12,7 +12,7 @@
 <body>
     <form id="MasterForm" runat="server">
         <header id="main-header">
-            <div id="logo"></div>
+            <asp:LinkButton Text="" ID="logo" runat="server" OnClick="goIndex" />
             <div id="header-wrapper">
                 <div id="search">
                     <asp:TextBox placeholder="Search" runat="server" /><!--
@@ -25,7 +25,7 @@
                                 <asp:LinkButton Text="Home" runat="server" OnClick="goHome" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="Index" runat="server" OnClick="goIndex"/>
+                                <asp:LinkButton Text="text" runat="server" />
                             </li>
                             <li>
                                 <asp:LinkButton Text="text" runat="server" />
@@ -47,7 +47,7 @@
                                         <asp:LinkButton Text="Profile" runat="server" />
                                     </li>
                                     <li>
-                                        <asp:LinkButton Text="Edit profile" onclick="goEditProfile" runat="server" />
+                                        <asp:LinkButton Text="Edit profile" OnClick="goEditProfile" runat="server" />
                                     </li>
                                     <li>
                                         <asp:LinkButton Text="Logout" runat="server" />
@@ -65,11 +65,11 @@
         </main>
         <footer id="main-footer">
             <div>
-                <asp:Button id="Facebook" class="social-media" Text=" " runat="server" />
-                <asp:Button id="Tweeter" class="social-media" Text=" " runat="server" />
-                <asp:Button id="GooglePlus" class="social-media" Text=" " runat="server" />
-                <asp:Button id="LinkedIn" class="social-media" Text=" " runat="server" />
-                <asp:Button id="GitHub" class="social-media" Text=" " runat="server" />
+                <asp:Button ID="Facebook" class="social-media" Text=" " runat="server" />
+                <asp:Button ID="Tweeter" class="social-media" Text=" " runat="server" />
+                <asp:Button ID="GooglePlus" class="social-media" Text=" " runat="server" />
+                <asp:Button ID="LinkedIn" class="social-media" Text=" " runat="server" />
+                <asp:Button ID="GitHub" class="social-media" Text=" " runat="server" />
             </div>
             <div>&copy All right Reserved</div>
         </footer>

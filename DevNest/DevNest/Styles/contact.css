@@ -93,5 +93,5 @@
               #Wrapper .inner-wrapper .form-wrapper .form-section section .social-media-contacts a:visited {
                 text-decoration: none;
                 color: #F5F5F5; }
-
-/*# sourceMappingURL=contact.css.map */
+              #Wrapper .inner-wrapper .form-wrapper .form-section section .social-media-contacts a:hover, #Wrapper .inner-wrapper .form-wrapper .form-section section .social-media-contacts a:hover:visited {
+                text-decoration: underline; }
