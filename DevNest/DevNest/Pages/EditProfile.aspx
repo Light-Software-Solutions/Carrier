@@ -26,7 +26,7 @@
             <div class="projects-edit">
                 <h2>Projects</h2>
                 <asp:LinkButton Text="Add new project" runat="server" />
-                <asp:LinkButton Text="Manage existing project" runat="server" />
+                <asp:LinkButton Text="Manage existing project" runat="server" OnClick="manageProjects" />
             </div>
         </section>
         <section class="right-edit">
