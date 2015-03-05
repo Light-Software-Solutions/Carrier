@@ -130,9 +130,16 @@
     <Content Include="App_Data\DevNestDB_log.ldf">
       <DependentUpon>DevNestDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Pages\contact-us.aspx" />
     <Content Include="Pages\EditProfile.aspx" />
     <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\Index.aspx" />
+    <Content Include="Styles\contact.css">
+      <DependentUpon>contact.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\contact.min.css">
+      <DependentUpon>contact.css</DependentUpon>
+    </Content>
     <Content Include="Styles\EditProfile.css">
       <DependentUpon>EditProfile.scss</DependentUpon>
     </Content>
@@ -145,6 +152,10 @@
     <Content Include="Styles\EditProfile.scss" />
     <Content Include="Styles\EditProfile.css.map">
       <DependentUpon>EditProfile.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\contact.scss" />
+    <Content Include="Styles\contact.css.map">
+      <DependentUpon>contact.css</DependentUpon>
     </Content>
     <None Include="Styles\Home.scss" />
     <Content Include="Styles\Home.css">
@@ -204,6 +215,13 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\contact-us.aspx.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\contact-us.aspx.designer.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\EditProfile.aspx.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>

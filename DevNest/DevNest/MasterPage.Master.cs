@@ -28,5 +28,10 @@ namespace DevNest
         {
             Response.Redirect("EditProfile.aspx");
         }
+        protected void goContact(object sender, EventArgs e)
+        {
+            Response.Redirect("contact-us.aspx");
+        }
+
     }
 }

@@ -31,7 +31,7 @@
                                 <asp:LinkButton Text="text" runat="server" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="text" runat="server" />
+                                <asp:LinkButton Text="Contact" runat="server" OnClick="goContact" />
                             </li>
                         </ul>
                     </nav>

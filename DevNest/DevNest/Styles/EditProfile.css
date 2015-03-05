@@ -72,6 +72,7 @@ input[type=text], textarea {
         border-radius: 10px;
         text-align: center;
         background-size: 10% auto;
+        color: #195039;
         border-radius: 5px;
         margin: 7px auto;
         background: url(/Images/username.png) no-repeat, #F5F5F5;
@@ -260,3 +261,5 @@ input[type=text], textarea {
           background: #F5F5F5;
           color: #195039;
           border: 1px solid #282627; }
+
+/*# sourceMappingURL=EditProfile.css.map */

@@ -1,0 +1,103 @@
+﻿@import "Utility.scss";
+
+$buttonsWidth: 300px;
+
+#Wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+
+    .inner-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+
+        .form-wrapper {
+            background: $OpacitySec;
+            padding: 20px 40px;
+            @include borderForms;
+
+            h1 {
+                text-align: left;
+                //background: blue;
+                color: $FontColor;
+                text-transform: uppercase;
+                font-size: 2rem;
+                padding-bottom: 30px;
+            }
+
+
+            .form-section {
+                display: flex;
+                flex-flow: row wrap;
+                //background: green;
+                fieldset {
+                    //background: red;
+                    span {
+                        display: block;
+                        color: $FontColor;
+                        margin-top: 20px;
+                        margin-left: 5px;
+                    }
+
+                    input[type=text], textarea {
+                        margin-top: 8px;
+                        width: $buttonsWidth;
+                    }
+
+                    input[type=text] {
+                        @include inputLayout;
+                    }
+
+                    textarea {
+                        @include inputLayout;
+                        max-width: $buttonsWidth;
+                        height: 100px;
+                        max-height: 300px;
+                    }
+
+                    input[type=submit] {
+                        @include buttonLayout;
+                        width: 100%;
+                        padding: 8px 0;
+                        margin-top: 10px;
+                    }
+                }
+
+                section {
+                    //background: green;
+                    //border: 1px solid red;
+                    width: $buttonsWidth;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                                    margin-left: 20px;
+                    align-content: flex-start;
+
+                    div {
+                        color: $FontColor;
+                        font-size: 1rem;
+                        margin-top: 40px;
+                        text-align: justify;
+                                                line-height: 130%;
+                    }
+
+                    .social-media-contacts {
+                        line-height: 150%;
+                        a {
+                            color: $FontColor;
+                            text-decoration: none;
+                            display: block;
+
+                            &:visited {
+                                text-decoration: none;
+                                color: $FontColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

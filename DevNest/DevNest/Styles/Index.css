@@ -41,7 +41,8 @@
         border: none;
         border-radius: 10px;
         text-align: center;
-        background-size: 10% auto; }
+        background-size: 10% auto;
+        color: #195039; }
         #Wrapper #forms fieldset .text-field:focus {
           text-align: left;
           width: 225px;
