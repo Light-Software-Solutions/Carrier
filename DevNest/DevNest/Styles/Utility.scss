@@ -1,5 +1,8 @@
 ﻿$MainColor: #282627;
 $SecColor: #195039;
+//$SecColor: #234456;
+$SecColor: adjust_hue(#195039, 160%);
+$ShadowColor: darken($SecColor, 10%);
 $FontColor: #F5F5F5;
 $BorderColor: rgba($FontColor, 0.4);
 $OpacitySec: rgba($SecColor, 0.3);
@@ -11,7 +14,7 @@ $OpacitySec: rgba($SecColor, 0.3);
     border: 1px solid $BorderColor;
     border-radius: 8px;
     cursor: pointer;
-
+    //background: red;
     &:hover {
         background: $FontColor;
         color: $SecColor;
@@ -66,4 +69,5 @@ $OpacitySec: rgba($SecColor, 0.3);
     min-height: 623px;
     font-size: 1rem;
     background: $MainColor;
+    //background: red;
 }

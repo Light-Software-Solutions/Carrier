@@ -15,15 +15,27 @@ body {
   flex-flow: row wrap;
   background: #282627;
   border-bottom: 1px solid rgba(245, 245, 245, 0.4); }
-  #main-header #logo {
+  #main-header .logo {
     width: 200px;
-    height: 100%;
-    background: url("../Images/logo.png") no-repeat;
-    background-size: 100%;
-    background-position: 0 14px;
+    /*background: url("../Images/logo.png") no-repeat;
+        background-size: 100%;
+        background-position: 0 14px;*/
     order: 1;
     flex-grow: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    align-self: flex-end; }
+    #main-header .logo svg {
+      background: #282627; }
+      #main-header .logo svg .svg-back-color {
+        fill: #282627; }
+      #main-header .logo svg .svg-sec-color {
+        fill: #501942; }
+      #main-header .logo svg .svg-font-color {
+        fill: #c2c2c2; }
+      #main-header .logo svg .svg-font-shadow {
+        fill: #290d22; }
   #main-header #header-wrapper {
     order: 2;
     flex-grow: 5;
@@ -36,7 +48,7 @@ body {
       flex-grow: 0; }
       #main-header #header-wrapper #search input[type="text"] {
         border: none;
-        background: #195039;
+        background: #501942;
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
         width: 150px;
@@ -46,13 +58,13 @@ body {
         color: #F5F5F5; }
         #main-header #header-wrapper #search input[type="text"]:focus {
           background: #F5F5F5;
-          color: #195039;
+          color: #501942;
           text-align: left;
           outline: 0;
           border: none; }
       #main-header #header-wrapper #search input[type="submit"] {
         border: none;
-        background: url("/Images/magnifying_glass_White.png") no-repeat, #195039;
+        background: url("/Images/magnifying_glass_White.png") no-repeat, #501942;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         border-left: 1px solid #282627;
@@ -64,7 +76,7 @@ body {
         cursor: pointer; }
         #main-header #header-wrapper #search input[type="submit"]:hover {
           background: url("/Images/magnifying_glass.png") no-repeat, #F5F5F5;
-          color: #195039;
+          color: #501942;
           background-position: 8px 4px;
           background-size: 47% auto; }
     #main-header #header-wrapper #controls {
@@ -88,12 +100,12 @@ body {
           #main-header #header-wrapper #controls #nav-menu ul li {
             float: left;
             justify-content: center;
-            border-top: 1px solid #195039; }
+            border-top: 1px solid #501942; }
             #main-header #header-wrapper #controls #nav-menu ul li:first-of-type {
-              border-left: 1px solid #195039;
+              border-left: 1px solid #501942;
               border-top-left-radius: 10px; }
             #main-header #header-wrapper #controls #nav-menu ul li:last-of-type {
-              border-right: 1px solid #195039;
+              border-right: 1px solid #501942;
               border-top-right-radius: 10px; }
             #main-header #header-wrapper #controls #nav-menu ul li:first-of-type a:hover {
               border-top-left-radius: 8px; }
@@ -110,7 +122,7 @@ body {
                 text-decoration: none;
                 color: #F5F5F5; }
               #main-header #header-wrapper #controls #nav-menu ul li a:hover, #main-header #header-wrapper #controls #nav-menu ul li a:visited:hover {
-                background: #195039; }
+                background: #501942; }
       #main-header #header-wrapper #controls #user-label {
         order: 1;
         align-self: flex-end;
@@ -128,7 +140,7 @@ body {
           text-overflow: ellipsis;
           overflow: hidden; }
           #main-header #header-wrapper #controls #user-label #user-name:hover {
-            color: #195039;
+            color: #501942;
             cursor: pointer; }
         #main-header #header-wrapper #controls #user-label ul {
           display: inline-block; }
@@ -149,16 +161,16 @@ body {
                 width: 100%;
                 height: 100%;
                 padding: 5px 0;
-                background: #195039;
+                background: #501942;
                 color: #F5F5F5;
                 text-decoration: none;
                 border: 1px solid #282627; }
                 #main-header #header-wrapper #controls #user-label ul li ul li a:hover {
-                  color: #195039;
+                  color: #501942;
                   text-decoration: none;
                   background: #F5F5F5; }
                 #main-header #header-wrapper #controls #user-label ul li ul li a:visited {
-                  color: #195039;
+                  color: #501942;
                   text-decoration: none; }
 
 #content-page {
@@ -168,7 +180,7 @@ body {
 #main-footer {
   width: auto;
   height: 50px;
-  background: #195039;
+  background: #501942;
   font-size: 1rem;
   color: #F5F5F5;
   display: flex;

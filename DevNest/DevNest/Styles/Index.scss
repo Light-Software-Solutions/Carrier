@@ -11,9 +11,26 @@
         order: 1;
         flex-grow: 1;
         width: 49%;
-        background: url("../Images/BodyBubbles.png") no-repeat;
+        padding: 5px;
+        //background: red;
+        /*background: url("../Images/BodyBubbles.png") no-repeat;
         background-size: 74% 97%;
-        background-position: 50% 50%;
+        background-position: 50% 50%;*/
+        .svg-back-color {
+            fill: $MainColor;
+        }
+
+        .svg-sec-color {
+            fill: $SecColor;
+        }
+
+        .svg-font-color {
+            fill: darken($FontColor, 20%);
+        }
+
+        .svg-font-shadow {
+            fill: $ShadowColor;
+        }
     }
 
     #forms {
