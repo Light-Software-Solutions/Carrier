@@ -1,7 +1,7 @@
 ﻿$MainColor: #282627;
 $SecColor: #195039;
-//$SecColor: #234456;
-$SecColor: adjust_hue(#195039, 160%);
+$SecColor: #234456;
+//$SecColor: adjust_hue(#195039, 160%);
 $ShadowColor: darken($SecColor, 10%);
 $FontColor: #F5F5F5;
 $BorderColor: rgba($FontColor, 0.4);

@@ -32,6 +32,9 @@ namespace DevNest
         {
             Response.Redirect("contact-us.aspx");
         }
-
+        protected void goPortfolio(object sender, EventArgs e)
+        {
+            Response.Redirect("portfolio.aspx");
+        }
     }
 }

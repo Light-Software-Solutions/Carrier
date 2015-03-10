@@ -31,11 +31,11 @@ body {
       #main-header .logo svg .svg-back-color {
         fill: #282627; }
       #main-header .logo svg .svg-sec-color {
-        fill: #501942; }
+        fill: #234456; }
       #main-header .logo svg .svg-font-color {
         fill: #c2c2c2; }
       #main-header .logo svg .svg-font-shadow {
-        fill: #290d22; }
+        fill: #142732; }
   #main-header #header-wrapper {
     order: 2;
     flex-grow: 5;
@@ -48,7 +48,7 @@ body {
       flex-grow: 0; }
       #main-header #header-wrapper #search input[type="text"] {
         border: none;
-        background: #501942;
+        background: #234456;
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
         width: 150px;
@@ -58,13 +58,13 @@ body {
         color: #F5F5F5; }
         #main-header #header-wrapper #search input[type="text"]:focus {
           background: #F5F5F5;
-          color: #501942;
+          color: #234456;
           text-align: left;
           outline: 0;
           border: none; }
       #main-header #header-wrapper #search input[type="submit"] {
         border: none;
-        background: url("/Images/magnifying_glass_White.png") no-repeat, #501942;
+        background: url("/Images/magnifying_glass_White.png") no-repeat, #234456;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         border-left: 1px solid #282627;
@@ -76,7 +76,7 @@ body {
         cursor: pointer; }
         #main-header #header-wrapper #search input[type="submit"]:hover {
           background: url("/Images/magnifying_glass.png") no-repeat, #F5F5F5;
-          color: #501942;
+          color: #234456;
           background-position: 8px 4px;
           background-size: 47% auto; }
     #main-header #header-wrapper #controls {
@@ -100,12 +100,12 @@ body {
           #main-header #header-wrapper #controls #nav-menu ul li {
             float: left;
             justify-content: center;
-            border-top: 1px solid #501942; }
+            border-top: 1px solid #234456; }
             #main-header #header-wrapper #controls #nav-menu ul li:first-of-type {
-              border-left: 1px solid #501942;
+              border-left: 1px solid #234456;
               border-top-left-radius: 10px; }
             #main-header #header-wrapper #controls #nav-menu ul li:last-of-type {
-              border-right: 1px solid #501942;
+              border-right: 1px solid #234456;
               border-top-right-radius: 10px; }
             #main-header #header-wrapper #controls #nav-menu ul li:first-of-type a:hover {
               border-top-left-radius: 8px; }
@@ -122,7 +122,7 @@ body {
                 text-decoration: none;
                 color: #F5F5F5; }
               #main-header #header-wrapper #controls #nav-menu ul li a:hover, #main-header #header-wrapper #controls #nav-menu ul li a:visited:hover {
-                background: #501942; }
+                background: #234456; }
       #main-header #header-wrapper #controls #user-label {
         order: 1;
         align-self: flex-end;
@@ -140,13 +140,14 @@ body {
           text-overflow: ellipsis;
           overflow: hidden; }
           #main-header #header-wrapper #controls #user-label #user-name:hover {
-            color: #501942;
+            color: #234456;
             cursor: pointer; }
         #main-header #header-wrapper #controls #user-label ul {
           display: inline-block; }
           #main-header #header-wrapper #controls #user-label ul li:hover ul {
             position: absolute;
-            display: block; }
+            display: block;
+            z-index: 1; }
           #main-header #header-wrapper #controls #user-label ul li ul {
             width: 140px;
             display: none; }
@@ -161,16 +162,16 @@ body {
                 width: 100%;
                 height: 100%;
                 padding: 5px 0;
-                background: #501942;
+                background: #234456;
                 color: #F5F5F5;
                 text-decoration: none;
                 border: 1px solid #282627; }
                 #main-header #header-wrapper #controls #user-label ul li ul li a:hover {
-                  color: #501942;
+                  color: #234456;
                   text-decoration: none;
                   background: #F5F5F5; }
                 #main-header #header-wrapper #controls #user-label ul li ul li a:visited {
-                  color: #501942;
+                  color: #234456;
                   text-decoration: none; }
 
 #content-page {
@@ -180,7 +181,7 @@ body {
 #main-footer {
   width: auto;
   height: 50px;
-  background: #501942;
+  background: #234456;
   font-size: 1rem;
   color: #F5F5F5;
   display: flex;
@@ -219,5 +220,3 @@ body {
     flex-grow: 0;
     text-align: right;
     padding: 0 2% 10px 2%; }
-
-/*# sourceMappingURL=MasterPage.css.map */

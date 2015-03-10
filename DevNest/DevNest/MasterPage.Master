@@ -102,10 +102,10 @@
                                 <asp:LinkButton Text="Home" runat="server" OnClick="goHome" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="Index" runat="server" OnClick="goIndex" />
+                                <asp:LinkButton Text="Explore" runat="server" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="text" runat="server" />
+                                <asp:LinkButton Text="Portfolio" runat="server" OnClick="goPortfolio" />
                             </li>
                             <li>
                                 <asp:LinkButton Text="Contact" runat="server" OnClick="goContact" />
@@ -122,6 +122,9 @@
                                 <ul id="drop-down">
                                     <li>
                                         <asp:LinkButton Text="Profile" runat="server" />
+                                    </li>
+                                     <li>
+                                        <asp:LinkButton Text="Index" runat="server" OnClick="goIndex"/>
                                     </li>
                                     <li>
                                         <asp:LinkButton Text="Edit profile" OnClick="goEditProfile" runat="server" />
