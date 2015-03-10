@@ -217,6 +217,7 @@ body {
                         &:hover ul {
                             position: absolute;
                             display: block;
+                            z-index: 1;
                         }
 
                         ul {
@@ -273,7 +274,7 @@ body {
 #main-footer {
     width: auto;
     height: 50px;
-    //background: rgba($SecColor, 0.3);
+    //background: $OpacitySec;
     background: $SecColor;
     font-size: 1rem;
     color: $FontColor;
