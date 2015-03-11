@@ -43,11 +43,12 @@
                     <div class="couple">
                         <asp:Label Text="asp.net" runat="server" />
                         <progress value="3" max="6"></progress>
+                    </div>
                 </div>
             </aside>
             <section class="user-info">
                 <div class="avatar">
-                    <asp:Image ImageUrl="http://placehold.it/150x150" runat="server" />
+                    <asp:Image ImageUrl="http://placehold.it/200x150" runat="server" />
                 </div>
                 <div class="details">
                     <div class="upper-details">
@@ -77,8 +78,10 @@
                     </div>
                 </div>
             </section>
-            <section class="summary"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, dolor, amet quaerat non praesentium assumenda tempora et expedita neque dicta consectetur dolorum vero harum perspiciatis enim quam odio numquam reprehenderit?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perspiciatis, odio, possimus, assumenda voluptates nulla quod sapiente obcaecati deleniti esse excepturi cumque pariatur molestias dolore sint consectetur temporibus ipsa eum?</span></section>
+            <section class="summary">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, dolor, amet quaerat non praesentium assumenda tempora et expedita neque dicta consectetur dolorum vero harum perspiciatis enim quam odio numquam reprehenderit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perspiciatis, odio, possimus, assumenda voluptates nulla quod sapiente obcaecati deleniti esse excepturi cumque pariatur molestias dolore sint consectetur temporibus ipsa eum?</span>
+            </section>
             <section class="all-projects">
                 <h2>Projects</h2>
                 <section>

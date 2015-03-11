@@ -71,6 +71,8 @@
                         margin-bottom: 5px;
                         -webkit-appearance: none;
                         appearance: none;
+                        @include borderForms;
+
                         &::-webkit-progress-bar  {
                             background: darken($FontColor, 20%);
                         }
@@ -100,7 +102,7 @@
             @include borderDetails();
 
             .avatar {
-                width: 150px;
+                width: 200px;
                 height: 150px;
                 order: 1;
                 flex-grow: 0;
@@ -123,6 +125,10 @@
                 //background: red;
                 a {
                     @include linkStyle;
+                }
+
+                a, span {
+                    margin-bottom: 5px;
                 }
 
                 .upper-details {

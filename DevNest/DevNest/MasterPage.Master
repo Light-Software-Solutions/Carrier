@@ -12,7 +12,7 @@
 <body>
     <form id="MasterForm" runat="server">
         <header id="main-header">
-            <div class="logo" runat="server" onclick="goIndex">
+            <asp:LinkButton class="logo" runat="server" onclick="goIndex">
                 <svg viewBox="0 0 350 150" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <path class="svg-font-color" d=" M 68.80 10.89 C 68.53 8.31 70.39 5.30 73.04 5.05 C 77.65 6.27 81.69 8.99 86.15 10.63 C 93.86 13.55 101.00 18.36 105.83 25.12 C 109.33 29.82 110.63 35.79 110.39 41.57 C 109.04 50.86 102.74 60.11 93.11 62.07 C 85.39 64.27 77.36 62.47 70.16 59.43 C 69.49 58.39 68.61 57.36 68.57 56.07 C 68.27 51.37 68.78 46.67 68.90 41.97 C 62.12 44.19 56.61 48.82 50.87 52.87 C 50.23 54.23 49.60 55.59 48.87 56.91 C 51.26 51.68 51.63 45.67 50.43 40.09 C 48.44 32.21 42.02 26.17 34.85 22.80 C 28.07 19.43 20.29 19.55 12.91 19.69 C 8.27 19.75 3.98 21.76 0.00 23.96 L 0.00 23.67 C 4.01 21.50 8.32 19.51 12.97 19.43 C 20.07 19.27 27.49 19.21 34.09 22.19 C 41.22 25.33 47.69 30.98 50.21 38.53 C 51.81 42.97 51.21 47.76 51.19 52.37 C 56.76 48.28 62.26 43.88 68.89 41.65 C 69.48 31.40 68.76 21.14 68.80 10.89 Z" />
                     <path class="svg-font-color" d=" M 197.15 13.20 C 197.65 10.93 199.91 12.46 201.38 12.67 C 201.45 23.46 201.10 34.24 200.88 45.02 C 200.77 46.98 200.82 49.06 199.87 50.84 C 199.13 50.88 197.64 50.97 196.90 51.01 C 195.81 48.82 196.16 46.30 196.17 43.94 C 196.44 38.63 196.58 33.33 196.60 28.01 C 196.87 23.09 196.22 18.05 197.15 13.20 Z" />
@@ -89,7 +89,7 @@
                     <path fill="#14402c" d=" M 10.99 141.38 C 12.64 140.87 13.17 141.42 12.58 143.02 C 10.92 143.53 10.40 142.98 10.99 141.38 Z" />
                     <path class="svg-font-color" d=" M 31.08 145.16 C 32.71 144.65 33.26 145.21 32.74 146.83 C 31.11 147.35 30.56 146.79 31.08 145.16 Z" />
                 </svg>
-            </div>
+            </asp:LinkButton>
             <div id="header-wrapper">
                 <div id="search">
                     <asp:TextBox placeholder="Search" runat="server" /><!--
@@ -108,7 +108,7 @@
                                 <asp:LinkButton Text="Portfolio" runat="server" OnClick="goPortfolio" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="Contact" runat="server" OnClick="goContact" />
+                                <asp:LinkButton Text="Contacts" runat="server" OnClick="goContact" />
                             </li>
                         </ul>
                     </nav>
@@ -117,12 +117,9 @@
                         <ul>
                             <li>
                                 <div id="user-name">
-                                    <asp:Label ID="UserName" Text="Нasd" runat="server"></asp:Label><!----><span>&#9662;</span>
+                                    <asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span>
                                 </div>
                                 <ul id="drop-down">
-                                     <li>
-                                        <asp:LinkButton Text="Index" runat="server" OnClick="goIndex"/>
-                                    </li>
                                     <li>
                                         <asp:LinkButton Text="Profile" runat="server" OnClick="goProfile" />
                                     </li>
