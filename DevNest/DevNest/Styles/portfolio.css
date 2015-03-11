@@ -16,7 +16,49 @@
     border: 1px solid rgba(245, 245, 245, 0.4);
     border-radius: 2px;
     padding: 30px;
-    background: rgba(35, 68, 86, 0.3); }
+    background: rgba(25, 80, 57, 0.3); }
+    #Wrapper .inner-wrapper .user-info {
+      width: 91.6%;
+      border: 1px solid rgba(245, 245, 245, 0.4);
+      height: 50px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      box-sizing: content-box; }
+      #Wrapper .inner-wrapper .user-info img {
+        width: 30px;
+        height: 30px;
+        transition: all 3s;
+        cursor: pointer; }
+        #Wrapper .inner-wrapper .user-info img:hover {
+          width: 50px;
+          height: 50px; }
+      #Wrapper .inner-wrapper .user-info .user-name {
+        width: auto;
+        height: auto; }
+        #Wrapper .inner-wrapper .user-info .user-name span {
+          font-size: 2rem;
+          color: #F5F5F5; }
+      #Wrapper .inner-wrapper .user-info a {
+        text-align: center;
+        background: #195039;
+        color: #F5F5F5;
+        border: 1px solid rgba(245, 245, 245, 0.4);
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 7px 10px;
+        text-decoration: none;
+        margin: 7px 0;
+        align-self: flex-end; }
+        #Wrapper .inner-wrapper .user-info a:hover {
+          background: #F5F5F5;
+          color: #195039;
+          border: 1px solid #282627; }
+        #Wrapper .inner-wrapper .user-info a:visited {
+          text-decoration: none; }
     #Wrapper .inner-wrapper .sort {
       font-size: 1.3rem;
       border: 1px solid rgba(245, 245, 245, 0.4); }
@@ -30,7 +72,7 @@
           font-size: 1rem;
           border: none;
           color: #F5F5F5;
-          background: #234456;
+          background: #195039;
           cursor: pointer;
           padding: 4px; }
           #Wrapper .inner-wrapper .sort ul input:hover {
@@ -41,7 +83,7 @@
       position: relative;
       margin: 10px 5px;
       padding: 3px;
-      background: #234456;
+      background: #195039;
       box-sizing: border-box;
       border-radius: 6px; }
       #Wrapper .inner-wrapper div img {
@@ -69,3 +111,5 @@
           font-size: 1.5rem;
           color: #F5F5F5;
           text-transform: uppercase; }
+
+/*# sourceMappingURL=portfolio.css.map */

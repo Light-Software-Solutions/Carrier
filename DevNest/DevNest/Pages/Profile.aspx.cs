@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace DevNest.Pages
 {
-    public partial class Profile : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class profile : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }

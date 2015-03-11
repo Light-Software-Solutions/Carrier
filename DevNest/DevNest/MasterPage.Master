@@ -120,11 +120,11 @@
                                     <asp:Label ID="UserName" Text="Нasd" runat="server"></asp:Label><!----><span>&#9662;</span>
                                 </div>
                                 <ul id="drop-down">
-                                    <li>
-                                        <asp:LinkButton Text="Profile" runat="server" />
-                                    </li>
                                      <li>
                                         <asp:LinkButton Text="Index" runat="server" OnClick="goIndex"/>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton Text="Profile" runat="server" OnClick="goProfile" />
                                     </li>
                                     <li>
                                         <asp:LinkButton Text="Edit profile" OnClick="goEditProfile" runat="server" />

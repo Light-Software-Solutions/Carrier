@@ -6,6 +6,14 @@
 <asp:Content ID="Portfolio" ContentPlaceHolderID="ContentMaster" runat="server">
     <div id="Wrapper">
         <div class="inner-wrapper">
+            <div class="user-info">
+                <asp:Image ImageUrl="http://placehold.it/50x50" runat="server" />
+                <div class="user-name">
+                    <asp:Label Text="First-name" runat="server" />
+                    <asp:Label Text="Last-name" runat="server" />
+                </div>
+                <asp:LinkButton Text="Profile" runat="server" OnClick="goProfile" />
+            </div>
             <div class="sort">
                 <h1>Sort Projects By:</h1>
                 <ul>

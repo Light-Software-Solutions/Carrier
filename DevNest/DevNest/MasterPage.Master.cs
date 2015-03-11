@@ -36,5 +36,10 @@ namespace DevNest
         {
             Response.Redirect("portfolio.aspx");
         }
+
+        protected void goProfile(object sender, EventArgs e)
+        {
+            Response.Redirect("profile.aspx");
+        }
     }
 }

@@ -13,5 +13,9 @@ namespace DevNest.Pages
         {
 
         }
+        protected void goProfile(object sender, EventArgs e)
+        {
+            Response.Redirect("profile.aspx");
+        }
     }
 }
