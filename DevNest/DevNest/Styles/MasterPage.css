@@ -189,7 +189,7 @@ body {
   display: flex;
   flex-flow: column;
   border: 1px solid rgba(245, 245, 245, 0.4);
-  border-bottom: none; }
+  /*border-bottom: none;*/ }
   #main-footer div:first-of-type {
     flex-grow: 5;
     text-align: left;
@@ -223,5 +223,3 @@ body {
     flex-grow: 0;
     text-align: right;
     padding: 0 2% 10px 2%; }
-
-/*# sourceMappingURL=MasterPage.css.map */

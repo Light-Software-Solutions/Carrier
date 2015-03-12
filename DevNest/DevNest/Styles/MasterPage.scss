@@ -282,7 +282,7 @@ body {
     display: flex;
     flex-flow: column;
     border: 1px solid $BorderColor;
-    border-bottom: none;
+    /*border-bottom: none;*/
 
     div:first-of-type {
         flex-grow: 5;

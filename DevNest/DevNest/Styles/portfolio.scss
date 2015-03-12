@@ -19,6 +19,7 @@
         .user-info {
             width: 91.6%;
             border: 1px solid $BorderColor;
+            background: $MainColor;
             height: 50px;
             display: flex;
             flex-flow: row wrap;
@@ -42,8 +43,7 @@
             .user-name {
                 width: auto;
                 height: auto;
-
-
+                                background: $MainColor;
                 span {
                     font-size: 2rem;
                     color: $FontColor;
@@ -67,6 +67,7 @@
         .sort {
             font-size: 1.3rem;
             border: 1px solid $BorderColor;
+                            background: $MainColor;
 
             h1 {
                 color: $FontColor;
@@ -85,7 +86,7 @@
                     background: $SecColor;
                     cursor: pointer;
                     padding: 4px;
-
+                                    background: $MainColor;
                     &:hover {
                         text-decoration: underline;
                     }

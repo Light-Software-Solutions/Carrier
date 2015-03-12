@@ -20,6 +20,7 @@
     #Wrapper .inner-wrapper .user-info {
       width: 91.6%;
       border: 1px solid rgba(245, 245, 245, 0.4);
+      background: #282627;
       height: 50px;
       display: flex;
       flex-flow: row wrap;
@@ -37,7 +38,8 @@
           height: 50px; }
       #Wrapper .inner-wrapper .user-info .user-name {
         width: auto;
-        height: auto; }
+        height: auto;
+        background: #282627; }
         #Wrapper .inner-wrapper .user-info .user-name span {
           font-size: 2rem;
           color: #F5F5F5; }
@@ -61,7 +63,8 @@
           text-decoration: none; }
     #Wrapper .inner-wrapper .sort {
       font-size: 1.3rem;
-      border: 1px solid rgba(245, 245, 245, 0.4); }
+      border: 1px solid rgba(245, 245, 245, 0.4);
+      background: #282627; }
       #Wrapper .inner-wrapper .sort h1 {
         color: #F5F5F5;
         padding: 5px 15px;
@@ -74,7 +77,8 @@
           color: #F5F5F5;
           background: #195039;
           cursor: pointer;
-          padding: 4px; }
+          padding: 4px;
+          background: #282627; }
           #Wrapper .inner-wrapper .sort ul input:hover {
             text-decoration: underline; }
     #Wrapper .inner-wrapper div {
@@ -111,5 +115,3 @@
           font-size: 1.5rem;
           color: #F5F5F5;
           text-transform: uppercase; }
-
-/*# sourceMappingURL=portfolio.css.map */
