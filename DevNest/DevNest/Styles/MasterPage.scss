@@ -2,7 +2,7 @@
 @import "Utility.scss";
 
 body {
-    //background: $MainColor;
+    background: $MainColor;
     max-width: 1280px;
     margin: 0 auto;
     //background: $SecColor;
@@ -16,7 +16,8 @@ body {
     flex-flow: row wrap;
     //border: 1px solid black;
     background: $MainColor;
-    border-bottom: 1px solid $BorderColor;
+    border: 1px solid $BorderColor;
+    border-top: none;
 
     .logo {
         width: 200px;
@@ -46,7 +47,7 @@ body {
 
             .svg-font-color {
                 fill: darken($FontColor, 20%);
-               // fill: yellow;
+                // fill: yellow;
             }
 
             .svg-font-shadow {
@@ -274,13 +275,14 @@ body {
 #main-footer {
     width: auto;
     height: 50px;
-    //background: $OpacitySec;
-    background: $SecColor;
+    background: $OpacitySec;
+    //background: $SecColor;
     font-size: 1rem;
     color: $FontColor;
     display: flex;
     flex-flow: column;
-    border-top: 1px solid $BorderColor;
+    border: 1px solid $BorderColor;
+    border-bottom: none;
 
     div:first-of-type {
         flex-grow: 5;

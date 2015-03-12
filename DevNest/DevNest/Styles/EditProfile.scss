@@ -38,7 +38,7 @@
     flex-grow: 1;
     height: 77px;
     align-self: flex-end;
-    margin: 0 5px 12px 5px;
+    margin: 0 5px 17px 5px;
 }
 
 input[type=text], textarea {
@@ -51,6 +51,12 @@ input[type=text], textarea {
     flex-flow: row wrap;
     font-size: 1rem;
 
+    .avatar-edit, .social-edit, .user-container, .knowledge-container {
+        @include borderForms;
+    }
+
+
+
     .left-edit {
         order: 1;
         width: 24%;
@@ -60,6 +66,7 @@ input[type=text], textarea {
         .avatar-edit, .social-edit, .projects-edit {
             //border: 1px solid green;
             margin: 20px;
+            //fix align;
             padding-bottom: 10px;
         }
 
@@ -106,8 +113,9 @@ input[type=text], textarea {
 
             input[type=text] {
                 @include fieldIconLeft;
+                width: 230px;
                 border-radius: 5px;
-                margin: 7px auto;
+                margin: 12px auto;
                 background: url(/Images/username.png) no-repeat, $FontColor;
                 @include icon-position;
             }
@@ -123,6 +131,7 @@ input[type=text], textarea {
         .projects-edit {
             background: $OpacitySec;
             color: $FontColor;
+            display: none;
 
             h2 {
                 @include h2Style;
@@ -236,12 +245,13 @@ input[type=text], textarea {
                 display: flex;
                 flex-flow: row wrap;
                 //Align left and right panels
-                margin-bottom: 9px;
+                margin-bottom: 11px;
 
                 .language {
                     //border: 1px solid black;
-                    width: 42%;
-                    margin: 5px 0 5px 9px;
+                    //42% 5 0 5 9
+                    width: 27%;
+                    margin: 5px 0 8px 16px;
                     flex-grow: 1;
                     display: flex;
                     flex-flow: column wrap;

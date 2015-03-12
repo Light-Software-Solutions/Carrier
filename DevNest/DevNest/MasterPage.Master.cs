@@ -41,5 +41,9 @@ namespace DevNest
         {
             Response.Redirect("profile.aspx");
         }
+        protected void manageProjects(object sender, EventArgs e)
+        {
+            Response.Redirect("manage-projects.aspx");
+        }
     }
 }

@@ -17,6 +17,10 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
+        border: 1px solid $BorderColor;
+        border-top: none;
+        border-radius: 0 0 2px 2px;
+
         #LeftArrow, #RightArrow {
             width: 59px;
             height: 59px;
@@ -53,7 +57,6 @@
     }
 
     section:nth-of-type(2) {
-        border-top: 1px solid $BorderColor;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

@@ -10,6 +10,35 @@
         background: $OpacitySec;
         @include borderForms;
 
+        .top-section {
+
+            .btn-cointainer {
+                display: flex;
+                flex-flow: column wrap;
+                a {
+                    display: block;
+                    @include buttonLayout;
+                    padding: 10px;
+                    width: 120px;
+                    align-self: flex-start;
+                    text-decoration: none;
+                    &:visited {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            h1 {
+                width: 100%;
+                text-align: center;
+                border: none;
+                padding-top: 30px;
+                font-size: 2rem;
+                padding: 0;
+            }
+        }
+
+
         section {
             //border: 1px solid red;
             margin: 10px 0;

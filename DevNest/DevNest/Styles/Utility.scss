@@ -4,6 +4,7 @@ $SecColor: #195039;
 //$SecColor: adjust_hue(#195039, 160%);
 $ShadowColor: darken($SecColor, 10%);
 $FontColor: #F5F5F5;
+//$FontColor: lighten($SecColor, 75%);
 $BorderColor: rgba($FontColor, 0.4);
 $OpacitySec: rgba($SecColor, 0.3);
 

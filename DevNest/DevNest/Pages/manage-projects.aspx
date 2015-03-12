@@ -6,6 +6,12 @@
 <asp:Content ID="ManageProjects" ContentPlaceHolderID="ContentMaster" runat="server">
     <div id="Wrapper">
         <section class="inner-wrapper">
+            <section class="top-section">
+                <div class="btn-cointainer">
+                    <asp:LinkButton Text="Add new project" runat="server" />
+                </div>
+                <h1>Manage Projects</h1>
+            </section>
             <section>
                 <h1>asp.net (<asp:Label Text="0" runat="server" />)</h1>
                 <section class="projects">

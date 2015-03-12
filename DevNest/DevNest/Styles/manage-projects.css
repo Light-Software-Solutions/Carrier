@@ -12,6 +12,34 @@
     background: rgba(25, 80, 57, 0.3);
     border: 1px solid rgba(245, 245, 245, 0.4);
     border-radius: 2px; }
+    #Wrapper .inner-wrapper .top-section .btn-cointainer {
+      display: flex;
+      flex-flow: column wrap; }
+      #Wrapper .inner-wrapper .top-section .btn-cointainer a {
+        display: block;
+        text-align: center;
+        background: #195039;
+        color: #F5F5F5;
+        border: 1px solid rgba(245, 245, 245, 0.4);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 10px;
+        width: 120px;
+        align-self: flex-start;
+        text-decoration: none; }
+        #Wrapper .inner-wrapper .top-section .btn-cointainer a:hover {
+          background: #F5F5F5;
+          color: #195039;
+          border: 1px solid #282627; }
+        #Wrapper .inner-wrapper .top-section .btn-cointainer a:visited {
+          text-decoration: none; }
+    #Wrapper .inner-wrapper .top-section h1 {
+      width: 100%;
+      text-align: center;
+      border: none;
+      padding-top: 30px;
+      font-size: 2rem;
+      padding: 0; }
     #Wrapper .inner-wrapper section {
       margin: 10px 0; }
       #Wrapper .inner-wrapper section h1 {

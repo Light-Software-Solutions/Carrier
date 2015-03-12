@@ -14,7 +14,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px; }
+  padding-top: 10px;
+  border: 1px solid rgba(245, 245, 245, 0.4);
+  border-top: none;
+  border-radius: 0 0 2px 2px; }
   #Wrapper #display #LeftArrow, #Wrapper #display #RightArrow {
     width: 59px;
     height: 59px;
@@ -39,7 +42,6 @@
     background: url("../Images/Splash.png") no-repeat;
     background-position: 172px -41px; }
 #Wrapper section:nth-of-type(2) {
-  border-top: 1px solid rgba(245, 245, 245, 0.4);
   display: flex;
   flex-direction: row;
   justify-content: space-between; }

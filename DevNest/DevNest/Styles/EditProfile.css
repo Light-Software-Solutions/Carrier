@@ -10,6 +10,9 @@ input[type=text], textarea {
   display: flex;
   flex-flow: row wrap;
   font-size: 1rem; }
+  #Wrapper .avatar-edit, #Wrapper .social-edit, #Wrapper .user-container, #Wrapper .knowledge-container {
+    border: 1px solid rgba(245, 245, 245, 0.4);
+    border-radius: 2px; }
   #Wrapper .left-edit {
     order: 1;
     width: 24%;
@@ -73,8 +76,9 @@ input[type=text], textarea {
         text-align: center;
         background-size: 10% auto;
         color: #195039;
+        width: 230px;
         border-radius: 5px;
-        margin: 7px auto;
+        margin: 12px auto;
         background: url(/Images/username.png) no-repeat, #F5F5F5;
         background-size: 9%;
         background-position: 1px 1px; }
@@ -100,7 +104,8 @@ input[type=text], textarea {
           border: 1px solid #282627; }
     #Wrapper .left-edit .projects-edit {
       background: rgba(25, 80, 57, 0.3);
-      color: #F5F5F5; }
+      color: #F5F5F5;
+      display: none; }
       #Wrapper .left-edit .projects-edit h2 {
         width: 100%;
         padding: 10px 0 10px 10px;
@@ -183,7 +188,7 @@ input[type=text], textarea {
         flex-grow: 1;
         height: 77px;
         align-self: flex-end;
-        margin: 0 5px 12px 5px;
+        margin: 0 5px 17px 5px;
         margin-bottom: 15px; }
         #Wrapper .right-edit .user-container input[type="submit"]:hover {
           background: #F5F5F5;
@@ -202,10 +207,10 @@ input[type=text], textarea {
         flex-grow: 0;
         display: flex;
         flex-flow: row wrap;
-        margin-bottom: 9px; }
+        margin-bottom: 11px; }
         #Wrapper .right-edit .knowledge-container .knowledge-edit .language {
-          width: 42%;
-          margin: 5px 0 5px 9px;
+          width: 27%;
+          margin: 5px 0 8px 16px;
           flex-grow: 1;
           display: flex;
           flex-flow: column wrap; }
@@ -256,7 +261,7 @@ input[type=text], textarea {
         flex-grow: 1;
         height: 77px;
         align-self: flex-end;
-        margin: 0 5px 12px 5px; }
+        margin: 0 5px 17px 5px; }
         #Wrapper .right-edit .knowledge-container input[type="submit"]:hover {
           background: #F5F5F5;
           color: #195039;

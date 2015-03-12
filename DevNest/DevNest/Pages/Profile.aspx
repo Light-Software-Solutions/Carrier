@@ -83,7 +83,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perspiciatis, odio, possimus, assumenda voluptates nulla quod sapiente obcaecati deleniti esse excepturi cumque pariatur molestias dolore sint consectetur temporibus ipsa eum?</span>
             </section>
             <section class="all-projects">
-                <h2>Projects</h2>
+                <h2>
+                    <asp:LinkButton Text="Projects" runat="server" onclick="goPortfolio"/></h2>
                 <section>
                     <h1>ASP.NET (<asp:Label Text="3" runat="server" />)</h1>
                     <section class="projects">

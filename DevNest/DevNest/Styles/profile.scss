@@ -73,10 +73,9 @@
                         appearance: none;
                         @include borderForms;
 
-                        &::-webkit-progress-bar  {
+                        &::-webkit-progress-bar {
                             background: darken($FontColor, 20%);
                         }
-
                         //Progress bar colors changed for chrome!;
                         &::-webkit-progress-value {
                             background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, lighten($SecColor, 40%), $SecColor);
@@ -199,12 +198,25 @@
         .all-projects {
             width: 100%;
             //display: none;
-
             h2 {
-                font-size: 2rem;
-                color: $FontColor;
-                text-align: center;
-                text-transform: capitalize;
+
+                a {
+                    font-size: 2rem;
+                    color: $FontColor;
+                    text-align: center;
+                    text-transform: capitalize;
+                    display: block;
+                    text-decoration: none;
+
+                    &:visited {
+                        color: $FontColor;
+                        text-decoration: none;
+                    }
+
+                    &:hover, &:visited:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
 
             h1 {

@@ -124,11 +124,18 @@
           font-size: 2rem; }
     #Wrapper .inner-wrapper .all-projects {
       width: 100%; }
-      #Wrapper .inner-wrapper .all-projects h2 {
+      #Wrapper .inner-wrapper .all-projects h2 a {
         font-size: 2rem;
         color: #F5F5F5;
         text-align: center;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        display: block;
+        text-decoration: none; }
+        #Wrapper .inner-wrapper .all-projects h2 a:visited {
+          color: #F5F5F5;
+          text-decoration: none; }
+        #Wrapper .inner-wrapper .all-projects h2 a:hover, #Wrapper .inner-wrapper .all-projects h2 a:visited:hover {
+          text-decoration: underline; }
       #Wrapper .inner-wrapper .all-projects h1 {
         display: flex;
         border-bottom: 2px solid #F5F5F5;
@@ -161,3 +168,5 @@
             text-transform: capitalize; }
         #Wrapper .inner-wrapper .all-projects .projects .container:nth-of-type(odd) {
           background: #195039; }
+
+/*# sourceMappingURL=profile.css.map */
