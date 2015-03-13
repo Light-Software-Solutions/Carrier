@@ -3,7 +3,7 @@
 
 body {
     background: $MainColor;
-    max-width: 1280px;
+    max-width: 1550px;
     margin: 0 auto;
     //background: $SecColor;
     //border: 1px solid $MainColor;
@@ -198,15 +198,41 @@ body {
                 }
 
                 #user-name {
+                    //display: none;
                     //border: 1px solid red;
-                    font-weight: 700;
                     width: 140px;
                     text-overflow: ellipsis;
                     overflow: hidden;
 
-                    &:hover {
-                        color: $SecColor;
-                        cursor: pointer;
+                    a {
+                        font-weight: 700;
+                        color: $FontColor;
+                        text-decoration: none;
+
+                        &:visited, &:visited:hover {
+                            color: $FontColor;
+                            text-decoration: none;
+                        }
+
+                        &:hover {
+                            color: $SecColor;
+                        }
+                    }
+                }
+
+                #login-user {
+                    display: none;
+                    width: 140px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+
+                    a {
+                        font-weight: 700;
+                        color: $FontColor;
+
+                        &:hover {
+                            color: $SecColor;
+                        }
                     }
                 }
                 //Drop-down
@@ -215,16 +241,18 @@ body {
 
                     li {
                         //border: 1px solid red;
-                        &:hover ul {
+                        /*&:hover ul {
                             position: absolute;
                             display: block;
                             z-index: 1;
-                        }
-
-                        ul {
+                        }*/
+                        #dropDown {
                             width: 140px;
                             //border: 1px solid red;
                             display: none;
+                            position: absolute;
+                            z-index: 1;
+                            margin-top: 2px;
 
                             li {
                                 text-align: center;
@@ -280,10 +308,9 @@ body {
     font-size: 1rem;
     color: $FontColor;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     border: 1px solid $BorderColor;
     /*border-bottom: none;*/
-
     div:first-of-type {
         flex-grow: 5;
         text-align: left;

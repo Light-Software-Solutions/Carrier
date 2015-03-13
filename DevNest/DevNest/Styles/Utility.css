@@ -1,6 +1,5 @@
 ﻿#Wrapper {
-  min-height: 623px;
+  min-height: 782px;
   font-size: 1rem;
-  background: #282627; }
-
-/*# sourceMappingURL=Utility.css.map */
+  background: #282627;
+  box-sizing: border-box; }

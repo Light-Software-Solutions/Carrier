@@ -1,7 +1,8 @@
 ﻿#Wrapper {
-  min-height: 623px;
+  min-height: 782px;
   font-size: 1rem;
-  background: #282627; }
+  background: #282627;
+  box-sizing: border-box; }
 
 #Wrapper {
   display: flex;
@@ -115,3 +116,5 @@
           font-size: 1.5rem;
           color: #F5F5F5;
           text-transform: uppercase; }
+
+/*# sourceMappingURL=portfolio.css.map */

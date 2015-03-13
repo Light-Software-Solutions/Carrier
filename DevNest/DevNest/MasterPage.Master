@@ -116,10 +116,15 @@
                         <div id="hello">Hello, </div>
                         <ul>
                             <li>
-                                <div id="user-name">
-                                    <asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span>
+                                <div id="login-user">
+                                    <asp:LinkButton runat="server" OnClick="goIndex">Login</asp:LinkButton>
+                                    /
+                                    <asp:LinkButton runat="server" OnClick="goIndex">Register</asp:LinkButton>
                                 </div>
-                                <ul id="drop-down">
+                                <div id="user-name">
+                                    <asp:LinkButton runat="server" OnClick="dropMenu"><asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span></asp:LinkButton>
+                                </div>
+                                <ul id="dropDown" runat="server">
                                     <li>
                                         <asp:LinkButton Text="Profile" runat="server" OnClick="goProfile" />
                                     </li>

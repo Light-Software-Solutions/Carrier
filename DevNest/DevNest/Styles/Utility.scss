@@ -67,8 +67,9 @@ $OpacitySec: rgba($SecColor, 0.3);
 
 #Wrapper {
     //height: 550px;
-    min-height: 623px;
+    min-height: 782px;
     font-size: 1rem;
     background: $MainColor;
     //background: red;
+    box-sizing: border-box;
 }

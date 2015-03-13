@@ -1,12 +1,13 @@
 ﻿@import url(reset.css);
 #Wrapper {
-  min-height: 623px;
+  min-height: 782px;
   font-size: 1rem;
-  background: #282627; }
+  background: #282627;
+  box-sizing: border-box; }
 
 body {
   background: #282627;
-  max-width: 1280px;
+  max-width: 1550px;
   margin: 0 auto; }
 
 #main-header {
@@ -137,44 +138,64 @@ body {
           display: inline-block;
           overflow: hidden; }
         #main-header #header-wrapper #controls #user-label #user-name {
-          font-weight: 700;
           width: 140px;
           text-overflow: ellipsis;
           overflow: hidden; }
-          #main-header #header-wrapper #controls #user-label #user-name:hover {
-            color: #195039;
-            cursor: pointer; }
+          #main-header #header-wrapper #controls #user-label #user-name a {
+            font-weight: 700;
+            color: #F5F5F5;
+            text-decoration: none; }
+            #main-header #header-wrapper #controls #user-label #user-name a:visited, #main-header #header-wrapper #controls #user-label #user-name a:visited:hover {
+              color: #F5F5F5;
+              text-decoration: none; }
+            #main-header #header-wrapper #controls #user-label #user-name a:hover {
+              color: #195039; }
+        #main-header #header-wrapper #controls #user-label #login-user {
+          display: none;
+          width: 140px;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+          #main-header #header-wrapper #controls #user-label #login-user a {
+            font-weight: 700;
+            color: #F5F5F5; }
+            #main-header #header-wrapper #controls #user-label #login-user a:hover {
+              color: #195039; }
         #main-header #header-wrapper #controls #user-label ul {
           display: inline-block; }
-          #main-header #header-wrapper #controls #user-label ul li:hover ul {
-            position: absolute;
-            display: block;
-            z-index: 1; }
-          #main-header #header-wrapper #controls #user-label ul li ul {
-            width: 140px;
-            display: none; }
-            #main-header #header-wrapper #controls #user-label ul li ul li {
-              text-align: center; }
-              #main-header #header-wrapper #controls #user-label ul li ul li:first-of-type a {
-                border-radius: 5px 5px 0 0; }
-              #main-header #header-wrapper #controls #user-label ul li ul li:last-of-type a {
-                border-radius: 0 0 5px 5px; }
-              #main-header #header-wrapper #controls #user-label ul li ul li a {
-                display: block;
-                width: 100%;
-                height: 100%;
-                padding: 5px 0;
-                background: #195039;
-                color: #F5F5F5;
-                text-decoration: none;
-                border: 1px solid #282627; }
-                #main-header #header-wrapper #controls #user-label ul li ul li a:hover {
-                  color: #195039;
+          #main-header #header-wrapper #controls #user-label ul li {
+            /*&:hover ul {
+                            position: absolute;
+                            display: block;
+                            z-index: 1;
+                        }*/ }
+            #main-header #header-wrapper #controls #user-label ul li #dropDown {
+              width: 140px;
+              display: none;
+              position: absolute;
+              z-index: 1;
+              margin-top: 2px; }
+              #main-header #header-wrapper #controls #user-label ul li #dropDown li {
+                text-align: center; }
+                #main-header #header-wrapper #controls #user-label ul li #dropDown li:first-of-type a {
+                  border-radius: 5px 5px 0 0; }
+                #main-header #header-wrapper #controls #user-label ul li #dropDown li:last-of-type a {
+                  border-radius: 0 0 5px 5px; }
+                #main-header #header-wrapper #controls #user-label ul li #dropDown li a {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  padding: 5px 0;
+                  background: #195039;
+                  color: #F5F5F5;
                   text-decoration: none;
-                  background: #F5F5F5; }
-                #main-header #header-wrapper #controls #user-label ul li ul li a:visited {
-                  color: #195039;
-                  text-decoration: none; }
+                  border: 1px solid #282627; }
+                  #main-header #header-wrapper #controls #user-label ul li #dropDown li a:hover {
+                    color: #195039;
+                    text-decoration: none;
+                    background: #F5F5F5; }
+                  #main-header #header-wrapper #controls #user-label ul li #dropDown li a:visited {
+                    color: #195039;
+                    text-decoration: none; }
 
 #content-page {
   height: auto;
@@ -187,7 +208,7 @@ body {
   font-size: 1rem;
   color: #F5F5F5;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   border: 1px solid rgba(245, 245, 245, 0.4);
   /*border-bottom: none;*/ }
   #main-footer div:first-of-type {

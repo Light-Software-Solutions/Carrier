@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,7 @@ namespace DevNest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void goHome(object sender, EventArgs e)
@@ -44,6 +45,18 @@ namespace DevNest
         protected void manageProjects(object sender, EventArgs e)
         {
             Response.Redirect("manage-projects.aspx");
+        }
+
+        protected void dropMenu(object sender, EventArgs e)
+        {
+            if (dropDown.Style["display"] == "none")
+            {
+                dropDown.Style["display"] = "block";
+            }
+            else
+            {
+                dropDown.Style["display"] = "none";
+            }
         }
     }
 }
