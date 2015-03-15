@@ -1,0 +1,146 @@
+﻿@import "Utility.scss";
+
+@font-face {
+    font-family: "Sugar";
+    src: url("Fonts/give me some sugar_2.ttf");
+}
+
+#Wrapper {
+    section {
+        height: 300px;
+    }
+
+    #display {
+        background: $OpacitySec;
+        //background: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        border: 1px solid $BorderColor;
+        border-top: none;
+        border-radius: 0 0 2px 2px;
+
+        #LeftArrow, #RightArrow {
+            width: 59px;
+            height: 59px;
+            cursor: pointer;
+            opacity: 0.3;
+            -moz-transition: 2s;
+            -o-transition: 2s;
+            -webkit-transition: 2s;
+            transition: 2s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        #LeftArrow {
+            margin-left: 20px;
+            background: url("../Images/sliderArrows.png") no-repeat;
+        }
+
+        #RightArrow {
+            margin-right: 20px;
+            background: url("../Images/sliderArrows.png") no-repeat;
+            background-position: -64px 0;
+        }
+
+        article {
+            //border: 1px solid red;
+            width: 80%;
+            height: 100%;
+            color: $FontColor;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            background: url("../Images/Splash.png") no-repeat;
+            background-position: 172px -41px;
+        }
+    }
+
+    section:nth-of-type(2) {
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+
+        article {
+            border: 1px solid $BorderColor;
+            border-radius: 4px;
+            width: 500px;
+            height: 66%;
+            align-self: center;
+            color: $FontColor;
+            background: $OpacitySec;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0 10%;
+
+            h1, div {
+                padding: 5px 10px;
+                text-transform: capitalize;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+                height: 15%;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                padding-top: 10px;
+            }
+
+            div {
+                text-align: justify;
+                height: 50%;
+                //border: 1px solid red;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-indent: 20px;
+
+                &::first-letter {
+                    font-family: Sugar;
+                    font-size: 2rem;
+                }
+            }
+
+            footer {
+                margin-top: 3%;
+                //border: 1px solid red;
+                display: flex;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                padding-bottom: 10px;
+
+                time {
+                    padding-left: 15px;
+                }
+
+                a {
+                    color: $FontColor;
+                    padding-right: 15px;
+                    text-decoration: none;
+
+                    &:visited {
+                        color: $FontColor;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

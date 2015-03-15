@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="DevNest.Register" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="DevNest.Index" %>
 
 <asp:Content ID="RegisterHead" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="/Styles/Index.css" />
+    <link ID="ContentCSS" rel="stylesheet" href="/Styles/Index.css" type="text/css" runat="server"/>
 </asp:Content>
 <asp:Content ID="Register" ContentPlaceHolderID="ContentMaster" runat="server">
     <div id="Wrapper">

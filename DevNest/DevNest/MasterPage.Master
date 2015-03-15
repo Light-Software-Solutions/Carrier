@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="Styles/MasterPage.css" type="text/css" />
+    <link id="MasterCSS" rel="stylesheet" href="Styles/MasterPage.css" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -123,7 +123,8 @@
                                 </div>
                                 <div id="user-name">
                                     <asp:LinkButton runat="server" OnClick="dropMenu">
-                                        <asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span></asp:LinkButton>
+                                        <asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span>
+                                    </asp:LinkButton>
                                 </div>
                                 <ul id="dropDown" runat="server">
                                     <li>
@@ -136,7 +137,7 @@
                                         <asp:LinkButton Text="Manage Projects" OnClick="manageProjects" runat="server" />
                                     </li>
                                     <li>
-                                        <asp:LinkButton Text="Change theme" runat="server" />
+                                        <asp:LinkButton Text="Change theme" runat="server" OnClick="ChangeBlueTheme" />
                                     </li>
                                     <li>
                                         <asp:LinkButton Text="Logout" runat="server" />

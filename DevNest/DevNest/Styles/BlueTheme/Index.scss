@@ -1,0 +1,125 @@
+﻿@import "Utility.scss";
+
+#Wrapper {
+    width: auto;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-size: 1rem;
+    //color: red;
+    #index-image {
+        border-right: 1px solid rgba($SecColor, 0.6);
+        order: 1;
+        flex-grow: 1;
+        width: 49%;
+        padding: 5px;
+        //background: red;
+        /*background: url("../Images/BodyBubbles.png") no-repeat;
+        background-size: 74% 97%;
+        background-position: 50% 50%;*/
+        .svg-back-color {
+            fill: $MainColor;
+        }
+
+        .svg-sec-color {
+            fill: $SecColor;
+        }
+
+        .svg-font-color {
+            fill: darken($FontColor, 20%);
+        }
+
+        .svg-font-shadow {
+            fill: $ShadowColor;
+        }
+    }
+
+    #forms {
+        //border: 1px solid yellow;
+        order: 2;
+        flex-grow: 1;
+        width: 49%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        //background: $MainColor;
+        fieldset {
+            border: 1px solid $BorderColor;
+            //border: 1px solid red;
+            border-radius: 2px;
+            margin-bottom: 70px;
+            padding: 35px 5px 20px 20px;
+            background: $OpacitySec;
+
+            span {
+                display: block;
+                width: 250px;
+                height: 22px;
+                padding-bottom: 4px;
+                text-align: center;
+                color: $FontColor;
+                //border: 1px solid red;
+            }
+
+            .text-field {
+                @include fieldIconLeft;
+            }
+
+            .username {
+                background: url(/Images/username.png) no-repeat, $FontColor;
+                @include icon-position;
+            }
+
+            .password {
+                background: url(/Images/password.png) no-repeat, $FontColor;
+                @include icon-position;
+            }
+
+            .email {
+                background: url(/Images/mail.png) no-repeat, $FontColor;
+                @include icon-position;
+            }
+
+            .upper-buttons {
+                .text-field {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .lower-buttons {
+                //border: 1px solid green;
+                display: flex;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+
+                .text-field:first-of-type {
+                    margin-bottom: 5px;
+                }
+
+                .inner-row {
+                    order: 1;
+                    //border: 1px solid red;
+                }
+
+                .submit-button {
+                    order: 2;
+                    width: 66px;
+                    margin-left: 10px;
+                    @include buttonLayout;
+                }
+            }
+        }
+
+
+
+        fieldset:first-of-type {
+            order: 1;
+        }
+
+        fieldset:last-of-type {
+            order: 2;
+        }
+    }
+}

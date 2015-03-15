@@ -1,0 +1,117 @@
+﻿#Wrapper {
+  min-height: 782px;
+  font-size: 1rem;
+  background: #282627;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (max-width: 1367px) {
+    #Wrapper {
+      min-height: 512px; } }
+
+#Wrapper {
+  width: auto;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-size: 1rem; }
+  #Wrapper #index-image {
+    border-right: 1px solid rgba(35, 68, 86, 0.6);
+    order: 1;
+    flex-grow: 1;
+    width: 49%;
+    padding: 5px;
+    /*background: url("../Images/BodyBubbles.png") no-repeat;
+        background-size: 74% 97%;
+        background-position: 50% 50%;*/ }
+    #Wrapper #index-image .svg-back-color {
+      fill: #282627; }
+    #Wrapper #index-image .svg-sec-color {
+      fill: #234456; }
+    #Wrapper #index-image .svg-font-color {
+      fill: #c2c2c2; }
+    #Wrapper #index-image .svg-font-shadow {
+      fill: #142732; }
+  #Wrapper #forms {
+    order: 2;
+    flex-grow: 1;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap; }
+    #Wrapper #forms fieldset {
+      border: 1px solid rgba(245, 245, 245, 0.4);
+      border-radius: 2px;
+      margin-bottom: 70px;
+      padding: 35px 5px 20px 20px;
+      background: rgba(35, 68, 86, 0.3); }
+      #Wrapper #forms fieldset span {
+        display: block;
+        width: 250px;
+        height: 22px;
+        padding-bottom: 4px;
+        text-align: center;
+        color: #F5F5F5; }
+      #Wrapper #forms fieldset .text-field {
+        display: block;
+        width: 250px;
+        height: 22px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        background-size: 10% auto;
+        color: #234456; }
+        #Wrapper #forms fieldset .text-field:focus {
+          text-align: left;
+          width: 225px;
+          padding-left: 25px;
+          outline: 0;
+          color: #234456; }
+      #Wrapper #forms fieldset .username {
+        background: url(/Images/username.png) no-repeat, #F5F5F5;
+        background-size: 9%;
+        background-position: 1px 1px; }
+      #Wrapper #forms fieldset .password {
+        background: url(/Images/password.png) no-repeat, #F5F5F5;
+        background-size: 9%;
+        background-position: 1px 1px; }
+      #Wrapper #forms fieldset .email {
+        background: url(/Images/mail.png) no-repeat, #F5F5F5;
+        background-size: 9%;
+        background-position: 1px 1px; }
+      #Wrapper #forms fieldset .upper-buttons .text-field {
+        margin-bottom: 5px; }
+      #Wrapper #forms fieldset .lower-buttons {
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap; }
+        #Wrapper #forms fieldset .lower-buttons .text-field:first-of-type {
+          margin-bottom: 5px; }
+        #Wrapper #forms fieldset .lower-buttons .inner-row {
+          order: 1; }
+        #Wrapper #forms fieldset .lower-buttons .submit-button {
+          order: 2;
+          width: 66px;
+          margin-left: 10px;
+          text-align: center;
+          background: #234456;
+          color: #F5F5F5;
+          border: 1px solid rgba(245, 245, 245, 0.4);
+          border-radius: 8px;
+          cursor: pointer;
+          text-decoration: none; }
+          #Wrapper #forms fieldset .lower-buttons .submit-button:hover {
+            background: #F5F5F5;
+            color: #234456;
+            border: 1px solid #282627; }
+          #Wrapper #forms fieldset .lower-buttons .submit-button:visited, #Wrapper #forms fieldset .lower-buttons .submit-button:visited:hover {
+            color: #F5F5F5;
+            text-decoration: none; }
+    #Wrapper #forms fieldset:first-of-type {
+      order: 1; }
+    #Wrapper #forms fieldset:last-of-type {
+      order: 2; }
+
+/*# sourceMappingURL=Index.css.map */

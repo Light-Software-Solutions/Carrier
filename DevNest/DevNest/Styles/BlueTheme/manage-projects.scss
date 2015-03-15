@@ -1,0 +1,112 @@
+﻿@import "Utility.scss";
+
+#Wrapper {
+    padding: 20px;
+
+    .inner-wrapper {
+        width: auto;
+        margin: 20px;
+        padding: 5px 20px;
+        background: $OpacitySec;
+        @include borderForms;
+
+        .top-section {
+
+            .btn-cointainer {
+                display: flex;
+                -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+
+                a {
+                    display: block;
+                    @include buttonLayout;
+                    padding: 10px;
+                    width: 120px;
+                    align-self: flex-start;
+                    text-decoration: none;
+
+                    &:visited {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            h1 {
+                width: 100%;
+                text-align: center;
+                border: none;
+                padding-top: 30px;
+                font-size: 2rem;
+                padding: 0;
+            }
+        }
+
+
+        section {
+            //border: 1px solid red;
+            margin: 10px 0;
+
+            h1 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                padding: 8px 4px;
+                color: $FontColor;
+                //background: pink;
+                border-bottom: 2px solid $FontColor;
+                //hide on click;
+                //cursor: pointer;
+            }
+
+            .projects {
+                //background: blue;
+                display: flex;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+                justify-content: space-around;
+
+                .container {
+                    width: 200px;
+                    height: 200px;
+                    border: 1px solid $BorderColor;
+                    border-radius: 8px;
+                    //background: green;
+                    margin: 10px 5px;
+                    display: flex;
+                    -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+                    background: url("http://placehold.it/200x200"), $SecColor;
+                    cursor: pointer;
+                    -moz-transition: all 2s;
+                    -o-transition: all 2s;
+                    -webkit-transition: all 2s;
+                    transition: all 2s;
+
+                    h3 {
+                        align-self: flex-end;
+                        background: rgba(0, 0, 0, 0.7);
+                        width: 100%;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        padding: 5px 10px;
+                        font-size: 1.3rem;
+                        text-align: center;
+                        border-top: 1px solid $BorderColor;
+                        border-radius: 0 0 7.8px 7px;
+                        color: darken($FontColor, 40%);
+                        text-transform: capitalize;
+                    }
+
+                    &:hover {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+                //Show case;
+                .container:nth-of-type(odd) {
+                    background: $SecColor;
+                }
+            }
+        }
+    }
+}

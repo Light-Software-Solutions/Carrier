@@ -53,14 +53,22 @@ namespace DevNest
 
         protected void dropMenu(object sender, EventArgs e)
         {
-            if (dropDown.Style["display"] == "none")
+            var temp = dropDown.Style["display"];
+            if (dropDown.Style["display"] == null)
             {
                 dropDown.Style["display"] = "block";
             }
             else
             {
-                dropDown.Style["display"] = "none";
+                dropDown.Style["display"] = null;
             }
+        }
+
+        protected void ChangeBlueTheme(object sender, EventArgs e)
+        {
+            //MasterCSS.Href = "Styles/BlueTheme/MasterPage.css";
+            string[] data = MasterCSS.Href.Split('/');
+            MasterCSS.Href = data[0] + "/BlueTheme/" + data[1];
         }
     }
 }
