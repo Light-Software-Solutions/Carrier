@@ -46,6 +46,10 @@ namespace DevNest
         {
             Response.Redirect("manage-projects.aspx");
         }
+        protected void goExplore(object sender, EventArgs e)
+        {
+            Response.Redirect("explore.aspx");
+        }
 
         protected void dropMenu(object sender, EventArgs e)
         {

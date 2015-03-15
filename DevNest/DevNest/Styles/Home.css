@@ -2,7 +2,12 @@
   min-height: 782px;
   font-size: 1rem;
   background: #282627;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media screen and (max-width: 1367px) {
+    #Wrapper {
+      min-height: 512px; } }
 
 @font-face {
   font-family: "Sugar";
@@ -11,7 +16,7 @@
 #Wrapper section {
   height: 300px; }
 #Wrapper #display {
-  background: rgba(25, 80, 57, 0.3);
+  background: rgba(35, 68, 86, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +29,9 @@
     height: 59px;
     cursor: pointer;
     opacity: 0.3;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
     transition: 2s; }
     #Wrapper #display #LeftArrow:hover, #Wrapper #display #RightArrow:hover {
       opacity: 1; }
@@ -38,12 +46,15 @@
     width: 80%;
     height: 100%;
     color: #F5F5F5;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
     background: url("../Images/Splash.png") no-repeat;
     background-position: 172px -41px; }
 #Wrapper section:nth-of-type(2) {
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
   justify-content: space-between; }
   #Wrapper section:nth-of-type(2) article {
@@ -53,8 +64,9 @@
     height: 66%;
     align-self: center;
     color: #F5F5F5;
-    background: rgba(25, 80, 57, 0.3);
+    background: rgba(35, 68, 86, 0.3);
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 10%; }
     #Wrapper section:nth-of-type(2) article h1, #Wrapper section:nth-of-type(2) article div {
@@ -65,12 +77,16 @@
       font-weight: 700;
       text-align: center;
       height: 15%;
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       overflow: hidden;
       padding-top: 10px; }
     #Wrapper section:nth-of-type(2) article div {
       text-align: justify;
       height: 50%;
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       overflow: hidden;
       text-indent: 20px; }
@@ -80,7 +96,8 @@
     #Wrapper section:nth-of-type(2) article footer {
       margin-top: 3%;
       display: flex;
-      flex-flow: row;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
       justify-content: space-between;
       padding-bottom: 10px; }
       #Wrapper section:nth-of-type(2) article footer time {

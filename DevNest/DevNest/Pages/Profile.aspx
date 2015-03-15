@@ -40,10 +40,6 @@
                         <asp:Label Text="asp.net" runat="server" />
                         <progress value="3" max="6"></progress>
                     </div>
-                    <div class="couple">
-                        <asp:Label Text="asp.net" runat="server" />
-                        <progress value="3" max="6"></progress>
-                    </div>
                 </div>
             </aside>
             <section class="user-info">

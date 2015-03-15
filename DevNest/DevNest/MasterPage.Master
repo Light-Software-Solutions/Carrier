@@ -102,7 +102,7 @@
                                 <asp:LinkButton Text="Home" runat="server" OnClick="goHome" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="Explore" runat="server" />
+                                <asp:LinkButton Text="Explore" runat="server" OnClick="goExplore"/>
                             </li>
                             <li>
                                 <asp:LinkButton Text="Portfolio" runat="server" OnClick="goPortfolio" />

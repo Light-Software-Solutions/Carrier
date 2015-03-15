@@ -26,6 +26,9 @@
             height: 59px;
             cursor: pointer;
             opacity: 0.3;
+            -moz-transition: 2s;
+            -o-transition: 2s;
+            -webkit-transition: 2s;
             transition: 2s;
 
             &:hover {
@@ -49,6 +52,8 @@
             width: 80%;
             height: 100%;
             color: $FontColor;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
             text-overflow: ellipsis;
             overflow: hidden;
             background: url("../Images/Splash.png") no-repeat;
@@ -58,6 +63,7 @@
 
     section:nth-of-type(2) {
         display: flex;
+        -ms-flex-direction: row;
         flex-direction: row;
         justify-content: space-between;
 
@@ -70,6 +76,7 @@
             color: $FontColor;
             background: $OpacitySec;
             display: flex;
+            -ms-flex-direction: column;
             flex-direction: column;
             margin: 0 10%;
 
@@ -83,6 +90,8 @@
                 font-weight: 700;
                 text-align: center;
                 height: 15%;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 padding-top: 10px;
@@ -92,6 +101,8 @@
                 text-align: justify;
                 height: 50%;
                 //border: 1px solid red;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 text-indent: 20px;
@@ -106,7 +117,8 @@
                 margin-top: 3%;
                 //border: 1px solid red;
                 display: flex;
-                flex-flow: row;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
                 justify-content: space-between;
                 padding-bottom: 10px;
 

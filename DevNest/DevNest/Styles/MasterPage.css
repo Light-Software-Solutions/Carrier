@@ -3,7 +3,12 @@
   min-height: 782px;
   font-size: 1rem;
   background: #282627;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media screen and (max-width: 1367px) {
+    #Wrapper {
+      min-height: 512px; } }
 
 body {
   background: #282627;
@@ -14,6 +19,7 @@ body {
   width: auto;
   height: 100px;
   display: flex;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   background: #282627;
   border: 1px solid rgba(245, 245, 245, 0.4);
@@ -27,6 +33,7 @@ body {
     flex-grow: 0;
     cursor: pointer;
     display: flex;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     align-self: flex-end; }
     #main-header .logo svg {
@@ -34,15 +41,16 @@ body {
       #main-header .logo svg .svg-back-color {
         fill: #282627; }
       #main-header .logo svg .svg-sec-color {
-        fill: #195039; }
+        fill: #234456; }
       #main-header .logo svg .svg-font-color {
         fill: #c2c2c2; }
       #main-header .logo svg .svg-font-shadow {
-        fill: #0d291d; }
+        fill: #142732; }
   #main-header #header-wrapper {
     order: 2;
     flex-grow: 5;
     display: flex;
+    -ms-flex-flow: column;
     flex-flow: column; }
     #main-header #header-wrapper #search {
       text-align: right;
@@ -51,7 +59,7 @@ body {
       flex-grow: 0; }
       #main-header #header-wrapper #search input[type="text"] {
         border: none;
-        background: #195039;
+        background: #234456;
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
         width: 150px;
@@ -61,13 +69,13 @@ body {
         color: #F5F5F5; }
         #main-header #header-wrapper #search input[type="text"]:focus {
           background: #F5F5F5;
-          color: #195039;
+          color: #234456;
           text-align: left;
           outline: 0;
           border: none; }
       #main-header #header-wrapper #search input[type="submit"] {
         border: none;
-        background: url("/Images/magnifying_glass_White.png") no-repeat, #195039;
+        background: url("/Images/magnifying_glass_White.png") no-repeat, #234456;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         border-left: 1px solid #282627;
@@ -79,21 +87,23 @@ body {
         cursor: pointer; }
         #main-header #header-wrapper #search input[type="submit"]:hover {
           background: url("/Images/magnifying_glass.png") no-repeat, #F5F5F5;
-          color: #195039;
+          color: #234456;
           background-position: 8px 4px;
           background-size: 47% auto; }
     #main-header #header-wrapper #controls {
       order: 2;
       flex-grow: 5;
       display: flex;
-      flex-flow: row; }
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
       #main-header #header-wrapper #controls #nav-menu {
         align-self: flex-end;
         order: 1;
         flex-grow: 1; }
         #main-header #header-wrapper #controls #nav-menu ul {
           display: flex;
-          flex-flow: row;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
           justify-content: center; }
           #main-header #header-wrapper #controls #nav-menu ul:after {
             content: "";
@@ -103,12 +113,12 @@ body {
           #main-header #header-wrapper #controls #nav-menu ul li {
             float: left;
             justify-content: center;
-            border-top: 1px solid #195039; }
+            border-top: 1px solid #234456; }
             #main-header #header-wrapper #controls #nav-menu ul li:first-of-type {
-              border-left: 1px solid #195039;
+              border-left: 1px solid #234456;
               border-top-left-radius: 10px; }
             #main-header #header-wrapper #controls #nav-menu ul li:last-of-type {
-              border-right: 1px solid #195039;
+              border-right: 1px solid #234456;
               border-top-right-radius: 10px; }
             #main-header #header-wrapper #controls #nav-menu ul li:first-of-type a:hover {
               border-top-left-radius: 8px; }
@@ -125,7 +135,7 @@ body {
                 text-decoration: none;
                 color: #F5F5F5; }
               #main-header #header-wrapper #controls #nav-menu ul li a:hover, #main-header #header-wrapper #controls #nav-menu ul li a:visited:hover {
-                background: #195039; }
+                background: #234456; }
       #main-header #header-wrapper #controls #user-label {
         order: 1;
         align-self: flex-end;
@@ -139,6 +149,8 @@ body {
           overflow: hidden; }
         #main-header #header-wrapper #controls #user-label #user-name {
           width: 140px;
+          -ms-text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
           overflow: hidden; }
           #main-header #header-wrapper #controls #user-label #user-name a {
@@ -149,17 +161,19 @@ body {
               color: #F5F5F5;
               text-decoration: none; }
             #main-header #header-wrapper #controls #user-label #user-name a:hover {
-              color: #195039; }
+              color: #234456; }
         #main-header #header-wrapper #controls #user-label #login-user {
           display: none;
           width: 140px;
+          -ms-text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
           overflow: hidden; }
           #main-header #header-wrapper #controls #user-label #login-user a {
             font-weight: 700;
             color: #F5F5F5; }
             #main-header #header-wrapper #controls #user-label #login-user a:hover {
-              color: #195039; }
+              color: #234456; }
         #main-header #header-wrapper #controls #user-label ul {
           display: inline-block; }
           #main-header #header-wrapper #controls #user-label ul li {
@@ -185,16 +199,16 @@ body {
                   width: 100%;
                   height: 100%;
                   padding: 5px 0;
-                  background: #195039;
+                  background: #234456;
                   color: #F5F5F5;
                   text-decoration: none;
                   border: 1px solid #282627; }
                   #main-header #header-wrapper #controls #user-label ul li #dropDown li a:hover {
-                    color: #195039;
+                    color: #234456;
                     text-decoration: none;
                     background: #F5F5F5; }
                   #main-header #header-wrapper #controls #user-label ul li #dropDown li a:visited {
-                    color: #195039;
+                    color: #234456;
                     text-decoration: none; }
 
 #content-page {
@@ -204,10 +218,11 @@ body {
 #main-footer {
   width: auto;
   height: 50px;
-  background: rgba(25, 80, 57, 0.3);
+  background: rgba(35, 68, 86, 0.3);
   font-size: 1rem;
   color: #F5F5F5;
   display: flex;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   border: 1px solid rgba(245, 245, 245, 0.4);
   /*border-bottom: none;*/ }
@@ -244,3 +259,5 @@ body {
     flex-grow: 0;
     text-align: right;
     padding: 0 2% 10px 2%; }
+
+/*# sourceMappingURL=MasterPage.css.map */

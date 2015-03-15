@@ -13,6 +13,7 @@ body {
     width: auto;
     height: 100px;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     //border: 1px solid black;
     background: $MainColor;
@@ -29,6 +30,7 @@ body {
         flex-grow: 0;
         cursor: pointer;
         display: flex;
+        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
         align-self: flex-end;
 
@@ -61,6 +63,7 @@ body {
         flex-grow: 5;
         //border: 1px solid red;
         display: flex;
+        -ms-flex-flow: column;
         flex-flow: column;
 
         #search {
@@ -117,7 +120,8 @@ body {
             order: 2;
             flex-grow: 5;
             display: flex;
-            flex-flow: row;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 
             #nav-menu {
                 //border: 1px solid black;
@@ -128,7 +132,8 @@ body {
                 ul {
                     //border: 1px solid red;
                     display: flex;
-                    flex-flow: row;
+                    -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
                     justify-content: center;
 
                     &:after {
@@ -201,6 +206,8 @@ body {
                     //display: none;
                     //border: 1px solid red;
                     width: 140px;
+                    -ms-text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
                     text-overflow: ellipsis;
                     overflow: hidden;
 
@@ -223,6 +230,8 @@ body {
                 #login-user {
                     display: none;
                     width: 140px;
+                    -ms-text-overflow: ellipsis;
+                    -o-text-overflow: ellipsis;
                     text-overflow: ellipsis;
                     overflow: hidden;
 
@@ -308,6 +317,7 @@ body {
     font-size: 1rem;
     color: $FontColor;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     border: 1px solid $BorderColor;
     /*border-bottom: none;*/

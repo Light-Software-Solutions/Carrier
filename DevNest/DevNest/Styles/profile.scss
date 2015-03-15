@@ -51,6 +51,7 @@
 
                 .couple {
                     display: flex;
+                    -ms-flex-flow: row wrap;
                     flex-flow: row wrap;
 
                     span {
@@ -69,8 +70,9 @@
                         flex-grow: 1;
                         height: 30px;
                         margin-bottom: 5px;
-                        -webkit-appearance: none;
                         appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
                         @include borderForms;
 
                         &::-webkit-progress-bar {
@@ -96,6 +98,7 @@
 
         .user-info {
             display: flex;
+            -ms-flex-flow: row wrap;
             flex-flow: row wrap;
             padding-bottom: 10px;
             @include borderDetails();
@@ -144,6 +147,7 @@
 
                 .lower-details {
                     display: flex;
+                    -ms-flex-flow: row wrap;
                     flex-flow: row wrap;
                     margin-top: 20px;
 
@@ -228,6 +232,7 @@
             .projects {
                 //background: blue;
                 display: flex;
+                -ms-flex-flow: row wrap;
                 flex-flow: row wrap;
                 justify-content: space-around;
 
@@ -239,6 +244,7 @@
                     //background: green;
                     margin: 10px 5px;
                     display: flex;
+                    -ms-flex-flow: row wrap;
                     flex-flow: row wrap;
                     background: url("http://placehold.it/300x200"), $SecColor;
                     cursor: pointer;
@@ -247,6 +253,8 @@
                         align-self: flex-end;
                         background: rgba(0, 0, 0, 0.7);
                         width: 100%;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
                         box-sizing: border-box;
                         padding: 5px 10px;
                         font-size: 1.3rem;

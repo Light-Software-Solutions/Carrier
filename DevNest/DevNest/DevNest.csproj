@@ -132,6 +132,7 @@
     </Content>
     <Content Include="Pages\contact-us.aspx" />
     <Content Include="Pages\EditProfile.aspx" />
+    <Content Include="Pages\explore.aspx" />
     <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\Index.aspx" />
     <Content Include="Pages\manage-projects.aspx" />
@@ -149,6 +150,12 @@
     <Content Include="Styles\EditProfile.min.css">
       <DependentUpon>EditProfile.css</DependentUpon>
     </Content>
+    <Content Include="Styles\explore.css">
+      <DependentUpon>explore.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\explore.min.css">
+      <DependentUpon>explore.css</DependentUpon>
+    </Content>
     <Content Include="Styles\Home.css.map">
       <DependentUpon>Home.css</DependentUpon>
     </Content>
@@ -159,6 +166,10 @@
     <Content Include="Styles\contact.scss" />
     <Content Include="Styles\contact.css.map">
       <DependentUpon>contact.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\explore.scss" />
+    <Content Include="Styles\explore.css.map">
+      <DependentUpon>explore.css</DependentUpon>
     </Content>
     <None Include="Styles\Home.scss" />
     <Content Include="Styles\Home.css">
@@ -262,6 +273,13 @@
     </Compile>
     <Compile Include="Pages\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\explore.aspx.cs">
+      <DependentUpon>explore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\explore.aspx.designer.cs">
+      <DependentUpon>explore.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

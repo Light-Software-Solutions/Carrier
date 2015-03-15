@@ -4,6 +4,7 @@ $buttonsWidth: 300px;
 
 #Wrapper {
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     padding: 20px;
 
@@ -12,6 +13,7 @@ $buttonsWidth: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
+        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
 
         .form-wrapper {
@@ -31,6 +33,7 @@ $buttonsWidth: 300px;
 
             .form-section {
                 display: flex;
+                -ms-flex-flow: row wrap;
                 flex-flow: row wrap;
                 //background: green;
                 fieldset {
@@ -70,9 +73,13 @@ $buttonsWidth: 300px;
                     //background: green;
                     //border: 1px solid red;
                     width: $buttonsWidth;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
                     box-sizing: border-box;
                     padding-left: 20px;
-                                    margin-left: 20px;
+                    margin-left: 20px;
+                    -ms-align-content: flex-start;
+                    -webkit-align-content: flex-start;
                     align-content: flex-start;
 
                     div {
@@ -80,11 +87,12 @@ $buttonsWidth: 300px;
                         font-size: 1rem;
                         margin-top: 40px;
                         text-align: justify;
-                                                line-height: 130%;
+                        line-height: 130%;
                     }
 
                     .social-media-contacts {
                         line-height: 150%;
+
                         a {
                             color: $FontColor;
                             text-decoration: none;

@@ -17,7 +17,7 @@
     @include formCommon;
     border-radius: 5px 0 0 5px;
     order: 1;
-    width: 90%;
+    width: 81%;
     flex-grow: 1;
     //background: blue !important;
 }
@@ -48,6 +48,7 @@ input[type=text], textarea {
 #Wrapper {
     //background: red;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     font-size: 1rem;
 
@@ -73,6 +74,7 @@ input[type=text], textarea {
         .avatar-edit {
             background: $OpacitySec;
             display: flex;
+            -ms-flex-flow: column wrap;
             flex-flow: column wrap;
 
             img {
@@ -85,6 +87,7 @@ input[type=text], textarea {
             .upload-container {
                 //background: blue;
                 display: flex;
+                -ms-flex-flow: column wrap;
                 flex-flow: column wrap;
                 justify-content: space-between;
 
@@ -173,6 +176,7 @@ input[type=text], textarea {
             }
 
             display: flex;
+            -ms-flex-flow: row wrap;
             flex-flow: row wrap;
 
             .user-info-edit {
@@ -185,6 +189,7 @@ input[type=text], textarea {
 
                 .input-row {
                     display: flex;
+                    -ms-flex-flow: row wrap;
                     flex-flow: row wrap;
                     //height: 30px;
                     //background: red;
@@ -231,6 +236,7 @@ input[type=text], textarea {
 
         .knowledge-container {
             display: flex;
+            -ms-flex-flow: row wrap;
             flex-flow: row wrap;
 
             h2 {
@@ -243,6 +249,7 @@ input[type=text], textarea {
                 width: 90%;
                 flex-grow: 0;
                 display: flex;
+                -ms-flex-flow: row wrap;
                 flex-flow: row wrap;
                 //Align left and right panels
                 margin-bottom: 11px;
@@ -254,11 +261,12 @@ input[type=text], textarea {
                     margin: 5px 0 8px 16px;
                     flex-grow: 1;
                     display: flex;
+                    -ms-flex-flow: column wrap;
                     flex-flow: column wrap;
-
 
                     .language-row {
                         display: flex;
+                        -ms-flex-flow: row wrap;
                         flex-flow: row wrap;
 
                         input {
@@ -273,6 +281,7 @@ input[type=text], textarea {
                     .hidden-menu-edit {
                         display: none;
                         //display: flex;
+                        -ms-flex-flow: column wrap;
                         flex-flow: column wrap;
                         //position: relative;
                         li {
