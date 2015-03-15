@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace DevNest
@@ -66,9 +67,15 @@ namespace DevNest
 
         protected void ChangeBlueTheme(object sender, EventArgs e)
         {
-            //MasterCSS.Href = "Styles/BlueTheme/MasterPage.css";
-            string[] data = MasterCSS.Href.Split('/');
-            MasterCSS.Href = data[0] + "/BlueTheme/" + data[1];
+            //Needed external storage for themes, will use on page_load this:
+            MasterCSS.Href = "Styles/BlueTheme/MasterPage.min.css";
+            //Just for demonstration on index page:
+            HtmlLink css = new HtmlLink();
+            css.Href = "/Styles/BlueTheme/Index.min.css";
+            css.Attributes["rel"] = "stylesheet";
+            css.Attributes["type"] = "text/css";
+            css.Attributes["media"] = "all";
+            Page.Header.Controls.Add(css);
         }
     }
 }
