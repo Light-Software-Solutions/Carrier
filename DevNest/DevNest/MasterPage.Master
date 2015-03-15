@@ -102,7 +102,7 @@
                                 <asp:LinkButton Text="Home" runat="server" OnClick="goHome" />
                             </li>
                             <li>
-                                <asp:LinkButton Text="Explore" runat="server" OnClick="goExplore"/>
+                                <asp:LinkButton Text="Explore" runat="server" OnClick="goExplore" />
                             </li>
                             <li>
                                 <asp:LinkButton Text="Portfolio" runat="server" OnClick="goPortfolio" />
@@ -122,7 +122,8 @@
                                     <asp:LinkButton runat="server" OnClick="goIndex">Register</asp:LinkButton>
                                 </div>
                                 <div id="user-name">
-                                    <asp:LinkButton runat="server" OnClick="dropMenu"><asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span></asp:LinkButton>
+                                    <asp:LinkButton runat="server" OnClick="dropMenu">
+                                        <asp:Label ID="UserName" Text="Kamigawa" runat="server"></asp:Label><!----><span>&#9662;</span></asp:LinkButton>
                                 </div>
                                 <ul id="dropDown" runat="server">
                                     <li>

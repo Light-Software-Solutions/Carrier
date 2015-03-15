@@ -15,7 +15,7 @@
     width: auto;
     margin: 20px;
     padding: 5px 20px;
-    background: rgba(35, 68, 86, 0.3);
+    background: rgba(25, 80, 57, 0.3);
     border: 1px solid rgba(245, 245, 245, 0.4);
     border-radius: 2px; }
     #Wrapper .inner-wrapper .top-section .btn-cointainer {
@@ -25,7 +25,7 @@
       #Wrapper .inner-wrapper .top-section .btn-cointainer a {
         display: block;
         text-align: center;
-        background: #234456;
+        background: #195039;
         color: #F5F5F5;
         border: 1px solid rgba(245, 245, 245, 0.4);
         border-radius: 8px;
@@ -37,7 +37,7 @@
         text-decoration: none; }
         #Wrapper .inner-wrapper .top-section .btn-cointainer a:hover {
           background: #F5F5F5;
-          color: #234456;
+          color: #195039;
           border: 1px solid #282627; }
         #Wrapper .inner-wrapper .top-section .btn-cointainer a:visited, #Wrapper .inner-wrapper .top-section .btn-cointainer a:visited:hover {
           color: #F5F5F5;
@@ -73,7 +73,7 @@
           display: flex;
           -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-          background: url("http://placehold.it/200x200"), #234456;
+          background: url("http://placehold.it/200x200"), #195039;
           cursor: pointer;
           -moz-transition: all 2s;
           -o-transition: all 2s;
@@ -97,6 +97,6 @@
             width: 250px;
             height: 250px; }
         #Wrapper .inner-wrapper section .projects .container:nth-of-type(odd) {
-          background: #234456; }
+          background: #195039; }
 
 /*# sourceMappingURL=manage-projects.css.map */

@@ -1,12 +1,12 @@
 ﻿$MainColor: #282627;
 //$MainColor: #ff0000;
 $SecColor: #195039;
-$SecColor: #234456;
+//$SecColor: #234456;
 //$SecColor: #ff8400;
 //$SecColor: adjust_hue(#195039, 160%);
 $ShadowColor: darken($SecColor, 10%);
 $FontColor: #F5F5F5;
-//$FontColor: lighten($SecColor, 75%);
+//$FontColor: lighten($SecColor, 90%);
 $BorderColor: rgba($FontColor, 0.4);
 $OpacitySec: rgba($SecColor, 0.3);
 

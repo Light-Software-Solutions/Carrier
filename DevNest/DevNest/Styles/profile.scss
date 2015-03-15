@@ -64,23 +64,47 @@
                         text-align: right;
                     }
 
+                    $progressBorderColor: darken($FontColor, 20%);
+                    $gradiendOne: -45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%;
+                    $gradientTwo: top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25);
+                    $gradientThree: left, lighten($SecColor, 40%), $SecColor;
 
                     progress[value] {
                         width: 50%;
                         flex-grow: 1;
                         height: 30px;
                         margin-bottom: 5px;
-                        appearance: none;
                         -webkit-appearance: none;
                         -moz-appearance: none;
+                        appearance: none;
                         @include borderForms;
+                        /*-moz-border-top-colors: $progressBorderColor;
+                        -moz-border-bottom-colors: $progressBorderColor;
+                        -moz-border-left-colors: $progressBorderColor;
+                        -moz-border-right-colors: $progressBorderColor;*/
+                        border: 1px solid $progressBorderColor;
+                        background: $progressBorderColor;
+                        border-radius: 2px;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        /* For IE10 */
+                        color: $SecColor;
+                        //background-color: red;
 
                         &::-webkit-progress-bar {
-                            background: darken($FontColor, 20%);
+                            background: $progressBorderColor;
+                            //background: red;
                         }
                         //Progress bar colors changed for chrome!;
                         &::-webkit-progress-value {
-                            background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, lighten($SecColor, 40%), $SecColor);
+                            background-image: -webkit-linear-gradient($gradiendOne), -webkit-linear-gradient($gradientTwo), -webkit-linear-gradient($gradientThree);
+                            border-radius: 2px;
+                            background-size: 55px 30px, 100% 100%, 100% 100%;
+                        }
+                        //Firefox;
+                        &::-moz-progress-bar {
+                            background-image: -moz-linear-gradient($gradiendOne), -moz-linear-gradient($gradientTwo), -moz-linear-gradient($gradientThree);
                             border-radius: 2px;
                             background-size: 55px 30px, 100% 100%, 100% 100%;
                         }
